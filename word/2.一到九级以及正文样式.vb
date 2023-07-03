@@ -13,8 +13,11 @@ Sub CustomizeAndApplyHeadingStyle()
         DeleteStyle styleName
     End If
     
+    Dim objStyle As style
+    Set objStyle = ActiveDocument.Styles.Add(Name:=styleName, Type:=wdStyleTypeParagraph)
+    
     ' 创建样式
-    With ActiveDocument.Styles.Add(Name:=styleName, Type:=wdStyleTypeParagraph)
+    With objStyle
         ' 设置样式属性
         .BaseStyle = ActiveDocument.Styles("正文")
         .Font.Size = 14
@@ -25,6 +28,14 @@ Sub CustomizeAndApplyHeadingStyle()
         .ParagraphFormat.OutlineLevel = wdOutlineLevel1
     End With
     
+    Set LT = ActiveDocument.ListTemplates.Add(OutlineNumbered:=True)
+     With LT.ListLevels(1)
+     .NumberStyle = wdListNumberStyleArabic
+     .NumberPosition = InchesToPoints(0.25 * (1 - 1))
+     .TextPosition = InchesToPoints(0.25 * 1)
+     .NumberFormat = "%1"
+     .LinkedStyle = styleName
+     End With
     ' 将样式应用于所选文本范围
     selectedRange.style = ActiveDocument.Styles(styleName)
 End Sub
@@ -42,3 +53,7 @@ Sub DeleteStyle(styleName As String)
     ActiveDocument.Styles(styleName).Delete
     On Error GoTo 0
 End Sub
+Sub applyStyle()
+   Selection.Range.style = ActiveDocument.Styles("Heading 1")
+End Sub
+ 
