@@ -22,6 +22,7 @@ Sub CustomizeAndApplyHeadingStyle()
         .Font.Color = wdColorBlue
         .ParagraphFormat.SpaceAfter = 12
         .ParagraphFormat.Alignment = wdAlignParagraphLeft
+        .ParagraphFormat.OutlineLevel = wdOutlineLevel1
     End With
     
     ' 将样式应用于所选文本范围
