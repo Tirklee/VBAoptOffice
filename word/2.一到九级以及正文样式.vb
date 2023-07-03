@@ -33,7 +33,7 @@ Sub CustomizeAndApplyHeadingStyle()
      .NumberStyle = wdListNumberStyleArabic
      .NumberPosition = InchesToPoints(0.25 * (1 - 1))
      .TextPosition = InchesToPoints(0.25 * 1)
-     .NumberFormat = "%1"
+     .NumberFormat = "%1."
      .LinkedStyle = styleName
      End With
     ' 将样式应用于所选文本范围
@@ -57,3 +57,4 @@ Sub applyStyle()
    Selection.Range.style = ActiveDocument.Styles("Heading 1")
 End Sub
  
+
