@@ -31,9 +31,11 @@ Sub CustomizeAndApplyHeadingStyle()
     Set LT = ActiveDocument.ListTemplates.Add(OutlineNumbered:=True)
      With LT.ListLevels(1)
      .NumberStyle = wdListNumberStyleArabic
-     .NumberPosition = InchesToPoints(0.25 * (1 - 1))
-     .TextPosition = InchesToPoints(0.25 * 1)
-     .NumberFormat = "%1."
+     .NumberPosition = InchesToPoints(0.25 * 0)
+     .TextPosition = InchesToPoints(0.25 * 0)
+     .NumberFormat = "%1"
+     .ResetOnHigher = 0
+     .StartAt = 1
      .LinkedStyle = styleName
      End With
     ' 将样式应用于所选文本范围
@@ -56,5 +58,3 @@ End Sub
 Sub applyStyle()
    Selection.Range.style = ActiveDocument.Styles("Heading 1")
 End Sub
- 
-
