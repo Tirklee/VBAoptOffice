@@ -1,43 +1,10 @@
-
-Sub CustomizeAndApplyHeadingStyle()
-    ' 创建一到九级标题
-    ' 创建一级标题
-     createStyle "一级标题", wdOutlineLevel1
-    ' 创建二级标题
-     createStyle "二级标题", wdOutlineLevel2
-    ' 创建三级标题
-     createStyle "三级标题", wdOutlineLevel3
-    ' 创建四级标题
-     createStyle "四级标题", wdOutlineLevel4
-    ' 创建五级标题
-     createStyle "五级标题", wdOutlineLevel5
-    ' 创建六级标题
-     createStyle "六级标题", wdOutlineLevel6
-    ' 创建七级标题
-     createStyle "七级标题", wdOutlineLevel7
-    ' 创建八级标题
-     createStyle "八级标题", wdOutlineLevel8
-    ' 创建九级标题
-     createStyle "九级标题", wdOutlineLevel9
-
-     ' 编号一级标题
-     LinkedMutilListStyleNumber "一级标题", 1, "%1"
-    ' 编号二级标题
-     LinkedMutilListStyleNumber "二级标题", 2, "%1.%2"
-    ' 编号三级标题
-     LinkedMutilListStyleNumber "三级标题", 3, "%1.%2.%3"
-    ' 编号四级标题
-     LinkedMutilListStyleNumber "四级标题", 4, "%1.%2.%3.%4"
-    ' 编号五级标题
-     LinkedMutilListStyleNumber "五级标题", 5, "%1.%2.%3.%4.%5"
-    ' 编号六级标题
-     LinkedMutilListStyleNumber "六级标题", 6, "%1.%2.%3.%4.%5.%6"
-    ' 编号七级标题
-     LinkedMutilListStyleNumber "七级标题", 7, "%1.%2.%3.%4.%5.%6.%7"
-    ' 编号八级标题
-     LinkedMutilListStyleNumber "八级标题", 8, "%1.%2.%3.%4.%5.%6.%7.%8"
-    ' 编号九级标题
-     LinkedMutilListStyleNumber "九级标题", 9, "%1.%2.%3.%4.%5.%6.%7.%8.%9"
+Sub CustomizeAndApplyStyle()
+   ' 创建列表样式
+   createStyle "列表样式", wdOutlineLevelBodyText
+   Dim listTemplateObj As listTemplate
+   Set listTemplateObj = ActiveDocument.ListTemplates.Add(OutlineNumbered:=False)
+   ' 编号一级标题
+   LinkedMutilListStyleNumber "列表样式", 1, "%1", listTemplateObj
 End Sub
 
 
@@ -64,9 +31,9 @@ Function createStyle(styleName As String, outlineLevel As Integer)
 End Function
 
 
-Sub LinkedMutilListStyleNumber(styleName As String, level As Integer, styleFormat As String)
-    Set LT = ActiveDocument.ListTemplates.Add(OutlineNumbered:=True)
-     With LT.ListLevels(level)
+Sub LinkedMutilListStyleNumber(styleName As String, level As Integer, styleFormat As String, listTemplateObj As listTemplate)
+    
+     With listTemplateObj.ListLevels(level)
         .NumberStyle = wdListNumberStyleArabic
         .NumberPosition = InchesToPoints(0.25 * 0)
         .TextPosition = InchesToPoints(0.25 * 0)
@@ -93,35 +60,5 @@ End Sub
 
 
 Sub applyStyle1()
-   Selection.Range.style = ActiveDocument.Styles("一级标题")
+   Selection.Range.style = ActiveDocument.Styles("列表样式")
 End Sub
-Sub applyStyle2()
-   Selection.Range.style = ActiveDocument.Styles("二级标题")
-End Sub
-
-Sub applyStyle3()
-   Selection.Range.style = ActiveDocument.Styles("三级标题")
-End Sub
-
-Sub applyStyle4()
-   Selection.Range.style = ActiveDocument.Styles("四级标题")
-End Sub
-
-Sub applyStyle5()
-   Selection.Range.style = ActiveDocument.Styles("五级标题")
-End Sub
-
-Sub applyStyle6()
-   Selection.Range.style = ActiveDocument.Styles("六级标题")
-End Sub
-Sub applyStyle7()
-   Selection.Range.style = ActiveDocument.Styles("七级标题")
-End Sub
-Sub applyStyle8()
-   Selection.Range.style = ActiveDocument.Styles("八级标题")
-End Sub
-Sub applyStyle9()
-   Selection.Range.style = ActiveDocument.Styles("九级标题")
-End Sub
-
-
