@@ -1,6 +1,51 @@
 
-Function createStyle(styleName As String,outlineLevel As Int)
+Sub CustomizeAndApplyHeadingStyle()
+    ' 创建一到九级标题
+    ' 创建一级标题
+     createStyle "一级标题", wdOutlineLevel1
+    ' 创建二级标题
+     createStyle "二级标题", wdOutlineLevel2
+    ' 创建三级标题
+     createStyle "三级标题", wdOutlineLevel3
+    ' 创建四级标题
+     createStyle "四级标题", wdOutlineLevel4
+    ' 创建五级标题
+     createStyle "五级标题", wdOutlineLevel5
+    ' 创建六级标题
+     createStyle "六级标题", wdOutlineLevel6
+    ' 创建七级标题
+     createStyle "七级标题", wdOutlineLevel7
+    ' 创建八级标题
+     createStyle "八级标题", wdOutlineLevel8
+    ' 创建九级标题
+     createStyle "九级标题", wdOutlineLevel9
+     
+     
+    Dim LT As listTemplate
+    Set LT = ActiveDocument.ListTemplates.Add(OutlineNumbered:=True)
 
+     ' 编号一级标题
+     LinkedMutilListStyleNumber "一级标题", 1, "%1", LT
+    ' 编号二级标题
+     LinkedMutilListStyleNumber "二级标题", 2, "%1.%2", LT
+    ' 编号三级标题
+     LinkedMutilListStyleNumber "三级标题", 3, "%1.%2.%3", LT
+    ' 编号四级标题
+     LinkedMutilListStyleNumber "四级标题", 4, "%1.%2.%3.%4", LT
+    ' 编号五级标题
+     LinkedMutilListStyleNumber "五级标题", 5, "%1.%2.%3.%4.%5", LT
+    ' 编号六级标题
+     LinkedMutilListStyleNumber "六级标题", 6, "%1.%2.%3.%4.%5.%6", LT
+    ' 编号七级标题
+     LinkedMutilListStyleNumber "七级标题", 7, "%1.%2.%3.%4.%5.%6.%7", LT
+    ' 编号八级标题
+     LinkedMutilListStyleNumber "八级标题", 8, "%1.%2.%3.%4.%5.%6.%7.%8", LT
+    ' 编号九级标题
+     LinkedMutilListStyleNumber "九级标题", 9, "%1.%2.%3.%4.%5.%6.%7.%8.%9", LT
+End Sub
+
+
+Function createStyle(styleName As String, outlineLevel As Integer)
      ' 检查样式是否已存在
     If StyleExists(styleName) Then
         ' 如果样式已存在，则删除该样式
@@ -18,63 +63,21 @@ Function createStyle(styleName As String,outlineLevel As Int)
         .Font.Color = wdColorBlue
         .ParagraphFormat.SpaceAfter = 12
         .ParagraphFormat.Alignment = wdAlignParagraphLeft
-        .ParagraphFormat.OutlineLevel = outlineLevel
+        .ParagraphFormat.outlineLevel = outlineLevel
     End With
 End Function
 
 
-Function LinkedMutilListStyleNumber(styleName As String,level As Int,styleFormat As String)
-    Set LT = ActiveDocument.ListTemplates.Add(OutlineNumbered:=True)
-     With LT.ListLevels(level)
+Sub LinkedMutilListStyleNumber(styleName As String, level As Integer, styleFormat As String, listTemplate As listTemplate)
+     With listTemplate.ListLevels(level)
         .NumberStyle = wdListNumberStyleArabic
         .NumberPosition = InchesToPoints(0.25 * 0)
         .TextPosition = InchesToPoints(0.25 * 0)
         .NumberFormat = styleFormat
-        .ResetOnHigher = level-1
+        .ResetOnHigher = level - 1
         .StartAt = 1
         .LinkedStyle = styleName
      End With
-End Function
-
-Sub CustomizeAndApplyHeadingStyle()
-    ' 创建一到九级标题
-    ' 创建一级标题
-     createStyle("一级标题",wdOutlineLevel1)
-    ' 创建二级标题
-     createStyle("二级标题",wdOutlineLevel2)
-    ' 创建三级标题
-     createStyle("三级标题",wdOutlineLevel3)
-    ' 创建四级标题
-     createStyle("四级标题",wdOutlineLevel4)
-    ' 创建五级标题
-     createStyle("五级标题",wdOutlineLevel5)
-    ' 创建六级标题
-     createStyle("六级标题",wdOutlineLevel6)
-    ' 创建七级标题
-     createStyle("七级标题",wdOutlineLevel7)
-    ' 创建八级标题
-     createStyle("八级标题",wdOutlineLevel8)
-    ' 创建九级标题
-     createStyle("九级标题",wdOutlineLevel9)
-
-     ' 编号一级标题
-     LinkedMutilListStyleNumber("一级标题",1,"%1")
-    ' 编号二级标题
-     LinkedMutilListStyleNumber("二级标题",2,"%1.%2")
-    ' 编号三级标题
-     LinkedMutilListStyleNumber("三级标题",3,"%1.%2.%3")
-    ' 编号四级标题
-     LinkedMutilListStyleNumber("四级标题",4,"%1.%2.%3.%4")
-    ' 编号五级标题
-     LinkedMutilListStyleNumber("五级标题",5,"%1.%2.%3.%4.%5")
-    ' 编号六级标题
-     LinkedMutilListStyleNumber("六级标题",6,"%1.%2.%3.%4.%5.%6")
-    ' 编号七级标题
-     LinkedMutilListStyleNumber("七级标题",7,"%1.%2.%3.%4.%5.%6.%7")
-    ' 编号八级标题
-     LinkedMutilListStyleNumber("八级标题",8,"%1.%2.%3.%4.%5.%6.%7.%8")
-    ' 编号九级标题
-     LinkedMutilListStyleNumber("九级标题",9,"%1.%2.%3.%4.%5.%6.%7.%8.%9")
 End Sub
 
 Function StyleExists(styleName As String) As Boolean
@@ -89,4 +92,36 @@ Sub DeleteStyle(styleName As String)
     On Error Resume Next
     ActiveDocument.Styles(styleName).Delete
     On Error GoTo 0
+End Sub
+
+Sub applyStyle1()
+   Selection.Range.style = ActiveDocument.Styles("一级标题")
+End Sub
+Sub applyStyle2()
+   Selection.Range.style = ActiveDocument.Styles("二级标题")
+End Sub
+
+Sub applyStyle3()
+   Selection.Range.style = ActiveDocument.Styles("三级标题")
+End Sub
+
+Sub applyStyle4()
+   Selection.Range.style = ActiveDocument.Styles("四级标题")
+End Sub
+
+Sub applyStyle5()
+   Selection.Range.style = ActiveDocument.Styles("五级标题")
+End Sub
+
+Sub applyStyle6()
+   Selection.Range.style = ActiveDocument.Styles("六级标题")
+End Sub
+Sub applyStyle7()
+   Selection.Range.style = ActiveDocument.Styles("七级标题")
+End Sub
+Sub applyStyle8()
+   Selection.Range.style = ActiveDocument.Styles("八级标题")
+End Sub
+Sub applyStyle9()
+   Selection.Range.style = ActiveDocument.Styles("九级标题")
 End Sub
