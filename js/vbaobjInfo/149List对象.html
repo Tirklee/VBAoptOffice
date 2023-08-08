@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365776"><!--csasset id="HV10365776" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>List 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">List 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">List 对象成员</b></span></td></tr></table></div><p>代表已应用于文档中指定段落的单一列表格式。<b>List</b> 对象是 <b>Lists</b> 集合的一个成员。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327790.htm">ApplyListTemplate</a></b></td><td>为指定的 <b>ListFormat</b> 对象设置列表格式。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><b class="ui">ApplyListTemplateWithLevel</b></b></td><td>以后的版本中将提供关于此成员的说明。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327791.htm">CanContinuePreviousList</a></b></td><td>返回一个 <b><a href="HV10323828.htm">WdContinue</a></b> 常量（<b>wdContinueDisabled</b>、<b>wdResetList</b> 或 <b>wdContinueList</b>），该常量指示是否可以继续使用上一列表中的格式。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327792.htm">ConvertNumbersToText</a></b></td><td>更改指定的 <b>List</b> 对象中的列表编号和 LISTNUM 域。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327793.htm">CountNumberedItems</a></b></td><td>返回指定 <b>List</b> 对象中的项目符号或编号项目和 LISTNUM 域的数量。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327800.htm">RemoveNumbers</a></b></td><td>删除指定列表中的编号或项目符号。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327789.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327794.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327797.htm">ListParagraphs</a></b></td><td>返回一个 <b><a href="HV10328123.htm">ListParagraphs</a></b> 集合，该集合代表列表、文档或区域内的所有编号段落。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327798.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>List</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327799.htm">Range</a></b></td><td>返回 <b>Range</b> 对象，该对象表示文档包含在指定对象中的一部分。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327801.htm">SingleListTemplate</a></b></td><td>
+			如果整个列表都使用同一列表模板，则该属性值为 <b>True</b>。只读 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327802.htm">StyleName</a></b></td><td>返回应用于指定的“自动图文集”词条的样式名称。只读 <b>String</b> 类型。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365641"><!--csasset id="HV10365641" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Frameset 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Frameset 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Frameset 对象成员</b></span></td></tr></table></div><p>代表整个框架页或框架页中的单个图文框。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327024.htm">AddNewFrame</a></b></td><td>该方法在框架页中添加一个新框架。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327029.htm">Delete</a></b></td><td>删除指定的 <b>Frameset</b> 对象。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327025.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327026.htm">ChildFramesetCount</a></b></td><td>返回指定 <b>Frameset</b> 对象的关联 <b>Frameset</b> 子对象的数目。<b>Long</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327027.htm">ChildFramesetItem</a></b></td><td>返回一个 <b>Frameset</b> 对象，该对象代表 <i>Index</i> 参数指定的 <b>Frameset</b> 子对象。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327028.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327030.htm">FrameDefaultURL</a></b></td><td>返回或设置当打开框架页时在指定框架中显示的网页或其他文档。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327031.htm">FrameDisplayBorders</a></b></td><td>
+			如果显示指定框架页上的框架边框，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327032.htm">FrameLinkToFile</a></b></td><td>
+			如果 <b><a href="HV10327030.htm">FrameDefaultURL</a></b> 属性指定的网页或其他文档是一个外部文件，Microsoft Word 仅保留从指定框架到该文件的一个链接，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327033.htm">FrameName</a></b></td><td>返回或设置框架页上指定框架的名称。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327034.htm">FrameResizable</a></b></td><td>
+			如果用户在 Web 浏览器中查看框架页时可调整指定框架的大小，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327035.htm">FrameScrollbarType</a></b></td><td>返回或设置当用 Web 浏览器浏览指定框架的框架页时，何时可以在该指定框架中使用滚动条。<b>WdScrollbarType</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327038.htm">FramesetBorderColor</a></b></td><td>返回或设置指定框架页上框架边框的颜色。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327039.htm">FramesetBorderWidth</a></b></td><td>返回或设置指定框架页上框架周围边框的宽度（以磅为单位）。<b>Single</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327040.htm">Height</a></b></td><td>返回或设置一个 <b>Float</b> 类型的值，该值代表指定 <b>Frameset</b> 对象的高度。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327041.htm">HeightType</a></b></td><td>返回或设置框架页上指定框架的宽度类型。<b>WdFramesetSizeType</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327042.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Frameset</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327043.htm">ParentFrameset</a></b></td><td>返回一个 <b>Frameset</b> 对象，该对象代表框架页上指定 <b>Frameset</b> 对象的父级。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327044.htm">Type</a></b></td><td>返回 <b>Frameset</b> 对象的类型。只读 <b><a href="HV10323877.htm">WdFramesetType</a></b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327045.htm">Width</a></b></td><td>返回或设置指定的 <b>Frameset</b> 对象的宽度。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327046.htm">WidthType</a></b></td><td>返回或设置指定的 <b>Frameset</b> 对象的宽度类型。<b>WdFramesetSizeType</b> 类型，可读写。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

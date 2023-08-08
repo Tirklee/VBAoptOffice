@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365762"><!--csasset id="HV10365762" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>LineFormat 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">LineFormat 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">LineFormat 对象成员</b></span></td></tr></table></div><p>代表线条和箭头的格式设置。对于线条，<b>LineFormat</b> 对象包含该线条自身的格式信息；对于具有边框的形状，该对象包含形状的边框的格式信息。</p><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327713.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327717.htm">BackColor</a></b></td><td>返回或设置一个 <b><a href="HV10324975.htm">ColorFormat</a></b> 对象，该对象代表带图案线条的背景色。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327718.htm">BeginArrowheadLength</a></b></td><td>返回或设置指定线条开头的箭头长度。<b>MsoArrowheadLength</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327719.htm">BeginArrowheadStyle</a></b></td><td>返回或设置指定线条开头的箭头样式。<b>MsoArrowheadStyle</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327720.htm">BeginArrowheadWidth</a></b></td><td>返回或设置指定线条开头的箭头宽度。<b>MsoArrowheadWidth</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327721.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327722.htm">DashStyle</a></b></td><td>返回或设置指定线条的虚线样式。<b>MsoLineDashStyle</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327723.htm">EndArrowheadLength</a></b></td><td>返回或设置指定线条末尾箭头的长度。<b>MsoArrowheadLength</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327724.htm">EndArrowheadStyle</a></b></td><td>返回或设置指定线条末尾箭头的样式。<b>MsoArrowheadStyle</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327725.htm">EndArrowheadWidth</a></b></td><td>返回或设置指定线条末尾箭头的宽度。<b>MsoArrowheadWidth</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327726.htm">ForeColor</a></b></td><td>返回或设置一个 <b><a href="HV10324975.htm">ColorFormat</a></b> 对象，该对象代表线条的前景色。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327727.htm">InsetPen</a></b></td><td>
+			如果为 <b>MsoTrue</b>，则在指定形状内绘制线条。<b>MsoTriState</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327732.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>LineFormat</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327733.htm">Pattern</a></b></td><td>设置或返回代表应用于指定线条的图案的值。可读写 <b>MsoPatternType</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327734.htm">Style</a></b></td><td>返回或设置线条格式样式。可读写 <b>MsoLineStyle</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327735.htm">Transparency</a></b></td><td>返回或设置线条的透明度。可读写 <b>Single</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327736.htm">Visible</a></b></td><td>
+			如果指定对象或应用于该对象的格式是可见的，则该属性值为 <b>True</b>。<b>MsoTriState</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327737.htm">Weight</a></b></td><td>返回或设置指定线条的粗细（以磅为单位）。<b>Single</b> 类型，可读写。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

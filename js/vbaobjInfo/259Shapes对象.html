@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10366159"><!--csasset id="HV10366159" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Shapes 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Shapes 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Shapes 对象成员</b></span><div id="divShowAll" STYLE="display:block;" align="left"><a href="javascript:AlterAllDivs('block');" class="DropDown"><img id="picHeader" border="0" src="blueup_CLV.gif" alt="全部显示">全部显示</a></div><div id="divHideAll" STYLE="display:none;" align="left"><a href="javascript:AlterAllDivs('none');" class="DropDown"><img id="hide" border="0" src="bluedrop_CLV.gif" alt="全部隐藏">全部隐藏</a></div></td></tr></table></div><p><b>Shape</b> 对象的集合，这些对象代表某个文档中的所有形状，或某个文档的所有页眉和页脚中的所有形状。每个 <b><a href="HV10330449.htm">Shape</a></b> 对象代表绘制层的一个对象，如自选图形、任意多边形、OLE 对象或图片。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330567.htm">AddCallout</a></b></td><td>在绘图画布上添加无框线的标注。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330568.htm">AddCanvas</a></b></td><td>在文档中添加<a class="glossary" href="javascript:AppendPopup(this,'OfDrawingCanvas_1_1')">绘图画布<SPAN CLASS="AsstInlineDefText"><SPAN CLASS="ACICollapsed" ID="divInlineDef_OfDrawingCanvas_1_1"> （绘图画布：一个区域，可在该区域上绘制多个形状。因为形状包含在绘图画布内，所以它们可作为一个单元移动和调整大小。）</SPAN></SPAN></a>。返回代表该画布的 <b><a href="HV10330449.htm">Shape</a></b> 对象并将其添加到 <b>Shapes</b> 集合。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330569.htm">AddChart</a></b></td><td>
+		将指定类型的图表作为形状插入到活动文档中，并且在 Microsoft Office Excel 中打开包含 Microsoft Word 用于创建该图表的默认数据的工作表。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330570.htm">AddCurve</a></b></td><td>返回一个 <b><a href="HV10330449.htm">Shape</a></b> 对象，该对象代表绘图画布上的贝赛尔曲线。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330571.htm">AddLabel</a></b></td><td>在绘图画布上添加一个文本标签。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330572.htm">AddLine</a></b></td><td>在绘图画布上添加一条直线。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330573.htm">AddOLEControl</a></b></td><td>创建一个 ActiveX 控件（以前称为 OLE 控件）。返回代表新 ActiveX 控件的 <b>InlineShape</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330574.htm">AddOLEObject</a></b></td><td>创建一个 OLE 对象。返回代表新 OLE 对象的 <b>InlineShape</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330575.htm">AddPicture</a></b></td><td>在绘图画布上添加一幅图片。返回一个 <b>Shape</b> 对象，该对象代表图片并将其添加至 <b>CanvasShapes</b> 集合。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330576.htm">AddPolyline</a></b></td><td>在绘图画布上添加一个开放或封闭的多边形。返回一个代表该多边形的 <b>Shape</b> 对象，并将其添加到 <b>CanvasShapes</b> 集合。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330577.htm">AddShape</a></b></td><td>向某文档中添加一个自选图形。返回代表该自选图形的 <b><a href="HV10330449.htm">Shape</a></b> 对象并将其添加到 <b><a href="HV10330588.htm">Shapes</a></b> 集合。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10379791.htm">AddSmartArt</a></b></td><td>将指定的 SmartArt 图形插入活动文档。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330578.htm">AddTextbox</a></b></td><td>在绘图画布上添加一个文本框。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330579.htm">AddTextEffect</a></b></td><td>在绘图画布上添加一个“艺术字”图形。返回一个 <b>Shape</b> 对象，该对象代表“艺术字”，并将其添加至 <b>CanvasShapes</b> 集合。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330581.htm">BuildFreeform</a></b></td><td>建立任意多边形对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330584.htm">Item</a></b></td><td>返回集合中的单个 <b>Shape</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330586.htm">Range</a></b></td><td>返回代表范围内的形状的 <b>ShapeRange</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330587.htm">SelectAll</a></b></td><td>选择形状集合中的所有形状。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330580.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330582.htm">Count</a></b></td><td>返回一个 <b>Long</b> 类型的值，该值代表集合中图形的数量。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330583.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330585.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Shapes</b> 对象的父对象。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

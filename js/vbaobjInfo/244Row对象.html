@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10366114"><!--csasset id="HV10366114" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Row 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Row 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Row 对象成员</b></span></td></tr></table></div><p>代表表格中的一行。<b>Row</b> 对象是 <b><a href="HV10330133.htm">Rows</a></b> 集合的一个成员。<b>Rows</b> 集合包含指定的所选内容、范围或表格中的所有行。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330083.htm">ConvertToText</a></b></td><td>将表格转换为文本并返回一个 <b>Range</b> 对象，该对象代表带分隔符的文本。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330085.htm">Delete</a></b></td><td>删除指定的表格行。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330101.htm">Select</a></b></td><td>选择指定的表格行。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330102.htm">SetHeight</a></b></td><td>设置表格行的高度。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330103.htm">SetLeftIndent</a></b></td><td>设置表格中行的缩进。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330078.htm">Alignment</a></b></td><td>返回或设置一个 <b>WdRowAlignment</b> 常量，该常量代表指定行的对齐方式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330079.htm">AllowBreakAcrossPages</a></b></td><td>
+			如果允许分页符拆分表格中一行或多行中的文本，则该属性值为 <b>True</b>。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330080.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330081.htm">Borders</a></b></td><td>返回一个 <b><a href="HV10324622.htm">Borders</a></b> 集合，该集合代表指定对象的所有边框。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330082.htm">Cells</a></b></td><td>返回一个 <b><a href="HV10324890.htm">Cells</a></b> 集合，该集合代表在某一列、行、选定内容或区域中的表格单元格。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330084.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330086.htm">HeadingFormat</a></b></td><td>
+			如果为 <b>True</b>，则将指定一行或数行的格式设置为表格标题。当表格不止一页时，可将多行的格式重复设置为表格标题。可以是 <b>True</b>、<b>False</b> 或 <b>wdUndefined</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330087.htm">Height</a></b></td><td>返回或设置表格中指定行的高度。Single 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330088.htm">HeightRule</a></b></td><td>返回或设置确定指定单元格或行高度的规则。<b>WdRowHeightRule</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330089.htm">ID</a></b></td><td>在文档另存为网页时返回或设置指定表格行的标识标签。可读写 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330090.htm">Index</a></b></td><td>返回 <b>Long</b> 值，该值表示项目在集合中的位置。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330091.htm">IsFirst</a></b></td><td>
+			如果指定的行是表格中的首行，则该属性值为 <b>True</b>。只读 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330092.htm">IsLast</a></b></td><td>
+			如果指定的行是表格中的末行，则该属性值为 <b>True</b>。只读 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330093.htm">LeftIndent</a></b></td><td>返回或设置一个 <b>Single</b> 类型的值，该值代表指定表格行的左缩进值（以磅为单位）。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330094.htm">NestingLevel</a></b></td><td>返回指定表格行的嵌套层。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330095.htm">Next</a></b></td><td>返回一个 <b>Row</b> 对象，该对象代表表格中行的集合中的下一个表格行。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330096.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Row</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330097.htm">Previous</a></b></td><td>返回一个 <b>Row</b> 对象，该对象代表指定行的前一个表格行。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330098.htm">Range</a></b></td><td>返回一个 <b>Range</b> 对象，该对象代表指定表格行内包含的文档部分。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330104.htm">Shading</a></b></td><td>返回一个 <b><a href="HV10330367.htm">Shading</a></b> 对象，该对象代表指定对象的底纹格式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330105.htm">SpaceBetweenColumns</a></b></td><td>返回或设置指定的一行或多行中相邻列的文本之间的距离（以磅为单位）。可读写 <b>Single</b> 类型。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365505"><!--csasset id="HV10365505" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Documents 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Documents 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Documents 对象成员</b></span></td></tr></table></div><p>当前在 Word 中打开的所有 <b><a href="HV10325678.htm">Document</a></b> 对象的集合。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325796.htm">Add</a></b></td><td>返回一个 <b>Document</b> 对象，该对象代表添加到打开文档集合中的新建空文档。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325797.htm">AddBlogDocument</a></b></td><td>
+		返回一个 <b>Document</b> 对象，该对象表示 Microsoft Word 向前三个参数所描述的帐户发布的新博客文档。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325799.htm">CanCheckOut</a></b></td><td>
+			如果该属性值为 <b>True</b>，则 Microsoft Word 可将指定的文档从服务器签出。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325800.htm">CheckOut</a></b></td><td>将指定的文档从服务器复制到本地计算机以进行编辑。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325801.htm">Close</a></b></td><td>关闭指定的文档。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325806.htm">Item</a></b></td><td>返回集合中的单个 <b>Document</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325807.htm">Open</a></b></td><td>打开指定的文档并将其添加到 <b>Documents</b> 集合。返回一个 <b>Document</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10380821.htm">OpenNoRepairDialog</a></b></td><td>打开指定的文档并将其添加到 <a href="HV10325804.htm">Documents</a> 集合。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325809.htm">Save</a></b></td><td>保存 <b>Documents</b> 集合中的所有文档。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325798.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325802.htm">Count</a></b></td><td>返回一个 <b>Long</b> 类型的值，该值代表集合中的文档数。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325803.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325808.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Documents</b> 对象的父对象。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

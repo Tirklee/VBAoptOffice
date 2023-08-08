@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365310"><!--csasset id="HV10365310" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Borders 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Borders 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Borders 对象成员</b></span></td></tr></table></div><p><b><a href="HV10324609.htm">Border</a></b> 对象的集合，这些对象代表对象的边框。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10324621.htm">ApplyPageBordersToAllSections</a></b></td><td>将指定的页面边框格式应用于文档中的所有节。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10324640.htm">Item</a></b></td><td>返回指定区域或选定内容中的一个边框。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324619.htm">AlwaysInFront</a></b></td><td>
+			如果在文档文本之前显示页面边框，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324620.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324624.htm">Count</a></b></td><td>返回 <b>Borders</b> 集合中的项目数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324625.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324626.htm">DistanceFrom</a></b></td><td>此属性返回或设置数值，该值指明指定的页面边框是从页面边缘还是从环绕的文本开始度量。<b>WdBorderDistanceFrom</b>，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324627.htm">DistanceFromBottom</a></b></td><td>返回或设置文本与下边框的距离（以磅为单位）。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324628.htm">DistanceFromLeft</a></b></td><td>返回或设置文本与左边框的距离（以磅为单位）。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324629.htm">DistanceFromRight</a></b></td><td>返回或设置文本的右边与右边框的距离（以磅为单位）。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324630.htm">DistanceFromTop</a></b></td><td>返回或设置文本与上边框的距离（以磅为单位）。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324631.htm">Enable</a></b></td><td>返回或设置指定对象的边框格式。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324632.htm">EnableFirstPageInSection</a></b></td><td>
+			如果可为节内第一页设置页面边框，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324633.htm">EnableOtherPagesInSection</a></b></td><td>
+			如果可为本节中除首页之外的所有页面设置页面边框，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324634.htm">HasHorizontal</a></b></td><td>
+			如果可将水平方向的边框应用于对象，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324635.htm">HasVertical</a></b></td><td>
+			如果可将垂直边框应用于指定对象，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324636.htm">InsideColor</a></b></td><td>返回或设置内部边框的 24 位颜色。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324637.htm">InsideColorIndex</a></b></td><td>返回或设置内部边框的颜色。<b>WdColorIndex</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324638.htm">InsideLineStyle</a></b></td><td>返回或设置指定对象的内部边框。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324639.htm">InsideLineWidth</a></b></td><td>返回或设置对象内部边框的线条宽度。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324641.htm">JoinBorders</a></b></td><td>
+			如果删除段落和表格边缘的垂直边框，以使水平边框与页面边框相连，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324642.htm">OutsideColor</a></b></td><td>返回或设置外部边框的 24 位颜色。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324643.htm">OutsideColorIndex</a></b></td><td>返回或设置外部边框的颜色。<b>WdColorIndex</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324644.htm">OutsideLineStyle</a></b></td><td>返回或设置指定对象的外部边框。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324645.htm">OutsideLineWidth</a></b></td><td>返回或设置对象外部边框的线条宽度。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324646.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Borders</b> 集合中的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324647.htm">Shadow</a></b></td><td>
+			如果为 <b>True</b>，则指定的边框设置为阴影格式。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324648.htm">SurroundFooter</a></b></td><td>
+			如果页面边框环绕文档的页脚，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324649.htm">SurroundHeader</a></b></td><td>
+			如果页面边框环绕文档页眉，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

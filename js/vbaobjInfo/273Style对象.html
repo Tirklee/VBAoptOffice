@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10366215"><!--csasset id="HV10366215" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Style 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Style 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Style 对象成员</b></span></td></tr></table></div><p>代表单个内置样式或用户定义的样式。<b>Style</b> 对象将样式属性（如字体、字形、段落间距）添加为 <b>Style</b> 对象的属性。<b>Style</b> 对象是 <b>Styles</b> 集合的成员。<b><a href="HV10330756.htm">Styles</a></b> 集合包含指定文档中的所有样式。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330723.htm">Delete</a></b></td><td>删除指定的样式。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10330732.htm">LinkToListTemplate</a></b></td><td>将指定的样式与一个列表模板链接，如此该样式中的格式就可以应用于列表。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330717.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330718.htm">AutomaticallyUpdate</a></b></td><td>
+			如果样式根据选定内容重新定义，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330719.htm">BaseStyle</a></b></td><td>返回或设置一种现有样式，根据此样式可以设置其他样式。<b>Variant</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330720.htm">Borders</a></b></td><td>返回一个 <b><a href="HV10324622.htm">Borders</a></b> 集合，该集合代表指定样式的所有边框。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330721.htm">BuiltIn</a></b></td><td>
+			如果指定对象是 Word 的内置样式或题注标签之一，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330722.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330724.htm">Description</a></b></td><td>返回指定样式的说明。只读 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330725.htm">Font</a></b></td><td>返回或设置一个 <b><a href="HV10326890.htm">Font</a></b> 对象，该对象代表指定样式的字符格式。可读写 <b class="bterm">Font</b>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330726.htm">Frame</a></b></td><td>返回一个 <b><a href="HV10326989.htm">Frame</a></b> 对象，该对象代表指定样式的图文框格式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330727.htm">InUse</a></b></td><td>
+			如果为 <b>True</b>，则指定的样式是一个已在文档中修改或应用的内置样式，或者是在文档中新建的样式。<b>Boolean</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330728.htm">LanguageID</a></b></td><td>返回或设置一个 <b><a href="HV10323907.htm">WdLanguageID</a></b> 常量，该常量代表指定范围的语言。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330729.htm">LanguageIDFarEast</a></b></td><td>返回或设置指定对象的东亚语言。可读写 <b><a href="HV10323907.htm">WdLanguageID</a></b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330730.htm">Linked</a></b></td><td>返回或设置 <b>Boolean</b> 值，该值表示某样式是否是段落和字符格式都可以使用的链接样式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330731.htm">LinkStyle</a></b></td><td>设置或返回一个 <b>Variant</b> 类型的值，该值代表段落和字符样式之间的链接。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330733.htm">ListLevelNumber</a></b></td><td>返回指定样式的列表级别。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330734.htm">ListTemplate</a></b></td><td>返回一个 <b>ListTemplate</b> 对象，该对象代表指定 <b>Style</b> 对象的列表格式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330735.htm">Locked</a></b></td><td>如果不能更改或编辑样式，则该属性值为 <b>True</b>。可读写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330736.htm">NameLocal</a></b></td><td>返回由用户语言表示的内置样式的名称。可读写 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330737.htm">NextParagraphStyle</a></b></td><td>返回或设置自动应用于在格式设置为指定样式的段落之后插入的新段落的样式。<b>Variant</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330738.htm">NoProofing</a></b></td><td>
+			如果拼写和语法检查程序忽略设置为此样式格式的文本，则该属性值为 <b>True</b>。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330739.htm">NoSpaceBetweenParagraphsOfSameStyle</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 会删除设置为使用相同样式的段落的间距。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330740.htm">ParagraphFormat</a></b></td><td>返回或设置一个 <b><a href="HV10329672.htm">ParagraphFormat</a></b> 对象，该对象代表指定样式的段落设置。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330741.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Style</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330742.htm">Priority</a></b></td><td>返回或设置一个 <b>Long</b> 类型的值，该值代表<b class="ui">“样式”</b>任务窗格中排序样式的优先级。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330744.htm">QuickStyle</a></b></td><td>返回或设置一个 <b>Boolean</b> 类型的值，该值代表样式是否对应于可用的快速样式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330745.htm">Shading</a></b></td><td>返回一个 <b>Shading</b> 对象，该对象代表指定对象的底纹格式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330748.htm">Table</a></b></td><td>返回一个 <b><a href="HV10331020.htm">TableStyle</a></b> 对象，该对象代表可通过使用表格样式应用于表格的属性。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10330749.htm">Type</a></b></td><td>返回样式的类型。只读 <b><a href="HV10324084.htm">WdStyleType</a></b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379877.htm">UnhideWhenUsed</a></b></td><td>如果在文档中使用指定样式后，该样式在 Word 2010 的<b class="ui">“样式”</b>库和<b class="ui">“样式”</b>任务窗格中显示为建议样式，则该属性值为 <b>True</b>。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379878.htm">Visibility</a></b></td><td>如果指定样式在<b class="ui">“样式”</b>库和<b class="ui">“样式”</b>任务窗格中显示为建议样式，则该属性值为 <b>True</b>。可读写。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365606"><!--csasset id="HV10365606" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Font 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Font 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Font 对象成员</b></span></td></tr></table></div><p>包含对象的字体属性（如字体名称、字号、颜色等）。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10326892.htm">Grow</a></b></td><td>将字号增大为下一个可用的字号。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10326906.htm">Reset</a></b></td><td>删除手动字符格式（不使用样式应用的格式）。例如，如果手动将单词设置为加粗格式，但基本样式为纯文本（不是粗体），则可用 <b>Reset</b> 方法删除加粗格式。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10326908.htm">SetAsTemplateDefault</a></b></td><td>将指定的字体格式设置为活动文档和所有基于活动模板创建的新文档的默认格式。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10326911.htm">Shrink</a></b></td><td>将字号减小为下一个可用的字号。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326872.htm">AllCaps</a></b></td><td>
+			如果字体格式为全部字母大写，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326873.htm">Animation</a></b></td><td>返回或设置应用于字体的动态效果类型。<b>WdAnimation</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326874.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326875.htm">Bold</a></b></td><td>
+			如果字体格式为加粗，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326876.htm">BoldBi</a></b></td><td>
+			如果字体格式为加粗，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326877.htm">Borders</a></b></td><td>返回一个 <b><a href="HV10324622.htm">Borders</a></b> 集合，该集合代表指定字体的所有边框。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326879.htm">ColorIndex</a></b></td><td>返回或设置一个 <b class="bterm">WdColorIndex</b> 常量，该常量代表指定字体的颜色。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326880.htm">ColorIndexBi</a></b></td><td>返回或设置从右向左语言文档中指定 <b>Font</b> 对象的颜色。<b>WdColorIndex</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379817.htm">ContextualAlternates</a></b></td><td>指定是否为指定的字体启用上下文替换。可读写 <b>Long</b>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326882.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326883.htm">DiacriticColor</a></b></td><td>返回或设置用于指定 <b>Font</b> 对象的音调符号的 24 位颜色。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326884.htm">DisableCharacterSpaceGrid</a></b></td><td>
+			如果 Microsoft Word 忽略相应 <b class="bterm">Font</b> 对象的每行字符数，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326885.htm">DoubleStrikeThrough</a></b></td><td>
+			如果将指定字体的格式设置为双删除线文本，则该属性值为 <b>True</b>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326886.htm">Duplicate</a></b></td><td>返回一个只读 <b>Font</b> 对象，该对象代表指定字体的字符格式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326887.htm">Emboss</a></b></td><td>
+			如果指定字体格式为阳文，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326888.htm">EmphasisMark</a></b></td><td>返回或设置 <b>WdEmphasisMark</b> 常量，该常量代表字符或指定字符串的着重号。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326889.htm">Engrave</a></b></td><td>
+			如果字体格式为阴文，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379818.htm">Fill</a></b></td><td>返回一个 <a href="HV10326755.htm">FillFormat</a> 对象，该对象包含指定文本区域所用字体的填充格式属性。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379819.htm">Glow</a></b></td><td>返回一个 <a href="HV10387427.htm">GlowFormat</a> 对象，该对象代表指定文本区域所用字体的发光格式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326893.htm">Hidden</a></b></td><td>
+			如果字体格式为隐藏文字，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326894.htm">Italic</a></b></td><td>
+			如果将字体或范围设置为倾斜格式，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326895.htm">ItalicBi</a></b></td><td>
+			如果将字体或范围设置为倾斜格式，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326896.htm">Kerning</a></b></td><td>返回或设置 Microsoft Word 根据字号自动调整字距时的最小字号。<b>Single</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379820.htm">Ligatures</a></b></td><td>返回或设置指定的 <b>Font</b> 对象的连字设置。可读写 <a href="HV10349215.htm">WdLigatures</a>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379821.htm">Line</a></b></td><td>返回一个 <a href="HV10327728.htm">LineFormat</a> 对象，该对象指定行的格式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326897.htm">Name</a></b></td><td>返回或设置指定对象的名称。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326898.htm">NameAscii</a></b></td><td>返回或设置拉丁语（字符代码从 0（零）到 127 的字符）所用的字体。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326899.htm">NameBi</a></b></td><td>返回或设置使用从右向左语言的文档中的字体的名称。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326900.htm">NameFarEast</a></b></td><td>返回或设置一种东亚字体名称。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326901.htm">NameOther</a></b></td><td>返回或设置字符代码从 128 到 255 的字符所用的字体。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379822.htm">NumberForm</a></b></td><td>返回或设置 OpenType 字体的数字形式设置。可读写 <a href="HV10349255.htm">WdNumberForm</a>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379823.htm">NumberSpacing</a></b></td><td>返回或设置字体的数字间距设置。可读写 <a href="HV10349257.htm">WdNumberSpacing</a>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326903.htm">Outline</a></b></td><td>
+			如果字体格式为镂空，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326904.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Font</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326905.htm">Position</a></b></td><td>返回或设置相对于基准线的文本位置（以磅为单位）。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379824.htm">Reflection</a></b></td><td>返回一个 <a href="HV10330008.htm">ReflectionFormat</a> 对象，该对象代表形状的反射格式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326907.htm">Scaling</a></b></td><td>返回或设置应用于字体的缩放百分比。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326909.htm">Shading</a></b></td><td>返回一个 <b>Shading</b> 对象，该对象代表指定字体的底纹格式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326910.htm">Shadow</a></b></td><td>
+			如果将指定字体设置为阴影格式，则该属性值为 <b>True</b>。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326912.htm">Size</a></b></td><td>返回或设置字号（以磅为单位）。<b>Single</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326913.htm">SizeBi</a></b></td><td>返回或设置字体大小（以磅为单位）。<b>Single</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326914.htm">SmallCaps</a></b></td><td>
+			如果字体格式为小型大写字母，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326915.htm">Spacing</a></b></td><td>返回或设置字符的间距（以磅为单位）。可读写 <b>Single</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326916.htm">StrikeThrough</a></b></td><td>
+			如果字体格式为带有删除线，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379825.htm">StylisticSet</a></b></td><td>指定所指定字体的样式集。可读写 <a href="HV10349359.htm">WdStylisticSet</a>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326917.htm">Subscript</a></b></td><td>
+			如果字体格式为下标，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326918.htm">Superscript</a></b></td><td>
+			如果字体格式为上标，则该属性值为 <b>True</b>。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379826.htm">TextColor</a></b></td><td>返回一个 <a href="HV10324975.htm">ColorFormat</a> 对象，该对象代表指定字体的颜色。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379827.htm">TextShadow</a></b></td><td>返回一个 <a href="HV10330381.htm">ShadowFormat</a> 对象，该对象指定所指定字体的阴影格式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379828.htm">ThreeD</a></b></td><td>返回一个 <a href="HV10331238.htm">ThreeDFormat</a> 对象，该对象包含指定字体的三维效果格式属性。只读。 </td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326919.htm">Underline</a></b></td><td>返回或设置应用于字体的下划线类型。可读写 <b><a href="HV10324108.htm">WdUnderline</a></b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326920.htm">UnderlineColor</a></b></td><td>返回或设置指定 <b>Font</b> 对象的下划线的 24 位颜色。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

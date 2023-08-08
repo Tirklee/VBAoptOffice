@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365842"><!--csasset id="HV10365842" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>MailMergeDataSource 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">MailMergeDataSource 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">MailMergeDataSource 对象成员</b></span><div id="divShowAll" STYLE="display:block;" align="left"><a href="javascript:AlterAllDivs('block');" class="DropDown"><img id="picHeader" border="0" src="blueup_CLV.gif" alt="全部显示">全部显示</a></div><div id="divHideAll" STYLE="display:none;" align="left"><a href="javascript:AlterAllDivs('none');" class="DropDown"><img id="hide" border="0" src="bluedrop_CLV.gif" alt="全部隐藏">全部隐藏</a></div></td></tr></table></div><p>代表邮件合并操作中的邮件合并数据源。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10328374.htm">Close</a></b></td><td>关闭指定的邮件合并数据源。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10328379.htm">FindRecord</a></b></td><td>在特定域的文字中搜索指定的邮件合并数据源的内容。如果找到了搜索文字，则该方法返回 <b>True</b>。<b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10328394.htm">SetAllErrorFlags</a></b></td><td>将邮件合并数据源中的所有记录标记为地址域中包含无效数据。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10328395.htm">SetAllIncludedFlags</a></b></td><td>包括或排除邮件合并中某个数据源的标记记录。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328372.htm">ActiveRecord</a></b></td><td>返回或设置活动邮件合并记录。可以是查询结果中的有效记录号，也可以是下列 <b>WdMailMergeActiveRecord</b> 常量之一。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328373.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328375.htm">ConnectString</a></b></td><td>返回指定邮件合并数据源的连接字符串。<b>String</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328376.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328377.htm">DataFields</a></b></td><td>返回一个 <b><a href="HV10328351.htm">MailMergeDataFields</a></b> 集合，该集合代表指定邮件合并数据源中的域。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328378.htm">FieldNames</a></b></td><td>返回一个 <b><a href="HV10344598.htm">MailMergeFieldNames</a></b> 集合，该集合代表指定邮件合并数据源中所有域的名称。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328380.htm">FirstRecord</a></b></td><td>返回或设置邮件合并操作中合并的第一个记录的编号。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328381.htm">HeaderSourceName</a></b></td><td>返回附加到指定的邮件合并主文档的域名源的路径和文件名。<b>String</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328382.htm">HeaderSourceType</a></b></td><td>返回一个值，该值表明为邮件合并操作提供域名源的方式。<b>WdMailMergeDataSource</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328383.htm">Included</a></b></td><td>
+			如果邮件合并中包含记录，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328384.htm">InvalidAddress</a></b></td><td>
+			当该属性值为 <b>True</b> 时，如果邮件合并数据源中记录的地址域中包含无效数据，则 Microsoft Word 标记该记录。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328385.htm">InvalidComments</a></b></td><td>如果 <b><a href="HV10328384.htm">InvalidAddress</a></b> 属性设置为 <b>True</b>，则返回或设置一个 <b>String</b> 值，该值描述无效的地址错误。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328386.htm">LastRecord</a></b></td><td>返回或设置邮件合并操作中要合并的最后一个记录的编号。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328389.htm">MappedDataFields</a></b></td><td>返回一个 <b><a href="HV10328632.htm">MappedDataFields</a></b> 集合，该集合代表 Microsoft Word 中可用的<a class="glossary" href="javascript:AppendPopup(this,'WdMappeddatafield_1_1')">映射数据字段<SPAN CLASS="AsstInlineDefText"><SPAN CLASS="ACICollapsed" ID="divInlineDef_WdMappeddatafield_1_1"> （映射数据字段：代表常用信息的字段，例如，“First Name”。如果数据源中包含“First Name”字段或其变体（例如，“FName”），该数据源字段自动映射到相应的映射数据字段。）</SPAN></SPAN></a>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328390.htm">Name</a></b></td><td>返回指定对象的名称。<b>String</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328391.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>MailMergeDataSource</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328392.htm">QueryString</a></b></td><td>返回或设置查询字符串（SQL 语句），该语句用于从邮件合并数据源中检索数据子集。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328393.htm">RecordCount</a></b></td><td>返回一个 <b>Long</b> 对象，该对象代表数据源中的记录数。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328396.htm">TableName</a></b></td><td>返回一个带有 SQL 查询的 <b>String</b> 类型的值，用于从邮件合并文档附加的数据源文件检索记录。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10328397.htm">Type</a></b></td><td>返回邮件合并数据源的类型。只读 <b><a href="HV10323925.htm">WdMailMergeDataSource</a></b> 类型。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

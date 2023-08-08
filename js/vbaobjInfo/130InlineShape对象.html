@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365718"><!--csasset id="HV10365718" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>InlineShape 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">InlineShape 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">InlineShape 对象成员</b></span><div id="divShowAll" STYLE="display:block;" align="left"><a href="javascript:AlterAllDivs('block');" class="DropDown"><img id="picHeader" border="0" src="blueup_CLV.gif" alt="全部显示">全部显示</a></div><div id="divHideAll" STYLE="display:none;" align="left"><a href="javascript:AlterAllDivs('none');" class="DropDown"><img id="hide" border="0" src="bluedrop_CLV.gif" alt="全部隐藏">全部隐藏</a></div></td></tr></table></div><p>代表文档的文字层中的对象。内嵌形状只能是图片、OLE 对象或 ActiveX 控件。<b>InlineShape</b> 对象是 <b><a href="HV10327529.htm">InlineShapes</a></b> 集合的一个成员。<b>InlineShapes</b> 集合包含文档、范围或所选内容中的所有内嵌形状。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327464.htm">ConvertToShape</a></b></td><td>将嵌入式图形转换为可自由浮动的图形。返回一个 <b><a href="HV10330449.htm">Shape</a></b> 对象，该对象代表新图形。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327466.htm">Delete</a></b></td><td>删除指定的嵌入式图形。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10073197_HV10327486.htm">Reset</a></b></td><td>删除对内嵌形状所做的更改。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10327492.htm">Select</a></b></td><td>选择指定的内嵌形状。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327460.htm">AlternativeText</a></b></td><td>返回或设置一个 <b>String</b> 类型的值，该值代表与网页中图形相关联的<a class="glossary" href="javascript:AppendPopup(this,'ofAlternativeText_1_1')">可选文字<SPAN CLASS="AsstInlineDefText"><SPAN CLASS="ACICollapsed" ID="divInlineDef_ofAlternativeText_1_1"> （可选文字：由 Web 浏览器用于在图像下载过程中显示文本，其对象是那些关闭图形的用户，以及那些依赖屏幕阅读软件将屏幕上的图形转换为可读语言的用户。）</SPAN></SPAN></a>。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327461.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386172.htm">BackgroundStyle</a></b></td><td>设置或返回指定内嵌形状的背景样式。可读写 <a href="HV10344137.htm">MsoBackgroundStyleIndex</a>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327462.htm">Borders</a></b></td><td>返回一个 <b><a href="HV10324622.htm">Borders</a></b> 集合，该集合代表指定形状的所有边框。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><b class="ui">CanvasItems</b></b></td><td>以后的版本中将提供关于此成员的说明。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327463.htm">Chart</a></b></td><td>返回一个 <b>Chart</b> 对象，该对象代表文档中内嵌形状集合内的图表。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327465.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327467.htm">Field</a></b></td><td>返回一个 <b>Field</b> 对象，该对象代表与指定内嵌形状相关联的域。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327468.htm">Fill</a></b></td><td>返回一个 <b><a href="HV10326755.htm">FillFormat</a></b> 对象，该对象包含指定形状的填充格式属性。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327469.htm">Glow</a></b></td><td>返回一个 <b><a href="HV10341071.htm">GlowFormat</a></b> 对象，该对象代表发光效果的格式属性。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327470.htm">GroupItems</a></b></td><td>返回一个 <b><a href="HV10327140.htm">GroupShapes</a></b> 集合，该集合代表针对内嵌形状组合到一起的形状。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327471.htm">HasChart</a></b></td><td>如果指定的形状是图表，则为 <b>True</b>。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386174.htm">HasSmartArt</a></b></td><td>如果形状上存在 SmartArt 图表，则返回 <b>True</b>。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327472.htm">Height</a></b></td><td>返回或设置内嵌形状的高度。<b>Single</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327473.htm">HorizontalLineFormat</a></b></td><td>返回一个 <b><a href="HV10327263.htm">HorizontalLineFormat</a></b> 对象，该对象包含指定 <b>InlineShape</b> 对象的横线格式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327474.htm">Hyperlink</a></b></td><td>返回一个 <b>Hyperlink</b> 对象，该对象代表与指定内嵌形状相关联的超链接。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327477.htm">IsPictureBullet</a></b></td><td>
+			如果为 <b>True</b>，则表明 <b>InlineShape</b> 对象是图片项目符号。<b>Boolean</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327478.htm">Line</a></b></td><td>返回一个 <b>LineFormat</b> 对象，该对象包含指定形状的线条格式属性。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327479.htm">LinkFormat</a></b></td><td>返回一个 <b>LinkFormat</b> 对象，该对象代表链接到文件的指定内嵌形状的链接选项。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327480.htm">LockAspectRatio</a></b></td><td>
+			如果在调整指定形状的大小时保留其最初比例，则该属性值为 <b>MsoTrue</b>；如果在调整形状大小时可分别改变其高度和宽度，则该属性值为 <b>MsoFalse</b>。可读写 <b>MsoTriState</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327481.htm">OLEFormat</a></b></td><td>返回一个 <b>OLEFormat</b> 对象，该对象代表指定的内嵌形状的 OLE 特征（链接除外）。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327482.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>InlineShape</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327483.htm">PictureFormat</a></b></td><td>返回一个 <b>PictureFormat</b> 对象，该对象包含内嵌形状的图片格式属性。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327484.htm">Range</a></b></td><td>返回一个 <b>Range</b> 对象，该对象代表内嵌形状中包含的文档部分。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327485.htm">Reflection</a></b></td><td>返回一个 <b><a href="HV10330008.htm">ReflectionFormat</a></b> 对象，该对象代表形状的反射格式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327487.htm">ScaleHeight</a></b></td><td>参照指定内嵌形状的原始尺寸缩放其高度。可读写 <b>Single</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327489.htm">ScaleWidth</a></b></td><td>参照指定内嵌形状的原始尺寸缩放其宽度。可读写 <b>Single</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327490.htm">Script</a></b></td><td>返回一个 <b>Script</b> 对象，该对象代表与指定网页中的图像相关联的脚本或代码块。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327494.htm">Shadow</a></b></td><td>返回一个 <b>ShadowFormat</b> 对象，该对象代表指定形状的阴影格式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386175.htm">ShapeStyle</a></b></td><td>返回或设置指定内嵌形状的样式。可读写 <a href="ms-help////HV10344215.htm">MsoShapeStyleIndex</a>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386176.htm">SmartArt</a></b></td><td>返回一个 <a href="HV10348794.htm">SmartArt</a> 对象，该对象提供与指定内嵌形状相关联的 SmartArt 的处理方式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327496.htm">SoftEdge</a></b></td><td>返回一个 <b><a href="HV10330671.htm">SoftEdgeFormat</a></b> 对象，该对象代表形状的柔化边缘格式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327498.htm">TextEffect</a></b></td><td>返回一个 <b>TextEffectFormat</b> 对象，该对象包含指定内嵌形状的文本效果格式属性。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386177.htm">Title</a></b></td><td>返回或设置一个 <b>String</b> 值，该值包含指定内嵌形状的标题。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327501.htm">Type</a></b></td><td>返回内嵌形状的类型。只读 <b><a href="HV10323899.htm">WdInlineShapeType</a></b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10327502.htm">Width</a></b></td><td>返回或设置指定内嵌形状的宽度（以磅为单位）。可读写 <b>Long</b> 类型。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

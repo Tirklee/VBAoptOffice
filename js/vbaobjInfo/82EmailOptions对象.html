@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365538"><!--csasset id="HV10365538" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>EmailOptions 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">EmailOptions 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">EmailOptions 对象成员</b></span><div id="divShowAll" STYLE="display:block;" align="left"><a href="javascript:AlterAllDivs('block');" class="DropDown"><img id="picHeader" border="0" src="blueup_CLV.gif" alt="全部显示">全部显示</a></div><div id="divHideAll" STYLE="display:none;" align="left"><a href="javascript:AlterAllDivs('none');" class="DropDown"><img id="hide" border="0" src="bluedrop_CLV.gif" alt="全部隐藏">全部隐藏</a></div></td></tr></table></div><p>在创建、编辑电子邮件和答复邮件时，该对象将包含 Microsoft Word 使用的全局应用程序级属性。</p><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326532.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326533.htm">AutoFormatAsYouTypeApplyBorders</a></b></td><td>
+			如果按下 Enter 后，三个或更多的连字符 (-)、等号 (=) 或下划线 (_) 将自动替换成指定的边框线，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326534.htm">AutoFormatAsYouTypeApplyBulletedLists</a></b></td><td>
+			如果用项目符号替换项目符号字符（如星号、连字符和大于符号），则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326535.htm">AutoFormatAsYouTypeApplyClosings</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 会在键入时自动为信函的结束语应用“结束语”样式。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326536.htm">AutoFormatAsYouTypeApplyDates</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 自动为键入的日期应用“日期”样式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326537.htm">AutoFormatAsYouTypeApplyFirstIndents</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 在键入时自动用首行缩进替代段落开始处输入的空格。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326538.htm">AutoFormatAsYouTypeApplyHeadings</a></b></td><td>
+			如果在键入标题时，自动为标题设置样式，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326539.htm">AutoFormatAsYouTypeApplyNumberedLists</a></b></td><td>
+			如果将段落格式自动设置为编号列表，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326540.htm">AutoFormatAsYouTypeApplyTables</a></b></td><td>
+			如果在键入一个加号、一串连字符、另一个加号等，然后按下 Enter 后，Word 自动创建一张表格，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326541.htm">AutoFormatAsYouTypeAutoLetterWizard</a></b></td><td>
+			如果为 <b>True</b>，则在用户输入信函称呼或结束语时，Microsoft Word 会自动启动“英文信函向导”。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326542.htm">AutoFormatAsYouTypeDefineStyles</a></b></td><td>
+			如果 Word 自动根据手动设置的格式新建一种样式，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326543.htm">AutoFormatAsYouTypeDeleteAutoSpaces</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 会在用户键入时自动删除日文和拉丁文文字之间插入的空格。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326544.htm">AutoFormatAsYouTypeFormatListItemBeginning</a></b></td><td>
+			如果 Word 将列表项开始处的字符格式重复应用于下一个列表项，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326545.htm">AutoFormatAsYouTypeInsertClosings</a></b></td><td>
+			如果为 <b>True</b>，则当用户输入备忘录标题时，Microsoft Word 会自动插入相应的备忘录结束语。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326546.htm">AutoFormatAsYouTypeInsertOvers</a></b></td><td>
+			如果为 <b>True</b>，则当用户输入“ <img border="0" src="fe034_ZA06051579.gif" alt="ki">”或“ <img border="0" src="fe319_ZA06051787.gif" alt="an">”时，Microsoft Word 将自动插入“ <img border="0" src="fe035_ZA06051580.gif" alt="ijou"> <img border="0" src="fe036_ZA06051581.gif" alt="ijou">”。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326547.htm">AutoFormatAsYouTypeMatchParentheses</a></b></td><td>
+			如果为 <b>True</b>，Microsoft Word 会自动更正不正确成对的括号，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326548.htm">AutoFormatAsYouTypeReplaceFarEastDashes</a></b></td><td>
+			如果为 <b>True</b>，Microsoft Word 会自动更正长元音和划线，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326549.htm">AutoFormatAsYouTypeReplaceFractions</a></b></td><td>
+			如果在您键入时，Word 自动用当前字符集的分数替换键入的分数（例如，将“1/2”替换为“?”），则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326550.htm">AutoFormatAsYouTypeReplaceHyperlinks</a></b></td><td>
+			如果本属性值为 <b>True</b>，则 Word 会在键入时自动将电子邮件地址、服务器和共享名称（即 UNC 路径）和 Internet 地址（即 URL）改为超链接。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326551.htm">AutoFormatAsYouTypeReplaceOrdinals</a></b></td><td>
+			如果键入时，Word 会用相同字母的上标格式替换序数后缀“st”、“nd”、“rd”和“th”（例如，“1st”被替换为“1”后接上标“st”），则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326552.htm">AutoFormatAsYouTypeReplacePlainTextEmphasis</a></b></td><td>
+			如果键入时，手动着重号自动替换为相应字符格式；例如，将“*bold*”改为“<b class="bterm">bold</b>”，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326553.htm">AutoFormatAsYouTypeReplaceQuotes</a></b></td><td>
+			如果键入时自动将所键入的直引号替换为弯引号，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326554.htm">AutoFormatAsYouTypeReplaceSymbols</a></b></td><td>
+			如果键入的两个连续的连字符 (--) 被替换为短破折号 (–) 或长破折号 (?)，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326555.htm">ComposeStyle</a></b></td><td>返回一个 <b><a href="HV10330746.htm">Style</a></b> 对象，该对象代表撰写新电子邮件时使用的样式。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326556.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326559.htm">EmailSignature</a></b></td><td>返回一个 <b><a href="HV10326578.htm">EmailSignature</a></b> 对象，该对象代表 Microsoft Word 附加在待发电子邮件正文后面的签名。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326561.htm">HTMLFidelity</a></b></td><td>删除那些用于在 Word 中打开 HTML 文件，但在显示时不需要的 HTML 标记。<b>WdEmailHTMLFidelity</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326562.htm">MarkComments</a></b></td><td>
+			如果 Microsoft Word 在电子邮件中标记用户的批注，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326563.htm">MarkCommentsWith</a></b></td><td>返回或设置 Microsoft Word 在电子邮件中标记批注的字符串。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326564.htm">NewColorOnReply</a></b></td><td>
+			如果为 <b>True</b>，则指定用户要在回复电子邮件时为回复邮件的文本选择一种新颜色。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326565.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>EmailOptions</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326566.htm">PlainTextStyle</a></b></td><td>返回 <b><a href="HV10330746.htm">Style</a></b> 对象，该对象代表用纯文本发送或接收的电子邮件的文本属性。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326567.htm">RelyOnCSS</a></b></td><td>
+			如果在 Web 浏览器中查看保存的文档时，对字体格式使用了级联样式表 (CSS)，则该属性为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326568.htm">ReplyStyle</a></b></td><td>返回一个 <b><a href="HV10330746.htm">Style</a></b> 对象，该对象代表答复电子邮件时使用的样式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326569.htm">TabIndentKey</a></b></td><td>
+			如果可分别使用 Tab 和 Backspace 键增加和减少段落的左缩进，并且可使用 Backspace 键将右对齐的段落更改为居中的段落而将居中的段落更改为左对齐的段落，则该属性值为 <b>True</b>。可读写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326570.htm">ThemeName</a></b></td><td>该属性返回或设置用于新的电子邮件的<a class="glossary" href="javascript:AppendPopup(this,'ofTheme_1_1')">主题<SPAN CLASS="AsstInlineDefText"><SPAN CLASS="ACICollapsed" ID="divInlineDef_ofTheme_1_1"> （主题：一组统一的设计元素，使用颜色、字体和图形设置文档的外观。）</SPAN></SPAN></a>名称以及所有主题格式选项的名称。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326571.htm">UseThemeStyle</a></b></td><td>
+			如果新电子邮件使用默认的电子邮件<a class="glossary" href="javascript:AppendPopup(this,'ofTheme_2_2')">主题<SPAN CLASS="AsstInlineDefText"><SPAN CLASS="ACICollapsed" ID="divInlineDef_ofTheme_2_2"> （主题：一组统一的设计元素，使用颜色、字体和图形设置文档的外观。）</SPAN></SPAN></a>所定义的字符样式，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10326572.htm">UseThemeStyleOnReply</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 将在回复电子邮件时应用主题。<b>Boolean</b> 类型，可读写。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

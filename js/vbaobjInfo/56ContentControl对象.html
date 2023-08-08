@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365437"><!--csasset id="HV10365437" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>ContentControl 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">ContentControl 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">ContentControl 对象成员</b></span></td></tr></table></div><p>一个内容控件。内容控件是固定在文档中并可能带有标记的区域，这些区域作为特定类型的内容的容器。单个内容控件可能包含日期、列表或带格式文本段落等内容。<b>ContentControl</b> 对象是 <b><a href="HV10325378.htm">ContentControls</a></b> 集合的成员。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325221.htm">Copy</a></b></td><td>
+		 将活动文档中的内容控件复制到剪贴板。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325225.htm">Cut</a></b></td><td>
+		从活动文档中删除内容控件并将该内容控件移动到剪贴板中。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325240.htm">Delete</a></b></td><td>
+		删除指定的内容控件以及内容控件中的内容。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10379770.htm">SetCheckedSymbol</a></b></td><td>设置用于表示复选框内容控件处于选中状态的符号。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325258.htm">SetPlaceholderText</a></b></td><td>
+		设置在用户输入自己的文本之前显示在内容控件中的占位符文本。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10379771.htm">SetUncheckedSymbol</a></b></td><td>设置用于表示复选框内容控件处于未选中状态的符号。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10325272.htm">Ungroup</a></b></td><td>
+		从文档中删除一个组内容控件，以便它的子内容控件不再嵌套，并且可以自由地进行编辑。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325212.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325214.htm">BuildingBlockCategory</a></b></td><td>返回或设置一个 <b>String</b> 值，该值代表构建基块内容控件的类别。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325216.htm">BuildingBlockType</a></b></td><td>返回或设置一个 <b>WdBuildingBlockTypes</b> 常量，该常量代表构建基块内容控件的构建基块类型。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10379803.htm">Checked</a></b></td><td>返回或设置一个 <b>Boolean</b> 值，该值代表复选框的当前状态（选中/未选中）。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325223.htm">Creator</a></b></td><td>返回一个 32 位的整数，该整数表示在其中创建加载项的应用程序。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325227.htm">DateCalendarType</a></b></td><td>返回或设置一个 <b><a href="HV10323795.htm">WdCalendarType</a></b> 常量，该常量代表日历内容控件的日历类型。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325231.htm">DateDisplayFormat</a></b></td><td>返回或设置一个 <b>String</b> 值，该值代表日期的显示格式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325232.htm">DateDisplayLocale</a></b></td><td>返回一个 <b>WdLanguageID</b> 值，该值代表日期内容控件中显示的日期的语言格式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325234.htm">DateStorageFormat</a></b></td><td>返回或设置一个 <b><a href="HV10323826.htm">WdContentControlDateStorageFormat</a></b> 值，该值代表在将日期内容控件绑定到活动文档的 XML 数据存储时的日期存储和检索格式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325236.htm">DefaultTextStyle</a></b></td><td>返回或设置一个 <b>Variant</b>，它代表用于设置文本内容控件中文本格式的字符样式的名称。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325241.htm">DropdownListEntries</a></b></td><td>返回一个 <b><a href="HV10340776.htm">ContentControlListEntries</a></b> 集合，该集合代表下拉列表内容控件或组合框内容控件中的项目。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325243.htm">ID</a></b></td><td>返回一个代表内容控件标识的 <b>String</b> 类型的值。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325245.htm">LockContentControl</a></b></td><td>返回或设置 <b>Boolean</b> 值，该值表示用户能否从活动文档中删除内容控件。可读/写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325247.htm">LockContents</a></b></td><td>返回或设置 <b>Boolean</b> 值，该值表示用户能否编辑内容控件的内容。可读/写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325249.htm">MultiLine</a></b></td><td>返回 <b>Boolean</b> 值，该值表示文本内容控件是否允许多行文本。可读/写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325250.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>ContentControl</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325252.htm">ParentContentControl</a></b></td><td>返回一个 <b>ContentControl</b> 类型的值，该值代表嵌套在格式文本控件或组控件内的内容控件的父内容控件。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325255.htm">PlaceholderText</a></b></td><td>返回一个 <b>BuildingBlock</b> 对象，该对象代表内容控件的占位符文本。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325256.htm">Range</a></b></td><td>返回一个 <b><a href="HV10329911.htm">Range</a></b> 值，该值代表活动文档中的内容控件的内容。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325260.htm">ShowingPlaceholderText</a></b></td><td>返回 <b>Boolean</b> 值，该值指示是否显示内容控件的占位符文本。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325262.htm">Tag</a></b></td><td>返回或设置一个 <b>String</b> 类型的值，该值代表用于识别内容控件的值。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325264.htm">Temporary</a></b></td><td>返回或设置 <b>Boolean</b> 值，该值表示当用户编辑内容控件的内容时是否从活动文档中删除该控件。可读/写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325266.htm">Title</a></b></td><td>返回或设置 <b>String</b> 值，该值表示内容控件的标题。可读/写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325270.htm">Type</a></b></td><td>返回或设置一个 <b><a href="HV10323827.htm">WdContentControlType</a></b> 值，该值代表内容控件的类型。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325274.htm">XMLMapping</a></b></td><td>返回一个 <b><a href="HV10331484.htm">XMLMapping</a></b> 对象，该对象代表内容控件到文档的数据存储中的 XML 数据的映射。只读。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

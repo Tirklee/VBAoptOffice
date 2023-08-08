@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10385047"><!--csasset id="HV10385047" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>DataLabel 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">DataLabel 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">DataLabel 对象成员</b></span></td></tr></table></div><p>代表图表数据点或趋势线上的数据标签。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10380811.htm">Delete</a></b></td><td>删除对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10380813.htm">Select</a></b></td><td>选择对象。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381158.htm">Application</a></b></td><td>如果不与对象识别符一起使用，则该属性返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。如果与对象识别符一起使用，则该属性返回代表指定对象的创建者的 <b>Application</b> 对象（可对自动操作对象使用该属性来返回该对象的应用程序）。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381159.htm">AutoText</a></b></td><td>
+			如果对象会根据内容自动生成合适的文本，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381160.htm">Caption</a></b></td><td>返回或设置数据标签文本。可读/写 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381161.htm">Characters</a></b></td><td>返回一个 <b><a href="HV10380893.htm">ChartCharacters</a></b> 对象，该对象代表对象文本中的一系列字符。使用 <b>ChartCharacters</b> 对象可为文本字符串中的字符设置格式。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381162.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381163.htm">Format</a></b></td><td>返回对象的线条、填充和效果格式。只读 <b><a href="HV10380898.htm">ChartFormat</a></b>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386160.htm">Formula</a></b></td><td>获取或设置一个 <b>String</b> 值，该值以英语使用 A1 样式表示法来表示对象的公式。可读/写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386161.htm">FormulaLocal</a></b></td><td>返回或设置对象的公式，使用用户语言 A1 格式引用。可读/写 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386162.htm">FormulaR1C1</a></b></td><td>返回或设置对象的公式，使用宏语言 R1C1 格式符号表示。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386163.htm">FormulaR1C1Local</a></b></td><td>返回或设置对象的公式，使用用户语言 R1C1 格式符号表示。可读/写 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386164.htm">Height</a></b></td><td>返回对象的高度（以磅为单位）。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381164.htm">HorizontalAlignment</a></b></td><td>返回或设置指定对象的水平对齐方式。可读/写 <b>Variant</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381165.htm">Left</a></b></td><td>以磅为单位返回或设置对象左边缘至图表区左边缘的距离。可读/写 <b>Double</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381166.htm">Name</a></b></td><td>返回对象的名称。只读 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381167.htm">NumberFormat</a></b></td><td>返回或设置对象的格式代码。可读/写 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381168.htm">NumberFormatLinked</a></b></td><td>
+			如果数字格式链接到单元格（以便当单元格中的数字格式更改时数据标签中的数字格式也作相应的改动），则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381169.htm">NumberFormatLocal</a></b></td><td>以用户语言返回或设置对象的格式代码字符串。可读/写 <b>Variant</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381170.htm">Orientation</a></b></td><td>返回或设置文本方向。可读/写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381171.htm">Parent</a></b></td><td>返回指定对象的父对象。只读 <b>Object</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381172.htm">Position</a></b></td><td>返回或设置数据标签的位置。可读/写 <b><a href="HV10380737.htm">XlDataLabelPosition</a></b>。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381173.htm">ReadingOrder</a></b></td><td>返回或设置一个 <b><a href="HV10380754.htm">XlReadingOrder</a></b> 常量，该常量代表指定对象的阅读顺序。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381178.htm">Separator</a></b></td><td>返回或设置用于图表中的数据标签的分隔符。可读/写 <b>Variant</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381180.htm">Shadow</a></b></td><td>返回或设置一个表示对象是否有阴影的值。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381182.htm">ShowBubbleSize</a></b></td><td>
+			如果为 <b>True</b>，则在图表中显示数据标签的气泡大小。如果为 <b>False</b>，则隐藏气泡大小。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381183.htm">ShowCategoryName</a></b></td><td>
+			如果为 <b>True</b>，则在图表中显示数据标签的分类名称。如果为 <b>False</b>，则隐藏分类名称。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381184.htm">ShowLegendKey</a></b></td><td>
+			如果数据标签图例项标示可见，则为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381185.htm">ShowPercentage</a></b></td><td>
+			如果为 <b>True</b>，则在图表中显示数据标签的百分比值。如果为 <b>False</b>，则隐藏该百分比值。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381186.htm">ShowSeriesName</a></b></td><td>
+			如果为 <b>True</b>，则在图表中显示数据标签的系列名称。如果为 <b>False</b>，则隐藏系列名称。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381187.htm">ShowValue</a></b></td><td>
+			如果为 <b>True</b>，则显示指定图表的数据标签值。如果为 <b>False</b>，则隐藏这些值。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381205.htm">Text</a></b></td><td>返回或设置指定对象中的文本。可读/写 <b>String</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381206.htm">Top</a></b></td><td>返回或设置一个以磅为单位的距离，它代表从对象的上边缘到第一行顶部（在工作表上）或图表区顶部（在图表上）的距离。可读/写 <b>Double</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10381207.htm">VerticalAlignment</a></b></td><td>返回或设置指定对象的垂直对齐方式。可读/写 <b>Variant</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10386165.htm">Width</a></b></td><td>返回对象的宽度（以磅为单位）。只读。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

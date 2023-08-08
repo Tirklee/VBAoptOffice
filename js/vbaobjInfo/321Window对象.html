@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10366378"><!--csasset id="HV10366378" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>Window 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">Window 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">Window 对象成员</b></span></td></tr></table></div><p>代表一个窗口。许多文档特征（如滚动条和标尺）实际上是窗口的属性。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331369.htm">Activate</a></b></td><td>激活指定窗口。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331374.htm">Close</a></b></td><td>关闭指定的窗口。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331387.htm">GetPoint</a></b></td><td>返回指定区域或图形的屏幕坐标。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331392.htm">LargeScroll</a></b></td><td>将窗口或窗格滚动指定的屏数。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331394.htm">NewWindow</a></b></td><td>打开一个新窗口，该窗口与指定窗口显示同一个文档。返回一个 <b>Window</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331396.htm">PageScroll</a></b></td><td>使指定的窗格或窗口逐页滚动。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331400.htm">PrintOut</a></b></td><td>打印指定窗口中显示的全部或部分文档。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331401.htm">RangeFromPoint</a></b></td><td>返回 <b>Range</b> 或 <b>Shape</b> 对象，该对象位于由屏幕位置坐标对指定的位置。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331402.htm">ScrollIntoView</a></b></td><td>滚动文档窗口，以便在文档窗口显示指定的区域或图形。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331404.htm">SetFocus</a></b></td><td>在指定的文档窗口为电子邮件设置焦点。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331405.htm">SmallScroll</a></b></td><td>将窗口或窗格滚动指定的行数。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331410.htm">ToggleRibbon</a></b></td><td>
+		显示或隐藏功能区。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331411.htm">ToggleShowAllReviewers</a></b></td><td>显示或隐藏包含备注和修订的文档中的所有备注。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331370.htm">Active</a></b></td><td>
+			如果指定窗口处于活动状态，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331371.htm">ActivePane</a></b></td><td>返回一个 <b><a href="HV10329548.htm">Pane</a></b> 对象，该对象代表指定窗口的活动窗格。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331372.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331373.htm">Caption</a></b></td><td>返回或设置显示在文档或应用程序窗口标题栏中的窗口题注文字。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331375.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331376.htm">DisplayHorizontalScrollBar</a></b></td><td>
+			如果在指定的窗口中显示水平滚动条，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331377.htm">DisplayLeftScrollBar</a></b></td><td>
+			如果垂直滚动条显示在文档窗口左侧，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331378.htm">DisplayRightRuler</a></b></td><td>
+			如果垂直标尺显示在页面视图中文档窗口右侧，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331379.htm">DisplayRulers</a></b></td><td>
+			如果在指定的窗口或窗格中显示标尺，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331380.htm">DisplayScreenTips</a></b></td><td>
+			如果批注、脚注、尾注和超链接以提示形式显示，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331381.htm">DisplayVerticalRuler</a></b></td><td>
+			如果在指定的窗口或窗格中显示垂直标尺，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331382.htm">DisplayVerticalScrollBar</a></b></td><td>
+			如果在指定的窗口中显示垂直滚动条，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331383.htm">Document</a></b></td><td>返回一个 <b><a href="HV10325678.htm">Document</a></b> 对象，该对象与指定窗格、窗口或选定内容相关。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331384.htm">DocumentMap</a></b></td><td>
+			如果显示文档结构图，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331386.htm">EnvelopeVisible</a></b></td><td>
+			如果电子邮件的页眉在文档窗口是可见的，则该属性值为 <b>True</b>。默认值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331388.htm">Height</a></b></td><td>返回或设置窗口的高度。Long 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331389.htm">HorizontalPercentScrolled</a></b></td><td>返回或设置水平滚动条位置（以文档宽度的百分比表示）。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331390.htm">IMEMode</a></b></td><td>返回或设置日文输入法编辑器 (IME) 的默认启动模式。<b>WdIMEMode</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331391.htm">Index</a></b></td><td>返回 <b>Long</b> 值，该值表示项目在集合中的位置。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331393.htm">Left</a></b></td><td>返回或设置一个 <b>Long</b> 类型的值，该值代表指定窗口的水平位置，以磅为单位。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331395.htm">Next</a></b></td><td>返回打开的文档窗口集合中的下一个文档窗口。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331397.htm">Panes</a></b></td><td>返回一个 <b><a href="HV10329563.htm">Panes</a></b> 集合，该集合指定窗口的所有窗格。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331398.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>Window</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331399.htm">Previous</a></b></td><td>返回打开的文档窗口集合中的上一个文档窗口。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331403.htm">Selection</a></b></td><td>返回一个 <b>Selection</b> 对象，该对象代表一个选定范围或插入点。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331535.htm">ShowSourceDocuments</a></b></td><td>返回或设置一个 <b><a href="HV10324071.htm">WdShowSourceDocuments</a></b> 常量，该常量代表 Microsoft Word 在比较和合并过程之后显示源文档的方式。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331406.htm">Split</a></b></td><td>
+			如果将窗口拆分为多个窗格，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331407.htm">SplitVertical</a></b></td><td>返回或设置指定窗口的垂直拆分百分比。<b>Long</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331408.htm">StyleAreaWidth</a></b></td><td>该属性返回或设置样式区的宽度，以磅为单位。<b>Single</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331409.htm">Thumbnails</a></b></td><td>设置或返回一个 <b>Boolean</b> 类型的值，代表是否沿 Microsoft Word 文档窗口的左侧显示文档页面的缩略图。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331412.htm">Top</a></b></td><td>返回或设置指定文档窗口的垂直位置（以磅为单位）。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331413.htm">Type</a></b></td><td>返回窗口的类型。只读 <b><a href="HV10324117.htm">WdWindowType</a></b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331414.htm">UsableHeight</a></b></td><td>返回指定的文档窗口中活动工作区的高度（以磅为单位）。<b>Long</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331415.htm">UsableWidth</a></b></td><td>返回指定的文档窗口中活动工作区的宽度（以磅为单位）。<b>Long</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331416.htm">VerticalPercentScrolled</a></b></td><td>返回或设置垂直滚动条的位置（以文档长度的百分比表示）。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331417.htm">View</a></b></td><td>返回一个 <b><a href="HV10331347.htm">View</a></b> 对象，该对象代表指定窗口或窗格的视图。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331418.htm">Visible</a></b></td><td>
+			如果指定的对象可见，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331419.htm">Width</a></b></td><td>返回或设置指定文档窗口的宽度（以磅为单位）。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331422.htm">WindowNumber</a></b></td><td>该属性返回在指定窗口中显示的文档窗口序号。例如，如果窗口标题为“Sales.doc:2”，则该属性返回数值 2。<b>Long</b> 类型，只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331423.htm">WindowState</a></b></td><td>返回或设置指定文档窗口或任务窗口的状态。<b><a href="HV10324116.htm">WdWindowState</a></b> 类型，可读写。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

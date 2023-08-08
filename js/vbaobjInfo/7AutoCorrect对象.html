@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365265"><!--csasset id="HV10365265" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>AutoCorrect 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">AutoCorrect 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">AutoCorrect 对象成员</b></span></td></tr></table></div><p>代表 Word 的“自动更正”功能。</p><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324478.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324481.htm">CorrectCapsLock</a></b></td><td>
+			如果在键入时无意中使用了 Caps Lock（大写锁定）键，Word 就将自动进行更正，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324482.htm">CorrectDays</a></b></td><td>
+			如果 Word 自动大写星期日期单词的首字母，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324483.htm">CorrectHangulAndAlphabet</a></b></td><td>
+			如果 Microsoft Word 自动对朝鲜文字中键入的西文单词应用正确的字体，则该属性值为 <b>True</b>，反之亦然。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324484.htm">CorrectInitialCaps</a></b></td><td>
+			在某个单词的前两个字母均为大写时，如果为 <b>True</b>，则 Word 自动将第二个字母转换为小写。例如，“WOrd”将更正为“Word”。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324485.htm">CorrectKeyboardSetting</a></b></td><td>
+			如果在键入非当前键盘语言的文字时，Microsoft Word 自动将这些单词转置为其母语字母，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324486.htm">CorrectSentenceCaps</a></b></td><td>
+			如果 Word 自动大写每个句子的首字母，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324487.htm">CorrectTableCells</a></b></td><td>
+			如果为 <b>True</b>，则自动将表格单元格内容的首字母大写。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324488.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324489.htm">DisplayAutoCorrectOptions</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 显示<b class="ui">“自动更正选项”</b>按钮。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324490.htm">Entries</a></b></td><td>返回一个 <b><a href="HV10324520.htm">AutoCorrectEntries</a></b> 集合，该集合代表当前的“自动更正”词条列表。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324491.htm">FirstLetterAutoAdd</a></b></td><td>
+			如果 Word 会自动将缩写词添至“自动更正”的“首字母大写”例外项列表中，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324492.htm">FirstLetterExceptions</a></b></td><td>返回一个 <b><a href="HV10326864.htm">FirstLetterExceptions</a></b> 集合，该集合代表 Word 不会自动大写其后字母的缩写词列表。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324493.htm">HangulAndAlphabetAutoAdd</a></b></td><td>
+			如果 Microsoft Word 会自动将单词添至朝鲜文和字母顺序“自动更正”例外项列表中，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324494.htm">HangulAndAlphabetExceptions</a></b></td><td>返回一个 <b><a href="HV10327175.htm">HangulAndAlphabetExceptions</a></b> 集合，该集合代表朝鲜文和字母顺序“自动更正”例外项列表。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324495.htm">OtherCorrectionsAutoAdd</a></b></td><td>
+			如果 Microsoft Word 自动将单词添至<b class="ui">“‘自动更正’例外项”</b>对话框（在<b class="ui">“工具”</b>菜单上，单击<b class="ui">“自动更正选项”</b>命令）中<b class="ui">“其他更正”</b>选项卡上的“自动更正”例外项列表中，则该属性值为 <b>True</b>。如果删除并重新键入一个不希望 Word 更正的单词，Word 会将该单词添至该列表。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324496.htm">OtherCorrectionsExceptions</a></b></td><td>返回一个 <b><a href="HV10329441.htm">OtherCorrectionsExceptions</a></b> 集合，该集合代表 Microsoft Word 不会自动更正的单词的列表。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324497.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>AutoCorrect</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324498.htm">ReplaceText</a></b></td><td>
+			如果 Microsoft Word 使用“自动更正”列表中的词条自动替换指定文本，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324499.htm">ReplaceTextFromSpellingChecker</a></b></td><td>
+			如果为 <b>True</b>，Microsoft Word 将在用户键入时自动用拼写检查的建议替换拼错的文字。Word 只替换包含一处误拼的单词，并且拼写词典也只列出一个替换选项。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324500.htm">TwoInitialCapsAutoAdd</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 将单词自动添至“‘自动更正’前两个字母连续大写”例外项列表。如果将 Word 自动更改为小写字母的（跟随大写首字母的）大写字母删除并重新键入，则会将一个单词添至该列表中。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10324501.htm">TwoInitialCapsExceptions</a></b></td><td>返回一个 <b><a href="HV10331256.htm">TwoInitialCapsExceptions</a></b> 集合，该集合代表 Word 不会自动更正的包含混合大小写字母的词语列表。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

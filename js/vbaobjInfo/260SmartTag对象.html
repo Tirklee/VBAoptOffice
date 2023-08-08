@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10366163"><!--csasset id="HV10366163" date="2009-09-10"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>SmartTag 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">SmartTag 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText"></span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">SmartTag 对象成员</b></span></td></tr></table></div><p>代表文档或范围中包含识别类型信息的字符串。SmartTag 对象是 SmartTags 集合的一个成员。SmartTags 集合包含文档或文档的文本范围中的所有智能标记。Microsoft Word 使用识别器文件标记智能标记，并使用操作文件执行与智能标记相关的操作，例如链接到网站。</p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th>
+        <th width="20%">名称</th>
+        <th>说明</th>
+      </tr><tr><td width="6%"><img border="0" src="methods.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330592.htm">Delete</a>
+          </b>
+        </td>
+        <td>删除指定的智能标记。</td>
+      </tr><tr><td width="6%"><img border="0" src="methods.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330598.htm">Select</a>
+          </b>
+        </td>
+        <td>选择指定的智能标记。</td>
+      </tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th>
+        <th width="20%">名称</th>
+        <th>说明</th>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330590.htm">Application</a>
+          </b>
+        </td>
+        <td>返回一个代表 Microsoft Word 应用程序的 Application 对象。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330591.htm">Creator</a>
+          </b>
+        </td>
+        <td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 Long 类型。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330593.htm">DownloadURL</a>
+          </b>
+        </td>
+        <td>返回一个 String 类型的值，该值代表智能标签的 URL 地址。只读。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330594.htm">Name</a>
+          </b>
+        </td>
+        <td>返回指定对象的名称。只读 String 类型。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330595.htm">Parent</a>
+          </b>
+        </td>
+        <td>返回一个 Object 类型值，该值代表指定 SmartTag 对象的父对象。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330596.htm">Properties</a>
+          </b>
+        </td>
+        <td>返回一个 CustomProperties 集合，该集合代表智能标记的属性。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330597.htm">Range</a>
+          </b>
+        </td>
+        <td>返回一个 Range 对象，该对象代表智能标记中包含的文档部分。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330601.htm">SmartTagActions</a>
+          </b>
+        </td>
+        <td>返回一个 SmartTagActions 集合，该集合代表智能标记上可用操作的集合。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330602.htm">XML</a>
+          </b>
+        </td>
+        <td>返回一个 String 类型的值，该值代表与智能标记相关的 XML。只读。</td>
+      </tr><tr><td width="6%"><img border="0" src="properties.gif"></td>
+        <td width="20%">
+          <b class="bterm">
+            <a href="HV10330603.htm">XMLNode</a>
+          </b>
+        </td>
+        <td>返回一个 XMLNode 对象，该对象代表智能标记的 XML 元素。</td>
+      </tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

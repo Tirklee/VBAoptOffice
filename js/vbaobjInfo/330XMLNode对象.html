@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10366413"><!--csasset id="HV10366413" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>XMLNode 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">XMLNode 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">XMLNode 对象成员</b></span></td></tr></table></div><p>表示应用于文档的单个 XML 元素。 </p><p><b class="mainheaders">方法</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331513.htm">Copy</a></b></td><td>
+		将指定的 XML 元素（不包括 XML 标记）复制到剪贴板。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331515.htm">Cut</a></b></td><td>将指定的 XML 元素从文档中移到剪贴板上。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331516.htm">Delete</a></b></td><td>删除 XML 文档中指定的 XML 元素。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331531.htm">RemoveChild</a></b></td><td>
+		从指定的元素中删除子元素。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331532.htm">SelectNodes</a></b></td><td>
+		返回一个 <b><a href="HV10331551.htm">XMLNodes</a></b> 集合，该集合代表与 XPath 参数匹配的所有子元素（它们的顺序与它们在指定的 XML 元素中出现的顺序相同）。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331533.htm">SelectSingleNode</a></b></td><td>返回一个 <b>XMLNode</b> 对象，该对象代表指定的 XML 元素中第一个与 XPath 参数匹配的子元素。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331534.htm">SetValidationError</a></b></td><td>更改向用户显示的指定节点的验证错误文本，并强制 Word 将节点报告为无效。</td></tr><tr><td width="6%"><img border="0" src="methods.gif"></td><td width="20%"><b class="bterm"><a href="HV10331538.htm">Validate</a></b></td><td>
+		针对附加到文档的 XML 架构验证单个 XML 元素。</td></tr></table></div><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331508.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331509.htm">Attributes</a></b></td><td>返回一个 <b>XMLNodes</b> 集合，该集合代表指定元素的属性。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331510.htm">BaseName</a></b></td><td>返回一个 <b>String</b> 类型的值，该值代表不带任何前缀的元素名称。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331511.htm">ChildNodes</a></b></td><td>返回一个 <b>XMLNodes</b> 集合，该集合代表指定元素的子元素。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331512.htm">ChildNodeSuggestions</a></b></td><td>返回一个 <b>XMLChildNodeSuggestions</b> 集合，代表指定元素的子元素列表。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331514.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331517.htm">FirstChild</a></b></td><td>返回一个 <b>DiagramNode</b> 对象，该对象代表父节点的第一个子节点。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331518.htm">HasChildNodes</a></b></td><td>返回 <b>Boolean</b> 值，该值表示 XML 节点是否有子节点。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331519.htm">LastChild</a></b></td><td>返回一个 <b>XMLNode</b> 对象，该对象代表 XML 元素的最后一个子节点。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331520.htm">Level</a></b></td><td>返回一个 <b><a href="HV10324128.htm">WdXMLNodeLevel</a></b> 常量，该常量代表 XML 元素是段落的一部分、是整个段落、包含在表格单元格中还是包含表格行。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331521.htm">NamespaceURI</a></b></td><td>返回 <b>String</b> 值，该值表示指定对象的架构命名空间的统一资源标识符 (URI)。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331522.htm">NextSibling</a></b></td><td>返回一个 <b>XMLNode</b> 对象，该对象代表文档中与指定元素同级的下一个元素。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331523.htm">NodeType</a></b></td><td>返回一个代表节点类型的 <b><a href="HV10324130.htm">WdXMLNodeType</a></b> 常量。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331524.htm">NodeValue</a></b></td><td> 返回或设置一个 <b>String</b> 类型的值，该值代表 XML 元素的值。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331525.htm">OwnerDocument</a></b></td><td>返回一个代表指定 XML 元素的父文档的 <b>Document</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331526.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>XMLNode</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331527.htm">ParentNode</a></b></td><td>返回一个代表指定元素的父元素的 <b>XMLNode</b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331528.htm">PlaceholderText</a></b></td><td>设置或返回一个 <b>String</b> 类型的值，该值代表为不包含文本的元素显示的文本。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331529.htm">PreviousSibling</a></b></td><td>返回一个 <b>XMLNode</b> 对象，该对象代表文档中与指定元素同级的前一个元素。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331530.htm">Range</a></b></td><td>返回一个 <b><a href="HV10329911.htm">Range</a></b> 对象，该对象代表指定对象中包含的文档部分。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331537.htm">Text</a></b></td><td>返回或设置 XML 元素中包含的文本。<b>String</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331539.htm">ValidationErrorText</a></b></td><td>返回一个 <b>String</b> 类型的值，代表关于 <b>XMLNode</b> 对象验证错误的说明。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331540.htm">ValidationStatus</a></b></td><td>  返回一个 <b>WdXMLValidationStatus</b> 常量，该常量表示根据附加的架构，元素或属性是否有效。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331541.htm">WordOpenXML</a></b></td><td>返回一个 <b>String</b> 类型的值，该值以 Microsoft Word Open XML 格式表示节点的 XML。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10331542.htm">XML</a></b></td><td>返回 <b>String</b> 值，该值表示包含在 XML 节点中的文本（有或没有 XML 标记）。只读。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>

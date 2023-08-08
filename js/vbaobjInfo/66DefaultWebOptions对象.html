@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"><html dir="ltr" xmlns:MSHelp="urn:schemas-microsoft-com:mshelp"><head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<meta http-equiv="assetid" content="HV10365477"><!--csasset id="HV10365477" date="2009-11-02"--><!--cstransform awsDeveloperHXS.xsl date 2009-11-25 --><!--
+      csautotext date 2009-10-07 number --><!--
+      csglossary date 2009-12-04 number --><!--
+      csglobalstrings date 2009-09-14 number --><META NAME="lcid" CONTENT="2052"><title>DefaultWebOptions 对象成员</title><script type="text/javascript" language="Javascript" src="office12.js"></script><link rel="stylesheet" type="text/css" href="ont.css"><link rel="stylesheet" type="text/css" href="contentHXS.css">
+<SCRIPT LANGUAGE="javascript">
+   var strShow='全部显示';
+   var strHide='全部隐藏';
+   var strRtl='';
+   var L_UNDEFINED_TEXT='“帮助”无法定位该内嵌定义';
+</SCRIPT>
+  
+    <STYLE TYPE="text/CSS">
+	    .ACICollapsed
+	    {
+		    display: none;
+	    }
+
+	    .ACECollapsed
+	    {
+		    display: none;
+	    }
+          
+      <!--to wrap the table text when the page is re-sized-->
+      table
+      {
+          word-break:break-all;
+      }
+    </STYLE>
+
+    <NOSCRIPT>
+	    <STYLE TYPE="text/CSS">
+		    .ACICollapsed
+		    {
+			    display: inline;
+		    }
+
+		    .ACECollapsed
+		    {
+			    display: block;
+		    }
+	    </STYLE>
+    </NOSCRIPT>
+
+	    <SCRIPT>
+		    function go(url)
+		    {
+			    window.open(url, "_self");
+		    }
+
+		    function OpenInNewWindow(url)
+		    {
+			    go(url);
+		    }
+	    </SCRIPT>
+
+
+
+
+	    <script type="text/JavaScript" language="JavaScript">
+	    <!--
+
+    function InlineDefNotFound() { alert(L_UNDEFINED_TEXT); }
+    function AppendPopup(oSource, sPopup)
+    {
+	    InitializeGlobalData();
+	    if (typeof(allDivsInPage) == 'undefined' || null == allDivsInPage) return;
+	    var theDiv = allDivsInPage['divInlineDef_' + sPopup];
+	    if (typeof(theDiv) == 'undefined' || null == theDiv)
+		    {
+		    InlineDefNotFound();
+		    return;
+		    }
+	    if (theDiv.style.display.toUpperCase() != 'INLINE')
+		    theDiv.style.display = 'inline';
+	    else
+		    theDiv.style.display = 'none';
+    }
+
+    //-->
+    </script>
+     </head><body class="clientViewer"><div class="cdclvBreadcrumbs cdbread"><span><a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(0)">Word 2010 开发人员参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(1)">Word 对象模型参考</a> &gt; <a class="OAnc" href="#" onclick="javascript:GoOfflineParentCategory(2)">DefaultWebOptions 对象</a></span></div><!--content HTML starts here--><div class="cdclvSection"><div class="devdocvsbody"><div id="header"><table width="100%" id="topTable"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Word 开发人员参考</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle"><b class="mainheaders">DefaultWebOptions 对象成员</b></span></td></tr></table></div><p>包含 Microsoft Word 在您打开网页或将文档另存为网页时使用的应用程序级全局属性。</p><p><b class="mainheaders">属性</b></p><div id="vstable"><table><tr><th class="thhead" width="6%"> </th><th width="20%">名称</th><th>说明</th></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325484.htm">AllowPNG</a></b></td><td>
+			如果不允许将 PNG（可移植网络图形）作为输出格式使用，则该属性值为 <b>False</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325485.htm">AlwaysSaveInDefaultEncoding</a></b></td><td>
+			如果在保存网页或纯文本文档时使用默认编码，而不管打开该文件时的原始编码如何，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325486.htm">Application</a></b></td><td>返回一个代表 Microsoft Word 应用程序的 <b><a href="HV10324236.htm">Application</a></b> 对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325487.htm">BrowserLevel</a></b></td><td>返回或设置一个 <b>WdBrowserLevel</b> 常量，该常量代表在 Microsoft Word 中创建的新网页要指向的 Web 浏览器级别。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325488.htm">CheckIfOfficeIsHTMLEditor</a></b></td><td>
+			如果在启动 Word 时，Microsoft Word 检查某个 Office 应用程序是否为默认 HTML 编辑器，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325489.htm">CheckIfWordIsDefaultHTMLEditor</a></b></td><td>
+			如果在启动 Word 时，Microsoft Word 检查自己是否为默认 HTML 编辑器，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325490.htm">Creator</a></b></td><td>返回表示用于创建指定对象的应用程序的 32 位整数。只读 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325493.htm">Encoding</a></b></td><td>返回或设置在查看保存的文档时 Web 浏览器使用的文档编码（代码页或字符集）。<b>MsoEncoding</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325494.htm">FolderSuffix</a></b></td><td>返回一个 <b>String</b> 类型的值，该值代表 Microsoft Word 在将文档另存为网页、使用长文件名或将支持文件保存在单独的文件夹中时使用的文件夹后缀。只读。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325495.htm">Fonts</a></b></td><td>返回一个 <b>WebPageFonts</b> 集合，该集合代表在 Word 中打开网页时 Microsoft Word 所使用的字体集。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325496.htm">OptimizeForBrowser</a></b></td><td>
+			如果 Microsoft Word 为 <b><a href="HV10325487.htm">BrowserLevel</a></b> 属性指定的 Web 浏览器优化在 Word 中创建的新网页，则该属性为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325497.htm">OrganizeInFolder</a></b></td><td>
+			如果在将指定文档另存为网页时，所有的支持文件（如背景纹理和图形）组织在一个单独的文件夹中，则该属性值为 <b>True</b>；如果支持文件和网页保存在同一文件夹中，则该属性值为 <b>False</b>。默认值为 <b>True</b>。可读写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325498.htm">Parent</a></b></td><td>返回一个 <b>Object</b> 类型的值，该值代表指定 <b>DefaultWebOptions</b> 对象的父对象。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325499.htm">PixelsPerInch</a></b></td><td>返回或设置网页中图形图像及表格单元格的密度（每英寸的像素数）。可读写 <b>Long</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325500.htm">RelyOnCSS</a></b></td><td>
+			如果在 Web 浏览器中查看保存的文档时，对字体格式使用了级联样式表 (CSS)，则该属性为 <b>True</b>。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325501.htm">RelyOnVML</a></b></td><td>
+			如果在将文档另存为网页时没有从图形对象中生成图像文件，则该属性值为 <b>True</b>。如果生成了图像，则该属性值为 <b>False</b>。默认值为 <b>False</b>。可读写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325502.htm">SaveNewWebPagesAsWebArchives</a></b></td><td>
+			如果为 <b>True</b>，则 Microsoft Word 使用“单个文件网页”（以前称为“Web 存档”）格式保存新的网页。可读/写 <b>Boolean</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325503.htm">ScreenSize</a></b></td><td>返回或设置在 Web 浏览器中查看保存的文档时应使用的理想最小屏幕尺寸（宽 x 高，以像素为单位）。可读写 <b>MsoScreenSize</b> 类型。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325504.htm">TargetBrowser</a></b></td><td>设置或返回一个 <b>MsoTargetBrowser</b> 常量，该常量代表在 Web 浏览器中查看文档的目标浏览器。可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325505.htm">UpdateLinksOnSave</a></b></td><td>
+			如果在将文档另存为网页时，所有支持文件的超链接和路径都会自动更新，则该属性值为 <b>True</b>。<b>Boolean</b> 类型，可读写。</td></tr><tr><td width="6%"><img border="0" src="properties.gif"></td><td width="20%"><b class="bterm"><a href="HV10325506.htm">UseLongFileNames</a></b></td><td>
+			如果将文档另存为网页时使用长文件名，则该属性值为 <b>True</b>。如果不使用长文件名，而使用 DOS 文件名格式 (8.3)，则该属性值为 <b>False</b>。默认值为 <b>True</b>。可读写 <b>Boolean</b> 类型。</td></tr></table></div><p><a href="HV10323630.htm">© 2010 Microsoft Corporation。保留所有权利。</a></p></div></div></body></html>
