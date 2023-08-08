@@ -1,0 +1,5 @@
+Sub getCrossReferenceItems()
+    For Each i In ActiveDocument.getCrossReferenceItems("图")
+        Debug.Print i
+    Next i
+End Sub
