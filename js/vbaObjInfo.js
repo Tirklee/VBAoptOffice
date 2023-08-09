@@ -40,7 +40,7 @@ function getVBAObjInfo(filePath){
           for(let r=1;r<childRows.length;r++){
             let childColumns = childRows[r].childNodes;
             objStr+="\t\t\t<!-- attrName:名称 desc：说明-->\r\n";
-            objStr+="\t\t\t<Item attrName=\'"+childColumns[1].textContent.trim().replaceAll(/\r?\n/g,"")+"\' desc=\'"+childColumns[2].textContent.trim().replaceAll(/\r?\n/g,"")+"\'/>\r\n";
+            objStr+="\t\t\t<Item attrName=\'"+childColumns[1].textContent.trim().replaceAll(/\r?\n/g,"")+"\' attrType='str' desc=\'"+childColumns[2].textContent.trim().replaceAll(/\r?\n/g,"")+"\'/>\r\n";
           }
           objStr+="\t\t</AttrItems>\r\n";
         }
