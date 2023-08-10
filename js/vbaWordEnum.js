@@ -39,7 +39,7 @@ function fetchApiList(apiList) {
       let enumCh = xpath.select('//main/div[3]/p[1]', doc).at(0);
       let enumStr = '\t<!--'+enumEn.textContent+'===='
                     +enumCh.textContent+'-->\r\n';
-      enumStr+='\t<'+api.EnumField+'>\r\n';   
+      enumStr+='\t<Enum id="'+api.EnumField+'">\r\n';   
       // 使用XPath查找所有a标签的href属性值
       let nodelist = xpath.select('//table/tbody/tr', doc);
       nodelist.forEach(node=>{
@@ -47,7 +47,7 @@ function fetchApiList(apiList) {
                  +'value="'+node.childNodes[3].textContent+'" '
                  +'description="'+ node.childNodes[5].textContent+'"/>\r\n';
       });
-      enumStr+='\t</'+api.EnumField+'>\r\n';
+      enumStr+='\t</Enum>\r\n';
       return enumStr;
     }).catch(error => {
       console.error(error);

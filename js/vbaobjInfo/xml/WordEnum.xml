@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WordEnum>	<!--WdAlertLevel 枚举 (Word) ====指定运行宏时产生的一些警告和消息的处理方式。-->
-	<WdAlertLevel>
+	<Enum id="WdAlertLevel">
 		<Item name="wdAlertsAll" value="-1" description="显示所有的消息框和警告，并将错误返回宏。"/>
 		<Item name="wdAlertsMessageBox" value="-2" description="仅显示消息框，同时捕获错误并将其返回宏。"/>
 		<Item name="wdAlertsNone" value="0" description="不显示任何警告或消息框。 如果运行宏时遇到消息框，则选择默认值并继续运行宏。"/>
-	</WdAlertLevel>
+	</Enum>
 	<!--WdAlignmentTabAlignment 枚举 (Word) ====指定制表符的对齐方式。-->
-	<WdAlignmentTabAlignment>
+	<Enum id="WdAlignmentTabAlignment">
 		<Item name="wdCenter" value="1" description="居中的制表符。"/>
 		<Item name="wdLeft" value="0" description="左对齐的制表符。"/>
 		<Item name="wdRight" value="2" description="右对齐的制表符。"/>
-	</WdAlignmentTabAlignment>
+	</Enum>
 	<!--WdAlignmentTabRelative 枚举 (Word) ====指定 Microsoft Word 在计算制表位的对齐方式时是相对于节边距还是相对于段落缩进。-->
-	<WdAlignmentTabRelative>
+	<Enum id="WdAlignmentTabRelative">
 		<Item name="wdIndent" value="1" description="Word 相对于段落缩进计算制表位的对齐方式。"/>
 		<Item name="wdMargin" value="0" description="Word 相对于边距计算制表位的对齐方式。"/>
-	</WdAlignmentTabRelative>
+	</Enum>
 	<!--WdApplyQuickStyleSets 枚举 (Word) ====指定要应用于文档的快速样式集。-->
-	<WdApplyQuickStyleSets>
+	<Enum id="WdApplyQuickStyleSets">
 		<Item name="wdSessionStartSet" value="1" description="将快速样式重置为打开文档时使用的样式集。"/>
 		<Item name="wdTemplateSet" value="2" description="将快速样式重置为模板中的样式集（如果有）。"/>
-	</WdApplyQuickStyleSets>
+	</Enum>
 	<!--WdArabicNumeral 枚举 (Word) ====为阿拉伯语文档指定数字样式。-->
-	<WdArabicNumeral>
+	<Enum id="WdArabicNumeral">
 		<Item name="wdNumeralArabic" value="0" description="数字采用阿拉伯语形状。"/>
 		<Item name="wdNumeralContext" value="2" description="数字形状取决于数字周围的文字。"/>
 		<Item name="wdNumeralHindi" value="1" description="数字采用印地语形状。"/>
 		<Item name="wdNumeralSystem" value="3" description="数字形状由系统设置决定。"/>
-	</WdArabicNumeral>
+	</Enum>
 	<!--WdAraSpeller 枚举 (Word) ====为阿拉伯语拼写检查指定拼写规则。-->
-	<WdAraSpeller>
+	<Enum id="WdAraSpeller">
 		<Item name="wdBoth" value="3" description="拼写检查使用有关以字母 yaa 结尾和以 alef hamza 开头的阿拉伯语单词拼写规则。"/>
 		<Item name="wdFinalYaa" value="2" description="拼写检查使用有关以字母 yaa 结尾的阿拉伯语单词拼写规则。"/>
 		<Item name="wdInitialAlef" value="1" description="拼写检查使用有关以 alef hamza 开头的阿拉伯语单词拼写规则。"/>
 		<Item name="wdNone" value="0" description="拼写检查忽略有关以字母 yaa 结尾或以 alef hamza 开头的阿拉伯语单词拼写规则。"/>
-	</WdAraSpeller>
+	</Enum>
 	<!--WdArrangeStyle 枚举 (Word) ====指定窗口排列方式。-->
-	<WdArrangeStyle>
+	<Enum id="WdArrangeStyle">
 		<Item name="wdIcons" value="1" description="窗口作为图标显示在单个窗口中。"/>
 		<Item name="wdTiled" value="0" description="窗口平铺在单个窗口中。"/>
-	</WdArrangeStyle>
+	</Enum>
 	<!--WdAutoFitBehavior 枚举 (Word) ====指定 Microsoft Word 如何使用自动调整功能来调整表格的大小。-->
-	<WdAutoFitBehavior>
+	<Enum id="WdAutoFitBehavior">
 		<Item name="wdAutoFitContent" value="1" description="根据表格中包含的内容自动调整表格的大小。"/>
 		<Item name="wdAutoFitFixed" value="0" description="将表格设置为固定大小而与内容无关，因此不会自动调整表格大小。"/>
 		<Item name="wdAutoFitWindow" value="2" description="根据活动窗口的宽度自动调整表格大小。"/>
-	</WdAutoFitBehavior>
+	</Enum>
 	<!--WdAutoMacros 枚举 (Word) ====指定存储在文档中的自动宏。-->
-	<WdAutoMacros>
+	<Enum id="WdAutoMacros">
 		<Item name="wdAutoClose" value="3" description="AutoClose 宏。"/>
 		<Item name="wdAutoExec" value="0" description="AutoExec 宏。"/>
 		<Item name="wdAutoExit" value="4" description="AutoExit 宏。"/>
 		<Item name="wdAutoNew" value="1" description="AutoNew 宏。"/>
 		<Item name="wdAutoOpen" value="2" description="AutoOpen 宏。"/>
 		<Item name="wdAutoSync" value="5" description="AutoSync 宏。"/>
-	</WdAutoMacros>
+	</Enum>
 	<!--WdAutoVersions 枚举 (Word) ====指定用于自动保存文档版本的选项的状态。-->
-	<WdAutoVersions>
+	<Enum id="WdAutoVersions">
 		<Item name="wdAutoVersionOff" value="0" description="不保存文档版本。"/>
 		<Item name="wdAutoVersionOnClose" value="1" description="关闭文档时自动保存该文档的版本。"/>
-	</WdAutoVersions>
+	</Enum>
 	<!--WdBaselineAlignment 枚举 (Word) ====指定行中字体的垂直位置。-->
-	<WdBaselineAlignment>
+	<Enum id="WdBaselineAlignment">
 		<Item name="wdBaselineAlignAuto" value="4" description="Microsoft Word 自动调整字体的基线对齐方式。"/>
 		<Item name="wdBaselineAlignBaseline" value="2" description="对齐段落的基线。"/>
 		<Item name="wdBaselineAlignCenter" value="1" description="对齐每个字体的中心点。"/>
 		<Item name="wdBaselineAlignFarEast50" value="3" description="使用亚洲语言字体标准的基线对齐。"/>
 		<Item name="wdBaselineAlignTop" value="0" description="沿每个字体顶端对齐。"/>
-	</WdBaselineAlignment>
+	</Enum>
 	<!--WdBookmarkSortBy 枚举 (Word) ====为显示在“书签”对话框中的书签名称指定排序选项。-->
-	<WdBookmarkSortBy>
+	<Enum id="WdBookmarkSortBy">
 		<Item name="wdSortByLocation" value="1" description="按在文档中的位置排序。"/>
 		<Item name="wdSortByName" value="0" description="按书签名称排序。"/>
-	</WdBookmarkSortBy>
+	</Enum>
 	<!--WdBorderDistanceFrom 枚举 (Word) ====指定页面边框是从页面边缘还是从其周围的文本开始计算。-->
-	<WdBorderDistanceFrom>
+	<Enum id="WdBorderDistanceFrom">
 		<Item name="wdBorderDistanceFromPageEdge" value="1" description="从页面边缘计算。"/>
 		<Item name="wdBorderDistanceFromText" value="0" description="从其周围的文本计算。"/>
-	</WdBorderDistanceFrom>
+	</Enum>
 	<!--WdBorderType 枚举 (Word) ====指定要使用的边框类型。-->
-	<WdBorderType>
+	<Enum id="WdBorderType">
 		<Item name="wdBorderBottom" value="-3" description="底边框线。"/>
 		<Item name="wdBorderDiagonalDown" value="-7" description="方向从左上角开始的斜向边框线。"/>
 		<Item name="wdBorderDiagonalUp" value="-8" description="方向从左下角开始的斜向边框线。"/>
@@ -88,9 +88,9 @@
 		<Item name="wdBorderRight" value="-4" description="右侧框线。"/>
 		<Item name="wdBorderTop" value="-1" description="上框线。"/>
 		<Item name="wdBorderVertical" value="-6" description="纵向框线。"/>
-	</WdBorderType>
+	</Enum>
 	<!--WdBreakType 枚举 (Word) ====指定分隔符的类型。-->
-	<WdBreakType>
+	<Enum id="WdBreakType">
 		<Item name="wdColumnBreak" value="8 " description="插入点处的分栏符。"/>
 		<Item name="wdLineBreak" value="6" description="换行符。"/>
 		<Item name="wdLineBreakClearLeft" value="9 " description="换行符。"/>
@@ -101,15 +101,15 @@
 		<Item name="wdSectionBreakNextPage" value="2" description="分节符在下一页。"/>
 		<Item name="wdSectionBreakOddPage" value="5" description="使下一节从下一奇数页开始的分节符。 如果分节符落入奇数页，则 Word 将下一偶数页留为空白。"/>
 		<Item name="wdTextWrappingBreak" value="11" description="结束当前行，并强制文字在图片、表格或其他项目的下方继续。 文字将在下一个空行（且该空行不包含与左边距或右边距对齐的表格）上继续。"/>
-	</WdBreakType>
+	</Enum>
 	<!--WdBrowserLevel 枚举 (Word) ====指定要针对在 Microsoft Word 中创建的新网页的 Web 浏览器版本。-->
-	<WdBrowserLevel>
+	<Enum id="WdBrowserLevel">
 		<Item name="wdBrowserLevelMicrosoftInternetExplorer5" value="1" description="Microsoft Internet Explorer 5。"/>
 		<Item name="wdBrowserLevelMicrosoftInternetExplorer6" value="2" description="Microsoft Internet Explorer 6。"/>
 		<Item name="wdBrowserLevelV4" value="0" description="Microsoft Internet Explorer 4。"/>
-	</WdBrowserLevel>
+	</Enum>
 	<!--WdBrowseTarget 枚举 (Word) ====指定 Next 或 Previous 方法找到的文档项目，并将插入点放在该项目的下一实例或上一实例之前。-->
-	<WdBrowseTarget>
+	<Enum id="WdBrowseTarget">
 		<Item name="wdBrowseComment" value="3" description="将插入点放在下一批注或上一批注之前。"/>
 		<Item name="wdBrowseEdit" value="10" description="将插入点放在下一编辑位置或上一编辑位置之前。"/>
 		<Item name="wdBrowseEndnote" value="5" description="将插入点放在下一尾注或上一尾注之前。"/>
@@ -122,9 +122,9 @@
 		<Item name="wdBrowsePage" value="1" description="将插入点放在下一页或上一页之前。"/>
 		<Item name="wdBrowseSection" value="2" description="将插入点放在下一节或上一节之前。"/>
 		<Item name="wdBrowseTable" value="7 " description="将插入点放在下一表格或上一表格之前。"/>
-	</WdBrowseTarget>
+	</Enum>
 	<!--WdBuildingBlockTypes 枚举 (Word) ====指定生成块的类型。-->
-	<WdBuildingBlockTypes>
+	<Enum id="WdBuildingBlockTypes">
 		<Item name="wdTypeAutoText" value="9 " description="自动图文集生成框。"/>
 		<Item name="wdTypeBibliography" value="34" description="书目生成块。"/>
 		<Item name="wdTypeCoverPage" value="2" description="封面生成块。"/>
@@ -160,9 +160,9 @@
 		<Item name="wdTypeTables" value="7 " description="表格生成块。"/>
 		<Item name="wdTypeTextBox" value="10" description="文本框生成块。"/>
 		<Item name="wdTypeWatermarks" value="8 " description="水印生成块。"/>
-	</WdBuildingBlockTypes>
+	</Enum>
 	<!--WdBuiltInProperty 枚举 (Word) ====指定内置文档属性。-->
-	<WdBuiltInProperty>
+	<Enum id="WdBuiltInProperty">
 		<Item name="wdPropertyAppName" value="9 " description="应用程序名称。"/>
 		<Item name="wdPropertyAuthor" value="3" description="作者。"/>
 		<Item name="wdPropertyBytes" value="22" description="字节数。"/>
@@ -193,9 +193,9 @@
 		<Item name="wdPropertyTitle" value="1" description="标题。"/>
 		<Item name="wdPropertyVBATotalEdit" value="13" description="VBA 项目编辑次数。"/>
 		<Item name="wdPropertyWords" value="15" description="字数。"/>
-	</WdBuiltInProperty>
+	</Enum>
 	<!--WdBuiltinStyle 枚举 (Word) ====指定内置的 Microsoft Word 样式。-->
-	<WdBuiltinStyle>
+	<Enum id="WdBuiltinStyle">
 		<Item name="wdStyleBlockQuotation" value="-85" description="文本块。"/>
 		<Item name="wdStyleBodyText" value="-67" description="正文文本。"/>
 		<Item name="wdStyleBodyText2" value="-81" description="正文文本 2。"/>
@@ -328,9 +328,9 @@
 		<Item name="wdStyleTOC7" value="-26" description="目录 7。"/>
 		<Item name="wdStyleTOC8" value="-27" description="目录 8。"/>
 		<Item name="wdStyleTOC9" value="-28" description="目录 9。"/>
-	</WdBuiltinStyle>
+	</Enum>
 	<!--WdCalendarType 枚举 (Word) ====指定日历类型。-->
-	<WdCalendarType>
+	<Enum id="WdCalendarType">
 		<Item name="wdCalendarArabic" value="1" description="阿拉伯回历"/>
 		<Item name="wdCalendarHebrew" value="2" description="希伯来农历"/>
 		<Item name="wdCalendarJapan" value="4" description="日本和历日历。"/>
@@ -342,20 +342,20 @@
 		<Item name="wdCalendarTranslitFrench" value="9 " description="转译法语。 法国的月和日的公历日历转译到阿拉伯脚本的名称。 不受支持。"/>
 		<Item name="wdCalendarUmalqura" value="13" description="-古兰经历。"/>
 		<Item name="wdCalendarWestern" value="0" description="西方语言。 对应于公历日历。"/>
-	</WdCalendarType>
+	</Enum>
 	<!--WdCalendarTypeBi 枚举 (Word) ====指定显示日期或时间时使用的日历类型。-->
-	<WdCalendarTypeBi>
+	<Enum id="WdCalendarTypeBi">
 		<Item name="wdCalendarTypeBidi" value="99" description="双向日历。"/>
 		<Item name="wdCalendarTypeGregorian" value="100" description="公历。"/>
-	</WdCalendarTypeBi>
+	</Enum>
 	<!--WdCaptionLabelID 枚举 (Word) ====指定题注标签的类型。-->
-	<WdCaptionLabelID>
+	<Enum id="WdCaptionLabelID">
 		<Item name="wdCaptionEquation" value="-3" description="方程。"/>
 		<Item name="wdCaptionFigure" value="-1" description="图。"/>
 		<Item name="wdCaptionTable" value="-2" description="表。"/>
-	</WdCaptionLabelID>
+	</Enum>
 	<!--WdCaptionNumberStyle 枚举 (Word) ====指定与 CaptionLabel 对象一起使用的编号样式。-->
-	<WdCaptionNumberStyle>
+	<Enum id="WdCaptionNumberStyle">
 		<Item name="wdCaptionNumberStyleArabic" value="0" description="阿拉伯语样式。"/>
 		<Item name="wdCaptionNumberStyleArabicFullWidth" value="14" description="全角阿拉伯语样式。"/>
 		<Item name="wdCaptionNumberStyleArabicLetter1" value="46" description="阿拉伯语字母样式 1。"/>
@@ -388,14 +388,14 @@
 		<Item name="wdCaptionNumberStyleVietCardinalText" value="56" description="越南语基数文本样式。"/>
 		<Item name="wdCaptionNumberStyleZodiac1" value="30" description="Zodiac 样式 1。"/>
 		<Item name="wdCaptionNumberStyleZodiac2" value="31" description="Zodiac 样式 2。"/>
-	</WdCaptionNumberStyle>
+	</Enum>
 	<!--WdCaptionPosition 枚举 (Word) ====指定题注标签文本的位置。-->
-	<WdCaptionPosition>
+	<Enum id="WdCaptionPosition">
 		<Item name="wdCaptionPositionAbove" value="0" description="题注标签加在上方。"/>
 		<Item name="wdCaptionPositionBelow" value="1" description="题注标签加在下方。"/>
-	</WdCaptionPosition>
+	</Enum>
 	<!--WdCellColor 枚举 (Word) ====指定突出显示当前文档中所添加、删除或合并的表格单元格的颜色。-->
-	<WdCellColor>
+	<Enum id="WdCellColor">
 		<Item name="wdCellColorByAuthor" value="-1" description="突出显示颜色由审阅者决定。"/>
 		<Item name="wdCellColorLightBlue" value="2" description="浅蓝色。"/>
 		<Item name="wdCellColorLightGray" value="7 " description="浅灰色。"/>
@@ -405,15 +405,15 @@
 		<Item name="wdCellColorLightYellow" value="3" description="浅黄色。"/>
 		<Item name="wdCellColorNoHighlight" value="0" description="不突出显示。"/>
 		<Item name="wdCellColorPink" value="1" description="粉红色。"/>
-	</WdCellColor>
+	</Enum>
 	<!--WdCellVerticalAlignment 枚举 (Word) ====指定表格中一个或多个单元格的文字的垂直对齐方式。-->
-	<WdCellVerticalAlignment>
+	<Enum id="WdCellVerticalAlignment">
 		<Item name="wdCellAlignVerticalBottom" value="3" description="文字与单元格底边框线对齐。"/>
 		<Item name="wdCellAlignVerticalCenter" value="1" description="文字与单元格中心对齐。"/>
 		<Item name="wdCellAlignVerticalTop" value="0" description="文字与单元格上框线对齐。"/>
-	</WdCellVerticalAlignment>
+	</Enum>
 	<!--WdCharacterCase 枚举 (Word) ====为指定范围内的文字指定大小写。-->
-	<WdCharacterCase>
+	<Enum id="WdCharacterCase">
 		<Item name="wdFullWidth" value="7 " description="全角。 用于日语字符。"/>
 		<Item name="wdHalfWidth" value="6" description="半角。 用于日语字符。"/>
 		<Item name="wdHiragana" value="9 " description="平假名字符。 与日语文本一起使用。"/>
@@ -424,32 +424,32 @@
 		<Item name="wdTitleWord" value="2" description="标题字大写。"/>
 		<Item name="wdToggleCase" value="5" description="在大写和小写之间切换。"/>
 		<Item name="wdUpperCase" value="1" description="大写。"/>
-	</WdCharacterCase>
+	</Enum>
 	<!--WdCharacterWidth 枚举 (Word) ====为指定范围内的字符指定字符宽度。-->
-	<WdCharacterWidth>
+	<Enum id="WdCharacterWidth">
 		<Item name="wdWidthFullWidth" value="7 " description="以完整字符宽度显示字符。"/>
 		<Item name="wdWidthHalfWidth" value="6" description="以半个字符宽度显示字符。"/>
-	</WdCharacterWidth>
+	</Enum>
 	<!--WdCheckInVersionType 枚举 (Word) ====指定文档时使用 签入 签入的版本的类型。 应用于存储在 SharePoint 库中的文档。-->
-	<WdCheckInVersionType>
+	<Enum id="WdCheckInVersionType">
 		<Item name="wdCheckInMajorVersion" value="1" description="主版本。"/>
 		<Item name="wdCheckInMinorVersion" value="0" description="次版本。"/>
 		<Item name="wdCheckInOverwriteVersion" value="2" description="覆盖服务器上的当前版本。"/>
-	</WdCheckInVersionType>
+	</Enum>
 	<!--WdChevronConvertRule 枚举 (Word) ====指定用于将括在 v 形字符中的文本 (< >) 转换为合并字段的规则。-->
-	<WdChevronConvertRule>
+	<Enum id="WdChevronConvertRule">
 		<Item name="wdAlwaysConvert" value="1" description="转换器尝试将括在 v 形中的文本转换为邮件合并字段 (< >) 。"/>
 		<Item name="wdAskToConvert" value="3" description="转换器在 Word for Macintosh 文档打开时提示用户是否转换 V 型字符中包含的文字。"/>
 		<Item name="wdAskToNotConvert" value="2" description="转换器在 Word for Macintosh 文档打开时提示用户是否转换 V 型字符中包含的文字。"/>
 		<Item name="wdNeverConvert" value="0" description="转换器忽略此文字而不做任何处理。"/>
-	</WdChevronConvertRule>
+	</Enum>
 	<!--WdCollapseDirection 枚举 (Word) ====指定某范围或所选内容的折叠方向。-->
-	<WdCollapseDirection>
+	<Enum id="WdCollapseDirection">
 		<Item name="wdCollapseEnd" value="0" description="将该范围折叠到结束点。"/>
 		<Item name="wdCollapseStart" value="1" description="将该范围折叠到起始点。"/>
-	</WdCollapseDirection>
+	</Enum>
 	<!--Word)  (WdColor 枚举====指定要应用的 24 位颜色。-->
-	<WdColor>
+	<Enum id="WdColor">
 		<Item name="wdColorAqua" value="13421619" description="水蓝色"/>
 		<Item name="wdColorAutomatic" value="-16777216" description="自动颜色;默认;通常为黑色"/>
 		<Item name="wdColorBlack" value="0" description="黑色"/>
@@ -510,9 +510,9 @@
 		<Item name="wdColorViolet" value="8388736" description="紫罗兰色"/>
 		<Item name="wdColorWhite" value="16777215" description="白色"/>
 		<Item name="wdColorYellow" value="65535" description="黄色"/>
-	</WdColor>
+	</Enum>
 	<!--WdColorIndex 枚举 (Word) ====指定要应用的颜色。-->
-	<WdColorIndex>
+	<Enum id="WdColorIndex">
 		<Item name="wdAuto" value="0" description="自动配色。 默认值；通常为黑色。"/>
 		<Item name="wdBlack" value="1" description="黑色。"/>
 		<Item name="wdBlue" value="2" description="蓝色。"/>
@@ -532,27 +532,27 @@
 		<Item name="wdViolet" value="12 " description="紫色。"/>
 		<Item name="wdWhite" value="8 " description="白色。"/>
 		<Item name="wdYellow" value="7 " description="黄色。"/>
-	</WdColorIndex>
+	</Enum>
 	<!--WdColumnWidth 枚举 (Word) ====指定读取布局中的列宽，该布局传递给 View.ColumnWidth 属性并由该属性返回。-->
-	<WdColumnWidth>
+	<Enum id="WdColumnWidth">
 		<Item name="wdColumnWidthDefault" value="2" description="默认列宽。"/>
 		<Item name="wdColumnWidthNarrow" value="1" description="窄列宽。"/>
 		<Item name="wdColumnWidthWide" value="3" description="宽列宽。"/>
-	</WdColumnWidth>
+	</Enum>
 	<!--WdCompareDestination 枚举 (Word) ====在比较两个文件之间的差异时，指定是创建一个新文件，还是在原始文档或修订的文档中标记两个文档之间的差异。-->
-	<WdCompareDestination>
+	<Enum id="WdCompareDestination">
 		<Item name="wdCompareDestinationNew" value="2" description="创建一个新文件并跟踪原始文档和修订的文档用修订之间的差异。"/>
 		<Item name="wdCompareDestinationOriginal" value="0" description="使用原始文档中的修订标记两个文件之间的差异。"/>
 		<Item name="wdCompareDestinationRevised" value="1" description="使用修订的文档中的修订标记两个文件之间的差异。"/>
-	</WdCompareDestination>
+	</Enum>
 	<!--WdCompareTarget 枚举 (Word) ====指定用于显示文档比较结果差异的目标文档。-->
-	<WdCompareTarget>
+	<Enum id="WdCompareTarget">
 		<Item name="wdCompareTargetCurrent" value="1" description="在当前文档中放置比较差异。 默认值。"/>
 		<Item name="wdCompareTargetNew" value="2" description="将比较结果差异置于新文档中。"/>
 		<Item name="wdCompareTargetSelected" value="0" description="将比较结果差异置于目标文档中。"/>
-	</WdCompareTarget>
+	</Enum>
 	<!--WdCompatibility 枚举 (Word) ====指定兼容性选项。-->
-	<WdCompatibility>
+	<Enum id="WdCompatibility">
 		<Item name="wdAlignTablesRowByRow" value="39" description="独立对齐表格行。"/>
 		<Item name="wdApplyBreakingRules" value="46" description="使用换行规则。"/>
 		<Item name="wdAutospaceLikeWW7" value="38" description="按 Microsoft Word 95 的方式自动调整间距。"/>
@@ -614,17 +614,17 @@
 		<Item name="wdUnderlineTabInNumList" value="58" description="给编号列表中数字和文字之间的制表符加下划线。"/>
 		<Item name="wdUseNormalStyleForList" value="51" description="对项目符号列表或编号列表使用“正文”样式，而不是“列出段落”样式。"/>
 		<Item name="wdWW11IndentRules" value="55" description="对被环绕对象旁的文字使用 Word 2003 缩进规则。"/>
-	</WdCompatibility>
+	</Enum>
 	<!--WdCompatibilityMode 枚举 (Word) ====指定的兼容性模式在打开文档时使用该Word 。-->
-	<WdCompatibilityMode>
+	<Enum id="WdCompatibilityMode">
 		<Item name="wdCurrent" value="65535" description="相当于Word最新版本的兼容性模式。"/>
 		<Item name="wdWord2003" value="11" description="Word被放入与 Word 2003 最兼容的模式。 在此模式下禁用Word的新功能。"/>
 		<Item name="wdWord2007" value="12 " description="Word 进入与 Word 2007 最兼容的模式。 在此模式下禁用Word的新功能。"/>
 		<Item name="wdWord2010" value="14" description="Word 进入与 Word 2010 最兼容的模式。 在此模式下禁用Word的新功能。"/>
 		<Item name="wdWord2013" value="15" description="默认值。 Word的所有功能都已都启用。"/>
-	</WdCompatibilityMode>
+	</Enum>
 	<!--WdConditionCode 枚举 (Word) ====指定要应用特殊样式格式的表格区域。-->
-	<WdConditionCode>
+	<Enum id="WdConditionCode">
 		<Item name="wdEvenColumnBanding" value="7 " description="将格式应用于偶数列。"/>
 		<Item name="wdEvenRowBanding" value="3" description="将格式应用于偶数行。"/>
 		<Item name="wdFirstColumn" value="4" description="将格式应用于表格中的第一列。"/>
@@ -637,9 +637,9 @@
 		<Item name="wdOddRowBanding" value="2" description="将格式应用于奇数行。"/>
 		<Item name="wdSECell" value="10" description="将格式应用于表格中的最后一个单元格。"/>
 		<Item name="wdSWCell" value="11" description="将格式应用于表格中最后一行的第一个单元格。"/>
-	</WdConditionCode>
+	</Enum>
 	<!--WdConstants 枚举 (Word) ====与各种 Microsoft Word 方法一起使用的常量将与此枚举组合在一起。-->
-	<WdConstants>
+	<Enum id="WdConstants">
 		<Item name="wdAutoPosition" value="0" description="代表指定设置的 Auto 值。"/>
 		<Item name="wdBackward" value="-1073741823" description="指示向后使用 MoveStartUntil 或 MoveStartWhile 对对象方法的 区域 或 选定内容 将扩展所选内容。"/>
 		<Item name="wdCreatorCode" value="1297307460" description="代表 Microsoft Word 所创建对象的创建者代码。"/>
@@ -647,28 +647,28 @@
 		<Item name="wdForward" value="1073741823" description="指示正使用 MoveStartUntil 或 MoveStartWhile 对对象方法的 区域 或 选定内容 将扩展所选内容。"/>
 		<Item name="wdToggle" value="9999998" description="切换属性值。"/>
 		<Item name="wdUndefined" value="9999999" description="代表未定义的值。"/>
-	</WdConstants>
+	</Enum>
 	<!--WdContentControlAppearance 枚举 (Word) ====指定内容控件的可视化效果，该控件传递给 ContentControl.Appearance 属性并由其返回。-->
-	<WdContentControlAppearance>
+	<Enum id="WdContentControlAppearance">
 		<Item name="wdContentControlBoundingBox" value="0" description="表示显示为带阴影矩形或边框的内容控件， (具有可选标题) 。"/>
 		<Item name="wdContentControlTags" value="1" description="表示显示为开始标记和结束标记的内容控件。"/>
 		<Item name="wdContentControlHidden" value="2" description="表示未显示的内容控件。"/>
-	</WdContentControlAppearance>
+	</Enum>
 	<!--WdContentControlDateStorageFormat 枚举 (Word) ====指示当一个日期内容控件绑定到文档的数据存储区中的 XML 节点时，如何存储或检索该日期控件的日期。-->
-	<WdContentControlDateStorageFormat>
+	<Enum id="WdContentControlDateStorageFormat">
 		<Item name="wdContentControlDateStorageDate" value="1" description="指定以标准 XML 架构日期时间格式的日期形式存储或检索日期内容控件的日期值。"/>
 		<Item name="wdContentControlDateStorageDateTime" value="2" description="指定以标准 XML 架构日期时间格式的时间形式存储或检索日期内容控件的日期值。"/>
 		<Item name="wdContentControlDateStorageText" value="0" description="指定以文本形式存储或检索日期内容控件的日期值。"/>
-	</WdContentControlDateStorageFormat>
+	</Enum>
 	<!--WdContentControlLevel 枚举 (Word) ====指定 ContentControl.Level 属性返回的内容控件的可能级别。-->
-	<WdContentControlLevel>
+	<Enum id="WdContentControlLevel">
 		<Item name="wdContentControlLevelCell" value="3" description="表示表单元格周围的内容控件。"/>
 		<Item name="wdContentControlLevelInline" value="0" description="表示一个内容控件，该控件将内容括在单个段落内。"/>
 		<Item name="wdContentControlLevelParagraph" value="1" description="表示包围一个或多个完整段落的内容控件。"/>
 		<Item name="wdContentControlLevelRow" value="2" description="表示包围表行的内容控件。"/>
-	</WdContentControlLevel>
+	</Enum>
 	<!--WdContentControlType 枚举 (Word) ====指示内容控件的类型。-->
-	<WdContentControlType>
+	<Enum id="WdContentControlType">
 		<Item name="wdContentControlBuildingBlockGallery" value="5" description="指定生成块库内容控件。"/>
 		<Item name="wdContentControlCheckbox" value="8 " description="指定复选框内容控件。"/>
 		<Item name="wdContentControlComboBox" value="3" description="指定组合框内容控件。"/>
@@ -679,15 +679,15 @@
 		<Item name="wdContentControlRepeatingSection" value="9 " description="指定重复的部分内容控件。"/>
 		<Item name="wdContentControlRichText" value="0" description="指定 RTF 内容控件。"/>
 		<Item name="wdContentControlText" value="1" description="指定文本内容控件。"/>
-	</WdContentControlType>
+	</Enum>
 	<!--WdContinue 枚举 (Word) ====指定是否可以继续使用上一列表中的格式。-->
-	<WdContinue>
+	<Enum id="WdContinue">
 		<Item name="wdContinueDisabled" value="0" description="不能继续使用上一列表中的格式。"/>
 		<Item name="wdContinueList" value="2" description="可以继续使用上一列表中的格式。"/>
 		<Item name="wdResetList" value="1" description="可以重新开始编号。"/>
-	</WdContinue>
+	</Enum>
 	<!--WdCountry 枚举 (Word) ====指定当前系统的国家/地区设置。-->
-	<WdCountry>
+	<Enum id="WdCountry">
 		<Item name="wdArgentina" value="54" description="阿根廷"/>
 		<Item name="wdBrazil" value="55" description="巴西"/>
 		<Item name="wdCanada" value="2" description="加拿大"/>
@@ -712,21 +712,21 @@
 		<Item name="wdUK" value="44" description="英国"/>
 		<Item name="wdUS" value="1" description="美国"/>
 		<Item name="wdVenezuela" value="58" description="委内瑞拉"/>
-	</WdCountry>
+	</Enum>
 	<!--WdCursorMovement 枚举 (Word) ====指定双向文字中插入点前进的方式。-->
-	<WdCursorMovement>
+	<Enum id="WdCursorMovement">
 		<Item name="wdCursorMovementLogical" value="0" description="插入点根据 Microsoft Word 检测到的语言的方向前进。"/>
 		<Item name="wdCursorMovementVisual" value="1" description="插入点前进至下一个可见的邻近字符。"/>
-	</WdCursorMovement>
+	</Enum>
 	<!--WdCursorType 枚举 (Word) ====指定光标的状态（形状）。-->
-	<WdCursorType>
+	<Enum id="WdCursorType">
 		<Item name="wdCursorIBeam" value="1" description="I 形光标形状。"/>
 		<Item name="wdCursorNormal" value="2" description="正常光标形状。 默认;cursor 采用 Windows 或应用程序指定的形状。"/>
 		<Item name="wdCursorNorthwestArrow" value="3" description="方向从左上角开始的斜线光标形状。"/>
 		<Item name="wdCursorWait" value="0" description="沙漏光标形状。"/>
-	</WdCursorType>
+	</Enum>
 	<!--WdCustomLabelPageSize 枚举 (Word) ====指定自定义邮件标签的页面大小。-->
-	<WdCustomLabelPageSize>
+	<Enum id="WdCustomLabelPageSize">
 		<Item name="wdCustomLabelA4" value="2" description="A4 纵向标签尺寸。"/>
 		<Item name="wdCustomLabelA4LS" value="3" description="A4 横向标签尺寸。"/>
 		<Item name="wdCustomLabelA5" value="4" description="A5 纵向标签尺寸。"/>
@@ -741,14 +741,14 @@
 		<Item name="wdCustomLabelMini" value="7 " description="微型标签尺寸。"/>
 		<Item name="wdCustomLabelVertHalfSheet" value="9 " description="半页纵向标签尺寸。"/>
 		<Item name="wdCustomLabelVertHalfSheetLS" value="10" description="半页横向标签尺寸。"/>
-	</WdCustomLabelPageSize>
+	</Enum>
 	<!--WdDateLanguage 枚举 (Word) ====指定要应用于当前日期和/或时间的语言格式。-->
-	<WdDateLanguage>
+	<Enum id="WdDateLanguage">
 		<Item name="wdDateLanguageBidi" value="10" description="双向的日期/时间格式。"/>
 		<Item name="wdDateLanguageLatin" value="1033" description="拉丁文日期/时间格式。"/>
-	</WdDateLanguage>
+	</Enum>
 	<!--WdDefaultFilePath 枚举 (Word) ====为与 Microsoft Word 相关的文件指定默认文件夹。-->
-	<WdDefaultFilePath>
+	<Enum id="WdDefaultFilePath">
 		<Item name="wdAutoRecoverPath" value="5" description="自动恢复文件的路径。"/>
 		<Item name="wdBorderArtPath" value="19" description="艺术型边框路径。"/>
 		<Item name="wdCurrentFolderPath" value="14" description="当前文件夹路径。"/>
@@ -766,27 +766,27 @@
 		<Item name="wdUserOptionsPath" value="4" description="用户选项路径。"/>
 		<Item name="wdUserTemplatesPath" value="2" description="用户模板路径。"/>
 		<Item name="wdWorkgroupTemplatesPath" value="3" description="工作组模板路径。"/>
-	</WdDefaultFilePath>
+	</Enum>
 	<!--WdDefaultListBehavior 枚举 (Word) ====指定列表的默认列表行为。-->
-	<WdDefaultListBehavior>
+	<Enum id="WdDefaultListBehavior">
 		<Item name="wdWord10ListBehavior" value="2" description="使用与 Microsoft Word 2002 兼容的格式。"/>
 		<Item name="wdWord8ListBehavior" value="0" description="使用与 Microsoft Word 97 兼容的格式。"/>
 		<Item name="wdWord9ListBehavior" value="1" description="使用在 Microsoft Word 2000 中引入的面向网站的格式。"/>
-	</WdDefaultListBehavior>
+	</Enum>
 	<!--WdDefaultTableBehavior 枚举 (Word) ====指定 Microsoft Word 是否要根据表格单元格的内容自动调整其大小（“自动调整”功能）。-->
-	<WdDefaultTableBehavior>
+	<Enum id="WdDefaultTableBehavior">
 		<Item name="wdWord8TableBehavior" value="0" description="禁用自动调整。 默认值。"/>
 		<Item name="wdWord9TableBehavior" value="1" description="启用"自动调整"功能。"/>
-	</WdDefaultTableBehavior>
+	</Enum>
 	<!--WdDeleteCells 枚举 (Word) ====指定要用删除单元格操作从表格中删除的单元格区域，或删除后剩余单元格的行为。-->
-	<WdDeleteCells>
+	<Enum id="WdDeleteCells">
 		<Item name="wdDeleteCellsEntireColumn" value="3" description="从表格中删除整列单元格。"/>
 		<Item name="wdDeleteCellsEntireRow" value="2" description="从表格中删除整行单元格。"/>
 		<Item name="wdDeleteCellsShiftLeft" value="0" description="在删除某一单元格或单元格区域后将删除操作所针对行中剩余的单元格左移。"/>
 		<Item name="wdDeleteCellsShiftUp" value="1" description="在删除某一单元格或单元格区域后将删除操作所针对列中剩余的单元格上移。"/>
-	</WdDeleteCells>
+	</Enum>
 	<!--WdDeletedTextMark 枚举 (Word) ====指定启用修订时删除文字的格式。-->
-	<WdDeletedTextMark>
+	<Enum id="WdDeletedTextMark">
 		<Item name="wdDeletedTextMarkBold" value="5" description="以加粗样式显示删除文字。"/>
 		<Item name="wdDeletedTextMarkCaret" value="2" description="用脱字号标记删除文字。"/>
 		<Item name="wdDeletedTextMarkColorOnly" value="9 " description="用指定颜色显示删除文字（默认值为红色）。"/>
@@ -798,14 +798,14 @@
 		<Item name="wdDeletedTextMarkStrikeThrough" value="1" description="用删除线符号标记删除文字。"/>
 		<Item name="wdDeletedTextMarkUnderline" value="7 " description="给删除文字加下划线。"/>
 		<Item name="wdDeletedTextMarkDoubleStrikeThrough" value="10" description="用双删除线符号标记删除文字。"/>
-	</WdDeletedTextMark>
+	</Enum>
 	<!--WdDiacriticColor 枚举 (Word) ====指定是否向双向语言或拉丁样式语言的音调符号应用不同的颜色。-->
-	<WdDiacriticColor>
+	<Enum id="WdDiacriticColor">
 		<Item name="wdDiacriticColorBidi" value="0" description="双向语言（阿拉伯语、希伯来语等）。"/>
 		<Item name="wdDiacriticColorLatin" value="1" description="拉丁样式的语言。"/>
-	</WdDiacriticColor>
+	</Enum>
 	<!--WdDictionaryType 枚举 (Word) ====指定校对工具类型。-->
-	<WdDictionaryType>
+	<Enum id="WdDictionaryType">
 		<Item name="wdGrammar" value="1" description="语法。"/>
 		<Item name="wdHangulHanjaConversion" value="8 " description="用于在朝鲜语和朝鲜语汉字之间转换的词典。 只有通过 Microsoft Office 语言设置启用了朝鲜语支持时才可用。"/>
 		<Item name="wdHangulHanjaConversionCustom" value="9 " description="用于在朝鲜语和朝鲜语汉字之间转换的自定义词典。"/>
@@ -816,55 +816,55 @@
 		<Item name="wdSpellingLegal" value="6" description="法律词典。"/>
 		<Item name="wdSpellingMedical" value="7 " description="医学词典。"/>
 		<Item name="wdThesaurus" value="2" description="辞典。"/>
-	</WdDictionaryType>
+	</Enum>
 	<!--WdDisableFeaturesIntroducedAfter 枚举 (Word) ====指定 Microsoft Word 版本，禁用该版本之后引入的所有功能。-->
-	<WdDisableFeaturesIntroducedAfter>
+	<Enum id="WdDisableFeaturesIntroducedAfter">
 		<Item name="wd70" value="0" description="指定 Word for Windows 95 的 7.0 和 7.0a 版。"/>
 		<Item name="wd70FE" value="1" description="指定 Word for Windows 95 的 7.0 和 7.0a 版，亚洲版。"/>
 		<Item name="wd80" value="2" description="指定 Word 97 for Windows。 默认值。"/>
-	</WdDisableFeaturesIntroducedAfter>
+	</Enum>
 	<!--WdDocPartInsertOptions 枚举 (Word) ====指定如何将生成块插入文档。-->
-	<WdDocPartInsertOptions>
+	<Enum id="WdDocPartInsertOptions">
 		<Item name="wdInsertContent" value="0" description="嵌入型生成块。"/>
 		<Item name="wdInsertPage" value="2" description="页面级别生成块。"/>
 		<Item name="wdInsertParagraph" value="1" description="段落级别生成块。"/>
-	</WdDocPartInsertOptions>
+	</Enum>
 	<!--WdDocumentDirection 枚举 (Word) ====指定文档中文字的排列方向。-->
-	<WdDocumentDirection>
+	<Enum id="WdDocumentDirection">
 		<Item name="wdLeftToRight" value="0" description="从左到右。"/>
 		<Item name="wdRightToLeft" value="1" description="从右到左。"/>
-	</WdDocumentDirection>
+	</Enum>
 	<!--WdDocumentKind 枚举 (Word) ====指定 Microsoft Word 自动设置文档格式时所使用的格式类型。-->
-	<WdDocumentKind>
+	<Enum id="WdDocumentKind">
 		<Item name="wdDocumentEmail" value="2" description="Email格式。"/>
 		<Item name="wdDocumentLetter" value="1" description="信函格式。"/>
 		<Item name="wdDocumentNotSpecified" value="0" description="无指定格式。"/>
-	</WdDocumentKind>
+	</Enum>
 	<!--WdDocumentMedium 枚举 (Word) ====指定要应用主题的文档类型。-->
-	<WdDocumentMedium>
+	<Enum id="WdDocumentMedium">
 		<Item name="wdDocument" value="1" description="文档。"/>
 		<Item name="wdEmailMessage" value="0" description="Email消息。"/>
 		<Item name="wdWebPage" value="2" description="网页。"/>
-	</WdDocumentMedium>
+	</Enum>
 	<!--WdDocumentType 枚举 (Word) ====指定文档类型。-->
-	<WdDocumentType>
+	<Enum id="WdDocumentType">
 		<Item name="wdTypeDocument" value="0" description="文档。"/>
 		<Item name="wdTypeFrameset" value="2" description="框架集。"/>
 		<Item name="wdTypeTemplate" value="1" description="模板。"/>
-	</WdDocumentType>
+	</Enum>
 	<!--WdDocumentViewDirection 枚举 (Word) ====指定整个文档的对齐方式和阅读顺序。-->
-	<WdDocumentViewDirection>
+	<Enum id="WdDocumentViewDirection">
 		<Item name="wdDocumentViewLtr" value="1" description="用左对齐方式和从左向右的阅读顺序显示文档。"/>
 		<Item name="wdDocumentViewRtl" value="0" description="用右对齐方式和从右向左的阅读顺序显示文档。"/>
-	</WdDocumentViewDirection>
+	</Enum>
 	<!--WdDropPosition 枚举 (Word) ====指定首字下沉的位置。-->
-	<WdDropPosition>
+	<Enum id="WdDropPosition">
 		<Item name="wdDropMargin" value="2" description="首字下沉在左边距结束。"/>
 		<Item name="wdDropNone" value="0" description="没有首字下沉。"/>
 		<Item name="wdDropNormal" value="1" description="首字下沉在左边距开始。"/>
-	</WdDropPosition>
+	</Enum>
 	<!--WdEditionOption 枚举 (Word) ====此枚举已经被弃用，不应使用。-->
-	<WdEditionOption>
+	<Enum id="WdEditionOption">
 		<Item name="wdAutomaticUpdate" value="3" description="不支持。"/>
 		<Item name="wdCancelPublisher" value="0" description="不支持。"/>
 		<Item name="wdChangeAttributes" value="5" description="不支持。"/>
@@ -873,58 +873,58 @@
 		<Item name="wdSelectPublisher" value="2" description="不支持。"/>
 		<Item name="wdSendPublisher" value="1" description="不支持。"/>
 		<Item name="wdUpdateSubscriber" value="6" description="不支持。"/>
-	</WdEditionOption>
+	</Enum>
 	<!--WdEditionType 枚举 (Word) ====此枚举已经被弃用，不应使用。-->
-	<WdEditionType>
+	<Enum id="WdEditionType">
 		<Item name="wdPublisher" value="0" description="不支持。"/>
 		<Item name="wdSubscriber" value="1" description="不支持。"/>
-	</WdEditionType>
+	</Enum>
 	<!--WdEditorType 枚举 (Word) ====指定文档的用户或用户组。-->
-	<WdEditorType>
+	<Enum id="WdEditorType">
 		<Item name="wdEditorCurrent" value="-6" description="代表文档的当前用户。"/>
 		<Item name="wdEditorEditors" value="-5" description="代表使用"信息版权管理"的文档的"编辑"组。"/>
 		<Item name="wdEditorEveryone" value="-1" description="代表打开文档的所有用户。"/>
 		<Item name="wdEditorOwners" value="-4" description="代表使用"信息版权管理"的文档的"所有者"组。"/>
-	</WdEditorType>
+	</Enum>
 	<!--WdEmailHTMLFidelity 枚举 (Word) ====指定是保留还是删除显示内容时不需要的 HTML 标记。-->
-	<WdEmailHTMLFidelity>
+	<Enum id="WdEmailHTMLFidelity">
 		<Item name="wdEmailHTMLFidelityHigh" value="3" description="按原样保留 HTML 标记。"/>
 		<Item name="wdEmailHTMLFidelityLow" value="1" description="删除不影响消息显示方式的所有 HTML 标记。"/>
 		<Item name="wdEmailHTMLFidelityMedium" value="2" description="不支持。"/>
-	</WdEmailHTMLFidelity>
+	</Enum>
 	<!--WdEmphasisMark 枚举 (Word) ====指定用于字符或指定字符串的着重号类型。-->
-	<WdEmphasisMark>
+	<Enum id="WdEmphasisMark">
 		<Item name="wdEmphasisMarkNone" value="0" description="没有着重号。"/>
 		<Item name="wdEmphasisMarkOverComma" value="2" description="一个逗号。"/>
 		<Item name="wdEmphasisMarkOverSolidCircle" value="1" description="黑色实心圈。"/>
 		<Item name="wdEmphasisMarkOverWhiteCircle" value="3" description="白色空心圈。"/>
 		<Item name="wdEmphasisMarkUnderSolidCircle" value="4" description="黑色实心圈。"/>
-	</WdEmphasisMark>
+	</Enum>
 	<!--WdEnableCancelKey 枚举 (Word) ====指定 Ctrl+Break 能否中断宏。-->
-	<WdEnableCancelKey>
+	<Enum id="WdEnableCancelKey">
 		<Item name="wdCancelDisabled" value="0" description="禁止 Ctrl+Break 中断宏。"/>
 		<Item name="wdCancelInterrupt" value="1" description="允许 Ctrl+Break 中断宏。"/>
-	</WdEnableCancelKey>
+	</Enum>
 	<!--WdEncloseStyle 枚举 (Word) ====指定圈号的相对大小。-->
-	<WdEncloseStyle>
+	<Enum id="WdEncloseStyle">
 		<Item name="wdEncloseStyleLarge" value="2" description="圈号较大。"/>
 		<Item name="wdEncloseStyleNone" value="0" description="圈号使用默认大小。"/>
 		<Item name="wdEncloseStyleSmall" value="1" description="圈号较小。"/>
-	</WdEncloseStyle>
+	</Enum>
 	<!--WdEnclosureType 枚举 (Word) ====指定要用作圈号的符号类型。-->
-	<WdEnclosureType>
+	<Enum id="WdEnclosureType">
 		<Item name="wdEnclosureCircle" value="0" description="圆圈。"/>
 		<Item name="wdEnclosureDiamond" value="3" description="菱形。"/>
 		<Item name="wdEnclosureSquare" value="1" description="方形。"/>
 		<Item name="wdEnclosureTriangle" value="2" description="三角形。"/>
-	</WdEnclosureType>
+	</Enum>
 	<!--WdEndnoteLocation 枚举 (Word) ====指定尾注的位置。-->
-	<WdEndnoteLocation>
+	<Enum id="WdEndnoteLocation">
 		<Item name="wdEndOfDocument" value="1" description="在活动文档的末尾。"/>
 		<Item name="wdEndOfSection" value="0" description="在当前节的末尾。"/>
-	</WdEndnoteLocation>
+	</Enum>
 	<!--WdEnvelopeOrientation 枚举 (Word) ====指定信封的方向。-->
-	<WdEnvelopeOrientation>
+	<Enum id="WdEnvelopeOrientation">
 		<Item name="wdCenterClockwise" value="7 " description="居中顺时针方向。"/>
 		<Item name="wdCenterLandscape" value="4" description="居中横向。"/>
 		<Item name="wdCenterPortrait" value="1" description="居中纵向。"/>
@@ -934,63 +934,63 @@
 		<Item name="wdRightClockwise" value="8 " description="靠右顺时针方向。"/>
 		<Item name="wdRightLandscape" value="5" description="靠右横向。"/>
 		<Item name="wdRightPortrait" value="2" description="靠右纵向。"/>
-	</WdEnvelopeOrientation>
+	</Enum>
 	<!--WdExportCreateBookmarks 枚举 (Word) ====指定导出文档时包括哪些书签。-->
-	<WdExportCreateBookmarks>
+	<Enum id="WdExportCreateBookmarks">
 		<Item name="wdExportCreateHeadingBookmarks" value="1" description="在导出的文档中为每个 Microsoft Word 标题创建一个书签，Word 标题只包含主文档和文本框中的标题，不包含页眉、页脚、尾注、脚注或注释中的标题。"/>
 		<Item name="wdExportCreateNoBookmarks" value="0" description="不在导出的文档中创建书签。"/>
 		<Item name="wdExportCreateWordBookmarks" value="2" description="在导出的文档中为每个 Word 书签创建一个书签，Word 书签包括除页眉和页脚中所含书签以外的所有书签。"/>
-	</WdExportCreateBookmarks>
+	</Enum>
 	<!--WdExportFormat 枚举 (Word) ====指定用于导出文档的格式。-->
-	<WdExportFormat>
+	<Enum id="WdExportFormat">
 		<Item name="wdExportFormat PDF" value="17 " description="将文档导出为 PDF 格式。"/>
 		<Item name="wdExportFormatXPS" value="18 " description="将文档导出为 XML Paper Specification (XPS) 格式。"/>
-	</WdExportFormat>
+	</Enum>
 	<!--WdExportItem 枚举 (Word) ====指定导出文档时是否带标记。-->
-	<WdExportItem>
+	<Enum id="WdExportItem">
 		<Item name="wdExportDocumentContent" value="0" description="导出文档时不带标记。"/>
 		<Item name="wdExportDocumentWithMarkup" value="7 " description="导出文档时带标记。"/>
-	</WdExportItem>
+	</Enum>
 	<!--WdExportOptimizeFor 枚举 (Word) ====指定导出文档的分辨率和质量。-->
-	<WdExportOptimizeFor>
+	<Enum id="WdExportOptimizeFor">
 		<Item name="wdExportOptimizeForOnScreen" value="1" description="针对屏幕显示进行导出，质量较差，生成的文件大小较小。"/>
 		<Item name="wdExportOptimizeForPrint" value="0" description="导出打印，质量更高，文件大小更大。"/>
-	</WdExportOptimizeFor>
+	</Enum>
 	<!--WdExportRange 枚举 (Word) ====指定要导出文档中的多少内容。-->
-	<WdExportRange>
+	<Enum id="WdExportRange">
 		<Item name="wdExportAllDocument" value="0" description="导出整个文档。"/>
 		<Item name="wdExportCurrentPage" value="2" description="导出当前页。"/>
 		<Item name="wdExportFromTo" value="3" description="使用起始和结束位置导出某个范围的内容。"/>
 		<Item name="wdExportSelection" value="1" description="导出当前选择的内容。"/>
-	</WdExportRange>
+	</Enum>
 	<!--WdFarEastLineBreakLanguageID 枚举 (Word) ====指定在所指定文档或模板中对文本进行换行时使用的东亚语言。-->
-	<WdFarEastLineBreakLanguageID>
+	<Enum id="WdFarEastLineBreakLanguageID">
 		<Item name="wdLineBreakJapanese" value="1041" description="日语。"/>
 		<Item name="wdLineBreakKorean" value="1042" description="朝鲜语。"/>
 		<Item name="wdLineBreakSimplifiedChinese" value="2052" description="简体中文。"/>
 		<Item name="wdLineBreakTraditionalChinese" value="1028" description="繁体中文。"/>
-	</WdFarEastLineBreakLanguageID>
+	</Enum>
 	<!--WdFarEastLineBreakLevel 枚举 (Word) ====为所指定文档指定换行符控件级别。-->
-	<WdFarEastLineBreakLevel>
+	<Enum id="WdFarEastLineBreakLevel">
 		<Item name="wdFarEastLineBreakLevelCustom" value="2" description="自定义换行符控件。"/>
 		<Item name="wdFarEastLineBreakLevelNormal" value="0" description="普通换行符控件。"/>
 		<Item name="wdFarEastLineBreakLevelStrict" value="1" description="严格换行符控件。"/>
-	</WdFarEastLineBreakLevel>
+	</Enum>
 	<!--WdFieldKind 枚举 (Word) ====指定 Field 对象的字段的类型。-->
-	<WdFieldKind>
+	<Enum id="WdFieldKind">
 		<Item name="wdFieldKindCold" value="3" description="没有结果的域，如索引项 (XE) 域、目录项 (TC) 域或 Private 域。"/>
 		<Item name="wdFieldKindHot" value="1" description="每次显示或页面重新设置格式时自动更新的域，但也可进行手动更新（如 INCLUDEPICTURE 或 FORMDROPDOWN）。"/>
 		<Item name="wdFieldKindNone" value="0" description="无效的域（如其中没有任何内容的一对域字符）。"/>
 		<Item name="wdFieldKindWarm" value="2" description="能进行更新并有结果的域。 该类型包括随数据源变化而自动更新的域，也包括那些可以手动进行更新的域（如 DATE 或 INCLUDETEXT）。"/>
-	</WdFieldKind>
+	</Enum>
 	<!--WdFieldShading 枚举 (Word) ====指定何时应用窗体域的屏幕底纹。-->
-	<WdFieldShading>
+	<Enum id="WdFieldShading">
 		<Item name="wdFieldShadingAlways" value="1" description="始终应用。"/>
 		<Item name="wdFieldShadingNever" value="0" description="从不应用。"/>
 		<Item name="wdFieldShadingWhenSelected" value="2" description="只在选中窗体域时才应用。"/>
-	</WdFieldShading>
+	</Enum>
 	<!--WdFieldType 枚举 (Word) ====指定 Microsoft Word 域。 除非另有说明，否则本枚举中介绍的域类型都可以通过 "域" 对话框以交互方式添加到 Word 文档中。 有关特定域代码的详细信息，请参阅 Word 帮助。-->
-	<WdFieldType>
+	<Enum id="WdFieldType">
 		<Item name="wdFieldAddin" value="81" description="Add-in 域。 不能通过 "域" 对话框提供。 用于存储不在用户界面上显示的数据。"/>
 		<Item name="wdFieldAddressBlock" value="93" description="AddressBlock 域。"/>
 		<Item name="wdFieldAdvance" value="84" description="Advance 域。"/>
@@ -1087,9 +1087,9 @@
 		<Item name="wdFieldUserName" value="60" description="UserName 域。"/>
 		<Item name="wdFieldBibliography" value="97" description="Bibliography 域。"/>
 		<Item name="wdFieldCitation" value="96" description="Citation 域。"/>
-	</WdFieldType>
+	</Enum>
 	<!--WdFindMatch 枚举 (Word) ====此枚举已经被弃用，不应使用。-->
-	<WdFindMatch>
+	<Enum id="WdFindMatch">
 		<Item name="wdMatchAnyCharacter" value="65599" description="不支持。"/>
 		<Item name="wdMatchAnyDigit" value="65567" description="不支持。"/>
 		<Item name="wdMatchAnyLetter" value="65583" description="不支持。"/>
@@ -1111,31 +1111,31 @@
 		<Item name="wdMatchSectionBreak" value="65580" description="不支持。"/>
 		<Item name="wdMatchTabCharacter" value="9 " description="不支持。"/>
 		<Item name="wdMatchWhiteSpace" value="65655" description="不支持。"/>
-	</WdFindMatch>
+	</Enum>
 	<!--WdFindWrap 枚举 (Word) ====指定在为查找操作指定某一所选内容或范围，但未在其中找到搜索文字时的换行行为。-->
-	<WdFindWrap>
+	<Enum id="WdFindWrap">
 		<Item name="wdFindAsk" value="2" description="搜索完所选内容或范围后，Microsoft Word 会显示一条消息，询问是否搜索文档的其余部分。"/>
 		<Item name="wdFindContinue" value="1" description="到达搜索范围的开始或结尾时，继续执行查找操作。"/>
 		<Item name="wdFindStop" value="0" description="到达搜索范围的开始或结尾时，停止执行查找操作。"/>
-	</WdFindWrap>
+	</Enum>
 	<!--WdFlowDirection 枚举 (Word) ====指定从一个文本列到下一个文本列的文字排列方向。-->
-	<WdFlowDirection>
+	<Enum id="WdFlowDirection">
 		<Item name="wdFlowLtr" value="0" description="列中的文字从左向右排列。"/>
 		<Item name="wdFlowRtl" value="1" description="列中的文字从右向左排列。"/>
-	</WdFlowDirection>
+	</Enum>
 	<!--WdFontBias 枚举 (Word) ====为符号指定字体斜线。-->
-	<WdFontBias>
+	<Enum id="WdFontBias">
 		<Item name="wdFontBiasDefault" value="0" description="默认字体斜线。"/>
 		<Item name="wdFontBiasDontCare" value="255" description="不指定字体斜线。"/>
 		<Item name="wdFontBiasFareast" value="1" description="亚洲语言字体斜线。"/>
-	</WdFontBias>
+	</Enum>
 	<!--WdFootnoteLocation 枚举 (Word) ====指定脚注的位置。-->
-	<WdFootnoteLocation>
+	<Enum id="WdFootnoteLocation">
 		<Item name="wdBeneathText" value="1" description="在当前文本下方。"/>
 		<Item name="wdBottomOfPage" value="0" description="在当前页面底部。"/>
-	</WdFootnoteLocation>
+	</Enum>
 	<!--WdFramePosition 枚举 (Word) ====指定按其计算图文框位置的参考点。-->
-	<WdFramePosition>
+	<Enum id="WdFramePosition">
 		<Item name="wdFrameBottom" value="-999997" description="下边距。"/>
 		<Item name="wdFrameCenter" value="-999995" description="文档中央。"/>
 		<Item name="wdFrameInside" value="-999994" description="框架内的内容。"/>
@@ -1143,48 +1143,48 @@
 		<Item name="wdFrameOutside" value="-999993" description="框架外的内容。"/>
 		<Item name="wdFrameRight" value="-999996" description="右边距。"/>
 		<Item name="wdFrameTop" value="-999999" description="上边距。"/>
-	</WdFramePosition>
+	</Enum>
 	<!--WdFramesetNewFrameLocation 枚举 (Word) ====指定新图文框相对于现有图文框的位置。-->
-	<WdFramesetNewFrameLocation>
+	<Enum id="WdFramesetNewFrameLocation">
 		<Item name="wdFramesetNewFrameAbove" value="0" description="在现有图文框上方。"/>
 		<Item name="wdFramesetNewFrameBelow" value="1" description="在现有图文框下方。"/>
 		<Item name="wdFramesetNewFrameLeft" value="3" description="在现有图文框左侧。"/>
 		<Item name="wdFramesetNewFrameRight" value="2" description="在现有图文框右侧。"/>
-	</WdFramesetNewFrameLocation>
+	</Enum>
 	<!--WdFramesetSizeType 枚举 (Word) ====指定如何解释框架页上所指定框架的高度或宽度。-->
-	<WdFramesetSizeType>
+	<Enum id="WdFramesetSizeType">
 		<Item name="wdFramesetSizeTypeFixed" value="1" description="Microsoft Word 将所指定框架的高度或宽度解释为固定值（以磅为单位）。"/>
 		<Item name="wdFramesetSizeTypePercent" value="0" description="Word 将所指定框架的高度或宽度解释为屏幕高度或宽度的百分比。"/>
 		<Item name="wdFramesetSizeTypeRelative" value="2" description="Word 将所指定框架的高度或宽度解释为相对于框架页上其他框架的高度或宽度。"/>
-	</WdFramesetSizeType>
+	</Enum>
 	<!--WdFramesetType 枚举 (Word) ====指定框架的类型。-->
-	<WdFramesetType>
+	<Enum id="WdFramesetType">
 		<Item name="wdFramesetTypeFrame" value="1" description="单个框架。"/>
 		<Item name="wdFramesetTypeFrameset" value="0" description="框架集。"/>
-	</WdFramesetType>
+	</Enum>
 	<!--WdFrameSizeRule 枚举 (Word) ====指定 Word 如何解释用于确定框架高度或宽度的规则。-->
-	<WdFrameSizeRule>
+	<Enum id="WdFrameSizeRule">
 		<Item name="wdFrameAtLeast" value="1" description="设置的高度或宽度的值等于或大于指定的 高度 属性或 宽度 属性的值。"/>
 		<Item name="wdFrameAuto" value="0" description="按照框架中项目的高度或宽度设置框架的高度或宽度。"/>
 		<Item name="wdFrameExact" value="2" description="高度 属性或 宽度 属性所指定的确切值设置的高度或宽度。"/>
-	</WdFrameSizeRule>
+	</Enum>
 	<!--WdFrenchSpeller 枚举 (Word) ====指示在使用法语拼写检查词典时所使用的法语版本。-->
-	<WdFrenchSpeller>
+	<Enum id="WdFrenchSpeller">
 		<Item name="wdFrenchBoth" value="0" description="在检查法语拼写时同时使用后期修订和前期修订法语词典。"/>
 		<Item name="wdFrenchPostReform" value="2" description="在检查法语拼写时只使用后期修订法语词典。"/>
 		<Item name="wdFrenchPreReform" value="1" description="在检查法语拼写时只使用前期修订法语词典。"/>
-	</WdFrenchSpeller>
+	</Enum>
 	<!--WdGoToDirection 枚举 (Word) ====指定要相对于对象或其自身移动所选内容或插入点的位置。-->
-	<WdGoToDirection>
+	<Enum id="WdGoToDirection">
 		<Item name="wdGoToAbsolute" value="1" description="绝对位置。"/>
 		<Item name="wdGoToFirst" value="1" description="所指定对象的第一个实例。"/>
 		<Item name="wdGoToLast" value="-1" description="所指定对象的最后一个实例。"/>
 		<Item name="wdGoToNext" value="2" description="所指定对象的下一个实例。"/>
 		<Item name="wdGoToPrevious" value="3" description="所指定对象的上一个实例。"/>
 		<Item name="wdGoToRelative" value="2" description="相对于当前位置的位置。"/>
-	</WdGoToDirection>
+	</Enum>
 	<!--WdGoToItem 枚举 (Word) ====指定要将插入点或所选内容移到其正前方的项目类型。-->
-	<WdGoToItem>
+	<Enum id="WdGoToItem">
 		<Item name="wdGoToBookmark" value="-1" description="书签。"/>
 		<Item name="wdGoToComment" value="6" description="批注。"/>
 		<Item name="wdGoToEndnote" value="5" description="尾注。"/>
@@ -1202,46 +1202,46 @@
 		<Item name="wdGoToSection" value="0" description="一节。"/>
 		<Item name="wdGoToSpellingError" value="13" description="拼写错误。"/>
 		<Item name="wdGoToTable" value="2" description="一个表格。"/>
-	</WdGoToItem>
+	</Enum>
 	<!--WdGranularity 枚举 (Word) ====指定在比较两个文档时所要标记的修订的级别。-->
-	<WdGranularity>
+	<Enum id="WdGranularity">
 		<Item name="wdGranularityCharLevel" value="0" description="在字符级别修订。"/>
 		<Item name="wdGranularityWordLevel" value="1" description="在字级别修订。"/>
-	</WdGranularity>
+	</Enum>
 	<!--WdGutterStyle 枚举 (Word) ====指定装订线显示在文档中的位置。-->
-	<WdGutterStyle>
+	<Enum id="WdGutterStyle">
 		<Item name="wdGutterPosLeft" value="0" description="左侧。"/>
 		<Item name="wdGutterPosRight" value="2" description="右侧。"/>
 		<Item name="wdGutterPosTop" value="1" description="顶部。"/>
-	</WdGutterStyle>
+	</Enum>
 	<!--WdGutterStyleOld 枚举 (Word) ====指定装订线样式应符合从左向右文字排列规则还是从右向左文字排列规则。-->
-	<WdGutterStyleOld>
+	<Enum id="WdGutterStyleOld">
 		<Item name="wdGutterStyleBidi" value="2" description="应使用双向语言装订线才能符合从右向左文字排列规则。"/>
 		<Item name="wdGutterStyleLatin" value="-10" description="应使用拉丁文装订线才能符合从左向右文字排列规则。"/>
-	</WdGutterStyleOld>
+	</Enum>
 	<!--WdHeaderFooterIndex 枚举 (Word) ====返回文档或节中的指定页眉或页脚。-->
-	<WdHeaderFooterIndex>
+	<Enum id="WdHeaderFooterIndex">
 		<Item name="wdHeaderFooterEvenPages" value="3" description="返回偶数页上的所有页眉或页脚。"/>
 		<Item name="wdHeaderFooterFirstPage" value="2" description="返回文档或节中的第一个页眉或页脚。"/>
 		<Item name="wdHeaderFooterPrimary" value="1" description="返回文档或节中除第一页外所有页上的页眉或页脚。"/>
-	</WdHeaderFooterIndex>
+	</Enum>
 	<!--WdHeadingSeparator 枚举 (Word) ====指定两个索引标题之间的文字分隔符类型。-->
-	<WdHeadingSeparator>
+	<Enum id="WdHeadingSeparator">
 		<Item name="wdHeadingSeparatorBlankLine" value="1" description="空行。"/>
 		<Item name="wdHeadingSeparatorLetter" value="2" description="指定的字母。"/>
 		<Item name="wdHeadingSeparatorLetterFull" value="4" description="指定的大写字母。"/>
 		<Item name="wdHeadingSeparatorLetterLow" value="3" description="指定的小写字符。"/>
 		<Item name="wdHeadingSeparatorNone" value="0" description="没有分隔符。"/>
-	</WdHeadingSeparator>
+	</Enum>
 	<!--WdHebSpellStart 枚举 (Word) ====指定希伯来语拼写检查将遵循的规则。-->
-	<WdHebSpellStart>
+	<Enum id="WdHebSpellStart">
 		<Item name="wdFullScript" value="0" description="拼写检查遵循常规的书写规则，即希伯来语言学院规定的不包含音调符号的文字的书写规则。"/>
 		<Item name="wdMixedAuthorizedScript" value="3" description="拼写检查遵循常规和传统的拼写规则，但在任何系统内不允许的任何拼写变体和任何无法完整识别的单词都作为潜在的错误突出显示。"/>
 		<Item name="wdMixedScript" value="2" description="拼写检查遵循常规和传统的书写规则并允许非常规的书写变体。 仅将完全无法识别的单词作为潜在的错误突出显示。"/>
 		<Item name="wdPartialScript" value="1" description="拼写检查遵循仅用于带音调符号的文字的传统书写规则。"/>
-	</WdHebSpellStart>
+	</Enum>
 	<!--WdHelpType 枚举 (Word) ====指定要显示的帮助主题或窗口的类型。-->
-	<WdHelpType>
+	<Enum id="WdHelpType">
 		<Item name="wdHelp" value="0" description="显示 "帮助主题" 对话框。"/>
 		<Item name="wdHelpAbout" value="1" description="显示 "关于 Microsoft Word" 对话框。"/>
 		<Item name="wdHelpActiveWindow" value="2" description="显示描述与当前视图或窗格相关的命令的帮助。"/>
@@ -1256,32 +1256,32 @@
 		<Item name="wdHelpQuickPreview" value="8 " description="显示快速预览。"/>
 		<Item name="wdHelpSearch" value="9 " description="显示 "帮助主题" 对话框。"/>
 		<Item name="wdHelpUsingHelp" value="10" description="显示描述如何使用帮助的帮助主题列表。"/>
-	</WdHelpType>
+	</Enum>
 	<!--WdHighAnsiText 枚举 (Word) ====指定 Word 如何解释高端 ANSI 字符。-->
-	<WdHighAnsiText>
+	<Enum id="WdHighAnsiText">
 		<Item name="wdAutoDetectHighAnsiFarEast" value="2" description="只有在 Microsoft Word 自动检测到东亚语言文字时，Word 才将高端 ANSI 字符译码为东亚语言字符。"/>
 		<Item name="wdHighAnsiIsFarEast" value="0" description="Word 不将任何高端 ANSI 字符译码为东亚字符。"/>
 		<Item name="wdHighAnsiIsHighAnsi" value="1" description="Word 将所有高端 ANSI 字符译码为东亚字符。"/>
-	</WdHighAnsiText>
+	</Enum>
 	<!--WdHorizontalInVerticalType 枚举 (Word) ====指定竖排文字中设置的横向文字格式。-->
-	<WdHorizontalInVerticalType>
+	<Enum id="WdHorizontalInVerticalType">
 		<Item name="wdHorizontalInVerticalFitInLine" value="1" description="根据竖排文字行调整横向文字。"/>
 		<Item name="wdHorizontalInVerticalNone" value="0" description="不对横向文字应用格式。"/>
 		<Item name="wdHorizontalInVerticalResizeLine" value="2" description="根据横向文字调整竖排文字行。"/>
-	</WdHorizontalInVerticalType>
+	</Enum>
 	<!--WdHorizontalLineAlignment 枚举 (Word) ====指定横线的对齐方式。-->
-	<WdHorizontalLineAlignment>
+	<Enum id="WdHorizontalLineAlignment">
 		<Item name="wdHorizontalLineAlignCenter" value="1" description="居中。"/>
 		<Item name="wdHorizontalLineAlignLeft" value="0" description="左对齐。"/>
 		<Item name="wdHorizontalLineAlignRight" value="2" description="右对齐。"/>
-	</WdHorizontalLineAlignment>
+	</Enum>
 	<!--WdHorizontalLineWidthType 枚举 (Word) ====指定 Word 如何解释指定横线的宽度（长度）。-->
-	<WdHorizontalLineWidthType>
+	<Enum id="WdHorizontalLineWidthType">
 		<Item name="wdHorizontalLineFixedWidth" value="-2" description="Word 将指定的横线的宽度 (长度) 解释为固定值 (以磅为单位)。 这是水平线添加了 AddHorizontalLine 方法的默认值。 设置一条横线与关联的 InlineShape 对象的 Width 属性将 WidthType 属性设置为此值。"/>
 		<Item name="wdHorizontalLinePercentWidth" value="-1" description="Word 将指定的横线的宽度 (长度) 解释为屏幕宽度的百分比。 这是水平线添加了 AddHorizontalLineStandard 方法的默认值。 在一条水平线上设置 PercentWidth 属性将 WidthType 属性设置为此值。"/>
-	</WdHorizontalLineWidthType>
+	</Enum>
 	<!--Word)  (WdIMEMode 枚举====指定日文输入法编辑器 (IME) 的默认启动模式。-->
-	<WdIMEMode>
+	<Enum id="WdIMEMode">
 		<Item name="wdIMEModeAlpha" value="8 " description="激活输入法的半角拉丁文模式。"/>
 		<Item name="wdIMEModeAlphaFull" value="7 " description="激活输入法的全角拉丁文模式。"/>
 		<Item name="wdIMEModeHangul" value="10" description="激活输入法的半角朝鲜语模式。"/>
@@ -1292,9 +1292,9 @@
 		<Item name="wdIMEModeNoControl" value="0" description="不更改输入法模式。"/>
 		<Item name="wdIMEModeOff" value="2" description="关闭输入法并激活拉丁文输入方式。"/>
 		<Item name="wdIMEModeOn" value="1" description="激活输入法。"/>
-	</WdIMEMode>
+	</Enum>
 	<!--WdIndexFilter 枚举 (Word) ====指定 Microsoft Word 对指定索引中各项的第一个字符进行分类的方式。-->
-	<WdIndexFilter>
+	<Enum id="WdIndexFilter">
 		<Item name="wdIndexFilterAiueo" value="1" description="日文字使用 AIUEO 字母表示方法。"/>
 		<Item name="wdIndexFilterAkasatana" value="2" description="日文字使用 Akasatana。"/>
 		<Item name="wdIndexFilterChosung" value="3" description="韩文字使用 Chosung。"/>
@@ -1302,9 +1302,9 @@
 		<Item name="wdIndexFilterLow" value="4" description="日文字使用 Akasatana。"/>
 		<Item name="wdIndexFilterMedium" value="5" description="日文字使用 AIUEO 字母表示方法。"/>
 		<Item name="wdIndexFilterNone" value="0" description="没有特殊筛选方式。"/>
-	</WdIndexFilter>
+	</Enum>
 	<!--WdIndexFormat 枚举 (Word) ====指定文档中索引的格式。-->
-	<WdIndexFormat>
+	<Enum id="WdIndexFormat">
 		<Item name="wdIndexBulleted" value="4" description="项目符号。"/>
 		<Item name="wdIndexClassic" value="1" description="古典型。"/>
 		<Item name="wdIndexFancy" value="2" description="流行。"/>
@@ -1312,19 +1312,19 @@
 		<Item name="wdIndexModern" value="3" description="现代。"/>
 		<Item name="wdIndexSimple" value="6" description="简明型。"/>
 		<Item name="wdIndexTemplate" value="0" description="来自模板。"/>
-	</WdIndexFormat>
+	</Enum>
 	<!--WdIndexSortBy 枚举 (Word) ====指定 Word 排序指定索引时使用的条件。-->
-	<WdIndexSortBy>
+	<Enum id="WdIndexSortBy">
 		<Item name="wdIndexSortByStroke" value="0" description="根据字符的笔画数排序。"/>
 		<Item name="wdIndexSortBySyllable" value="1" description="按发音排序。"/>
-	</WdIndexSortBy>
+	</Enum>
 	<!--WdIndexType 枚举 (Word) ====指定索引的类型。-->
-	<WdIndexType>
+	<Enum id="WdIndexType">
 		<Item name="wdIndexIndent" value="0" description="缩进索引。"/>
 		<Item name="wdIndexRunin" value="1" description="接排式索引。"/>
-	</WdIndexType>
+	</Enum>
 	<!--WdInformation 枚举 (Word) ====指定返回的涉及指定所选内容或区域的信息的类型。-->
-	<WdInformation>
+	<Enum id="WdInformation">
 		<Item name="wdActiveEndAdjustedPageNumber" value="1" description="返回包含指定的所选内容或区域的活动结尾的页面数。 如果设置一个起始页码或进行其他手动调整，则返回经调整的页码（与 wdActiveEndPageNumber 不同）。"/>
 		<Item name="wdActiveEndPageNumber" value="3" description="返回包含指定的选定内容或范围，从文档的开头开始计数的活动端的页面数。 与 wdActiveEndAdjustedPageNumber) 不同， (忽略对页码的任何手动调整。"/>
 		<Item name="wdActiveEndSectionNumber" value="2" description="返回节号，在该节中包含了指定的所选内容或区域的活动结尾。"/>
@@ -1366,9 +1366,9 @@
 		<Item name="wdVerticalPositionRelativeToTextBoundary" value="8 " description="返回所选内容或区域相对于周围最近的正文边界的上边缘的垂直位置，以磅为单位（1 磅 = 20 缇，72 磅 = 1 英寸）。 该参数可用于在图文框或表格中确定插入点位置。 如果所选内容不可见，则返回 -1。"/>
 		<Item name="wdWithInTable" value="12 " description="如果所选内容位于表格中，则该参数返回 True 。"/>
 		<Item name="wdZoomPercentage" value="19" description="按 百分比 属性返回当前设置的缩放百分比。"/>
-	</WdInformation>
+	</Enum>
 	<!--WdInlineShapeType 枚举 (Word) ====指定内嵌形状的形状类型。-->
-	<WdInlineShapeType>
+	<Enum id="WdInlineShapeType">
 		<Item name="wdInlineShape3DModel" value="19" description="3D 模型。"/>
 		<Item name="wdInlineShapeChart" value="12 " description="内嵌图表。"/>
 		<Item name="wdInlineShapeDiagram" value="13" description="内嵌关系图。"/>
@@ -1387,16 +1387,16 @@
 		<Item name="wdInlineShapeScriptAnchor" value="10" description="脚本定位标记。 指与文档一起存储的脚本块的定位标记位置。"/>
 		<Item name="wdInlineShapeSmartArt" value="15" description="SmartArt 图形。"/>
 		<Item name="wdInlineShapeWebVideo" value="16" description="作为海报帧视频网站的图片。"/>
-	</WdInlineShapeType>
+	</Enum>
 	<!--WdInsertCells 枚举 (Word) ====指定要添加到现有表格中的单元格的位置和类型。-->
-	<WdInsertCells>
+	<Enum id="WdInsertCells">
 		<Item name="wdInsertCellsEntireColumn" value="3" description="在所选内容所在列的左侧插入整列。"/>
 		<Item name="wdInsertCellsEntireRow" value="2" description="在所选内容所在行的上方插入整行。"/>
 		<Item name="wdInsertCellsShiftDown" value="1" description="在所选单元格的上方插入新单元格。"/>
 		<Item name="wdInsertCellsShiftRight" value="0" description="在所选单元格的左侧插入新单元格。"/>
-	</WdInsertCells>
+	</Enum>
 	<!--WdInsertedTextMark 枚举 (Word) ====指定启用修订功能时所插入文字的格式。-->
-	<WdInsertedTextMark>
+	<Enum id="WdInsertedTextMark">
 		<Item name="wdInsertedTextMarkBold" value="1" description="以加粗样式显示插入文字。"/>
 		<Item name="wdInsertedTextMarkColorOnly" value="5" description="用指定颜色显示插入文字。"/>
 		<Item name="wdInsertedTextMarkDoubleUnderline" value="4" description="用双下划线字符标记插入文字。"/>
@@ -1405,9 +1405,9 @@
 		<Item name="wdInsertedTextMarkStrikeThrough" value="6" description="用删除线符号标记插入文字。"/>
 		<Item name="wdInsertedTextMarkUnderline" value="3" description="给插入文字加下划线。"/>
 		<Item name="wdInsertedTextMarkDoubleStrikeThrough" value="7 " description="用双删除线符号标记插入文字。"/>
-	</WdInsertedTextMark>
+	</Enum>
 	<!--WdInternationalIndex 枚举 (Word) ====指定当前国家/地区和国际设置特定的信息。-->
-	<WdInternationalIndex>
+	<Enum id="WdInternationalIndex">
 		<Item name="wd24HourClock" value=" 21" description="如果使用 24 小时制，则返回 True ；如果使用 12 小时制，则返回 False 。"/>
 		<Item name="wdCurrencyCode" value="20" description="返回货币符号（在美国英语中使用 $）。"/>
 		<Item name="wdDateSeparator" value="25" description="返回日期分隔符（在美国英语中使用 /）。"/>
@@ -1418,20 +1418,20 @@
 		<Item name="wdProductLanguageID" value="26" description="返回 Word 的语言版本。"/>
 		<Item name="wdThousandsSeparator" value="19" description="返回千位分隔符（在美国英语中使用 ,）。"/>
 		<Item name="wdTimeSeparator" value="24" description="返回时间分隔符（在美国英语中使用 :）。"/>
-	</WdInternationalIndex>
+	</Enum>
 	<!--WdJustificationMode 枚举 (Word) ====指定文档的字符间距调整。-->
-	<WdJustificationMode>
+	<Enum id="WdJustificationMode">
 		<Item name="wdJustificationModeCompress" value="1" description="紧缩。"/>
 		<Item name="wdJustificationModeCompressKana" value="2" description="使用假名音节表（即平假名和片假名）规则进行紧缩。"/>
 		<Item name="wdJustificationModeExpand" value="0" description="加宽。"/>
-	</WdJustificationMode>
+	</Enum>
 	<!--WdKana 枚举 (Word) ====指定所选日文文字的格式。-->
-	<WdKana>
+	<Enum id="WdKana">
 		<Item name="wdKanaHiragana" value="9 " description="该文字的格式设置为平假名。"/>
 		<Item name="wdKanaKatakana" value="8 " description="该文字的格式设置为片假名。"/>
-	</WdKana>
+	</Enum>
 	<!--Word)  (WdKey 枚举====指定键盘字符。 虽然大写字符和小写字符通过字符编码映射中的不同值指定，但它们共用此枚举中的单个常量。-->
-	<WdKey>
+	<Enum id="WdKey">
 		<Item name="wdKey0" value="48" description="0 键。"/>
 		<Item name="wdKey1" value="49" description="1 键。"/>
 		<Item name="wdKey2" value="50" description="2 键。"/>
@@ -1530,9 +1530,9 @@
 		<Item name="wdKeyY" value="89" description="Y 键。"/>
 		<Item name="wdKeyZ" value="90" description="Z 键。"/>
 		<Item name="wdNoKey" value="255" description="没有键。"/>
-	</WdKey>
+	</Enum>
 	<!--WdKeyCategory 枚举 (Word) ====指定分配给键绑定的项目的类型。-->
-	<WdKeyCategory>
+	<Enum id="WdKeyCategory">
 		<Item name="wdKeyCategoryAutoText" value="4" description="键分配给自动图文集。"/>
 		<Item name="wdKeyCategoryCommand" value="1" description="将密钥分配给命令。"/>
 		<Item name="wdKeyCategoryDisable" value="0" description="键被禁用。"/>
@@ -1542,9 +1542,9 @@
 		<Item name="wdKeyCategoryPrefix" value="7 " description="键分配给前缀。"/>
 		<Item name="wdKeyCategoryStyle" value="5" description="键分配给样式。"/>
 		<Item name="wdKeyCategorySymbol" value="6" description="键分配给符号。"/>
-	</WdKeyCategory>
+	</Enum>
 	<!--WdLanguageID 枚举 (Word) ====指定要使用的语言。-->
-	<WdLanguageID>
+	<Enum id="WdLanguageID">
 		<Item name="wdAfrikaans" value="1078" description="非洲语言。"/>
 		<Item name="wdAlbanian" value="1052" description="阿尔巴尼亚语。"/>
 		<Item name="wdAmharic" value="1118" description="阿姆哈拉语。"/>
@@ -1749,29 +1749,29 @@
 		<Item name="wdYiddish" value="1085" description="意第绪语。"/>
 		<Item name="wdYoruba" value="1130" description="约鲁巴语。"/>
 		<Item name="wdZulu" value="1077" description="祖鲁语。"/>
-	</WdLanguageID>
+	</Enum>
 	<!--WdLayoutMode 枚举 (Word) ====指定在当前文档的版式模式下排放文本的方式。-->
-	<WdLayoutMode>
+	<Enum id="WdLayoutMode">
 		<Item name="wdLayoutModeDefault" value="0" description="排放文本时不使用网格。"/>
 		<Item name="wdLayoutModeGenko" value="3" description="文本在网格上布局;用户指定每行的行数和字符数。 当用户键入时，Microsoft Word 会自动将字符与网格线对齐。"/>
 		<Item name="wdLayoutModeGrid" value="1" description="文本在网格上布局;用户指定每行的行数和字符数。 当用户键入时，Microsoft Word 不会自动将字符与网格线对齐。"/>
 		<Item name="wdLayoutModeLineGrid" value="2" description="文本排放于网格之上；用户指定行数但不指定每行的字符数。"/>
-	</WdLayoutMode>
+	</Enum>
 	<!--WdLetterheadLocation 枚举 (Word) ====指定“英文信函向导”所创建的信函中信头的位置。-->
-	<WdLetterheadLocation>
+	<Enum id="WdLetterheadLocation">
 		<Item name="wdLetterBottom" value="1" description="在信函的底部。"/>
 		<Item name="wdLetterLeft" value="2" description="在信函的左侧。"/>
 		<Item name="wdLetterRight" value="3" description="在信函的右侧。"/>
 		<Item name="wdLetterTop" value="0" description="在信函的顶端。"/>
-	</WdLetterheadLocation>
+	</Enum>
 	<!--WdLetterStyle 枚举 (Word) ====指定“英文信函向导”所创建信函的布局。-->
-	<WdLetterStyle>
+	<Enum id="WdLetterStyle">
 		<Item name="wdFullBlock" value="0" description="完整区域。"/>
 		<Item name="wdModifiedBlock" value="1" description="修改过的区域。"/>
 		<Item name="wdSemiBlock" value="2" description="局部区域。"/>
-	</WdLetterStyle>
+	</Enum>
 	<!--Word)  (WdLigatures 枚举====指定应用于字体的连字类型。-->
-	<WdLigatures>
+	<Enum id="WdLigatures">
 		<Item name="wdLigaturesAll" value="15" description="将所有连字类型应用于字体。"/>
 		<Item name="wdLigaturesContextual" value="2" description="将上下文连字应用于字体。 上下文连字通常设计用来增强可读性，但也可能完全用于装饰。 上下文连字还可能是上下文替换。"/>
 		<Item name="wdLigaturesContextualDiscretional" value="10" description="将上下文和任意连字应用于字体。"/>
@@ -1788,26 +1788,26 @@
 		<Item name="wdLigaturesStandardDiscretional" value="9 " description="将标准和任意连字应用于字体。"/>
 		<Item name="wdLigaturesStandardHistorical" value="5" description="将标准和历史连字应用于字体。"/>
 		<Item name="wdLigaturesStandardHistoricalDiscretional" value="13" description="将标准、历史和任意连字应用于字体。"/>
-	</WdLigatures>
+	</Enum>
 	<!--WdLineEndingType 枚举 (Word) ====指定 Microsoft Word 在另存为文本文件的文档中标记换行符和分段符的方式。-->
-	<WdLineEndingType>
+	<Enum id="WdLineEndingType">
 		<Item name="wdCRLF" value="0" description="回车后换行。"/>
 		<Item name="wdCROnly" value="1" description="只使用回车。"/>
 		<Item name="wdLFCR" value="3" description="换行后回车。"/>
 		<Item name="wdLFOnly" value="2" description="只使用换行。"/>
 		<Item name="wdLSPS" value="4" description="不支持。"/>
-	</WdLineEndingType>
+	</Enum>
 	<!--WdLineSpacing 枚举 (Word) ====指定要应用于段落的行距格式。-->
-	<WdLineSpacing>
+	<Enum id="WdLineSpacing">
 		<Item name="wdLineSpace1pt5" value="1" description="1.5 倍行距。 该行距相当于当前字号加 6 磅。"/>
 		<Item name="wdLineSpaceAtLeast" value="3" description="行距至少为一个指定值。 该值需要单独指定。"/>
 		<Item name="wdLineSpaceDouble" value="2" description="双倍行距。"/>
 		<Item name="wdLineSpaceExactly" value="4" description="行距只能是所需的最大行距。 此设置所使用的行距通常小于单倍行距。"/>
 		<Item name="wdLineSpaceMultiple" value="5" description="由指定的行数确定的行距。"/>
 		<Item name="wdLineSpaceSingle" value="0" description="单个空格。 默认"/>
-	</WdLineSpacing>
+	</Enum>
 	<!--WdLineStyle 枚举 (Word) ====指定对象的边框样式。-->
-	<WdLineStyle>
+	<Enum id="WdLineStyle">
 		<Item name="wdLineStyleDashDot" value="5" description="划线后跟点。"/>
 		<Item name="wdLineStyleDashDotDotDot" value="6" description="划线后跟两个点。"/>
 		<Item name="wdLineStyleDashDotStroked" value="20" description="划线后跟粗点，使边框的外观类似于理发店招牌。"/>
@@ -1833,14 +1833,14 @@
 		<Item name="wdLineStyleThinThickThinMedGap" value="14" description="最里面是一条细实线，其次是一条粗实线，最外面是一条细实线，所有线之间的间隙中等。"/>
 		<Item name="wdLineStyleThinThickThinSmallGap" value="11" description="最里面一条细实线，其次一条粗实线，最外面是一条细实线，所有线之间的间隙较小。"/>
 		<Item name="wdLineStyleTriple" value="8 " description="三条细实线。"/>
-	</WdLineStyle>
+	</Enum>
 	<!--Word)  (WdLineType 枚举====指定行是文本行还是表格行。-->
-	<WdLineType>
+	<Enum id="WdLineType">
 		<Item name="wdTableRow" value="1" description="表格行。"/>
 		<Item name="wdTextLine" value="0" description="文档正文中的文本行。"/>
-	</WdLineType>
+	</Enum>
 	<!--WdLineWidth 枚举 (Word) ====指定对象边框的宽度。-->
-	<WdLineWidth>
+	<Enum id="WdLineWidth">
 		<Item name="wdLineWidth025pt" value="2" description="0.25 磅。"/>
 		<Item name="wdLineWidth050pt" value="4" description="0.50 磅。"/>
 		<Item name="wdLineWidth075pt" value="6" description="0.75 磅。"/>
@@ -1850,9 +1850,9 @@
 		<Item name="wdLineWidth300pt" value="24" description="3.00 磅。"/>
 		<Item name="wdLineWidth450pt" value="36" description="4.50 磅。"/>
 		<Item name="wdLineWidth600pt" value="48" description="6.00 磅。"/>
-	</WdLineWidth>
+	</Enum>
 	<!--Word)  (WdLinkType 枚举====指定链接的类型。-->
-	<WdLinkType>
+	<Enum id="WdLinkType">
 		<Item name="wdLinkTypeChart" value="8 " description="Microsoft Excel 图表。"/>
 		<Item name="wdLinkTypeDDE" value="6" description="动态数据交换。"/>
 		<Item name="wdLinkTypeDDEAuto" value="7 " description="DDE 自动化。"/>
@@ -1862,27 +1862,27 @@
 		<Item name="wdLinkTypePicture" value="1" description="图片。"/>
 		<Item name="wdLinkTypeReference" value="3" description="参考库。"/>
 		<Item name="wdLinkTypeText" value="2" description="文本。"/>
-	</WdLinkType>
+	</Enum>
 	<!--WdListApplyTo (Word) 枚举====指定要应用列表模板的列表部分。-->
-	<WdListApplyTo>
+	<Enum id="WdListApplyTo">
 		<Item name="wdListApplyToSelection" value="2" description="所选内容。"/>
 		<Item name="wdListApplyToThisPointForward" value="1" description="从光标插入点到列表末尾。"/>
 		<Item name="wdListApplyToWholeList" value="0" description="整个列表。"/>
-	</WdListApplyTo>
+	</Enum>
 	<!--WdListGalleryType 枚举 (Word) ====指定列表模板库中的列表类型。-->
-	<WdListGalleryType>
+	<Enum id="WdListGalleryType">
 		<Item name="wdBulletGallery" value="1" description="项目符号列表。"/>
 		<Item name="wdNumberGallery" value="2" description="编号列表。"/>
 		<Item name="wdOutlineNumberGallery" value="3" description="多级符号列表。"/>
-	</WdListGalleryType>
+	</Enum>
 	<!--WdListLevelAlignment 枚举 (Word) ====指定列表级别的对齐方式。-->
-	<WdListLevelAlignment>
+	<Enum id="WdListLevelAlignment">
 		<Item name="wdListLevelAlignCenter" value="1" description="居中对齐。"/>
 		<Item name="wdListLevelAlignLeft" value="0" description="左对齐。"/>
 		<Item name="wdListLevelAlignRight" value="2" description="右对齐。"/>
-	</WdListLevelAlignment>
+	</Enum>
 	<!--WdListNumberStyle 枚举 (Word) ====指定要应用于列表的数字样式。-->
-	<WdListNumberStyle>
+	<Enum id="WdListNumberStyle">
 		<Item name="wdListNumberStyleAiueo" value="20" description="Aiueo 数字样式。"/>
 		<Item name="wdListNumberStyleAiueoHalfWidth" value="12 " description="Aiueo 半角数字样式。"/>
 		<Item name="wdListNumberStyleArabic" value="0" description="阿拉伯数字样式。"/>
@@ -1951,9 +1951,9 @@
 		<Item name="wdListNumberStyleZodiac1" value="30" description="Zodiac 1 样式。"/>
 		<Item name="wdListNumberStyleZodiac2" value="31" description="Zodiac 2 样式。"/>
 		<Item name="wdListNumberStyleZodiac3" value="32" description="Zodiac 3 样式。"/>
-	</WdListNumberStyle>
+	</Enum>
 	<!--WdListType 枚举 (Word) ====指定列表的类型。-->
-	<WdListType>
+	<Enum id="WdListType">
 		<Item name="wdListBullet" value="2" description="项目符号列表。"/>
 		<Item name="wdListListNumOnly" value="1" description="可在段落正文中使用的 ListNum 域。"/>
 		<Item name="wdListMixedNumbering" value="5" description="混合数字列表。"/>
@@ -1961,22 +1961,22 @@
 		<Item name="wdListOutlineNumbering" value="4" description="分级显示的列表。"/>
 		<Item name="wdListPictureBullet" value="6" description="图片项目符号列表。"/>
 		<Item name="wdListSimpleNumbering" value="3" description="简单数字列表。"/>
-	</WdListType>
+	</Enum>
 	<!--Word)  (WdLockType 枚举====指定的 CoAuthLock 对象的锁的类型。-->
-	<WdLockType>
+	<Enum id="WdLockType">
 		<Item name="wdLockChanged" value="3" description="指定占位符锁。 占位符锁指示另一个用户已将锁从区域中删除，但当前用户尚未通过保存来更新文档视图。"/>
 		<Item name="wdLockEphemeral" value="2" description="指定临时锁定。 当用户在启用了共同创作的文档中开始编辑某个范围时，Word 会隐式地对某个范围进行临时锁定。"/>
 		<Item name="wdLockNone" value="0" description="保留以备今后使用。"/>
 		<Item name="wdLockReservation" value="1" description="指定保留锁定。 保留锁定是显式地创建用户通过在Word的 审阅选项卡上的 阻止作者按钮。"/>
-	</WdLockType>
+	</Enum>
 	<!--WdMailerPriority 枚举 (Word) ====此枚举已经被弃用，不应使用。-->
-	<WdMailerPriority>
+	<Enum id="WdMailerPriority">
 		<Item name="wdPriorityHigh" value="3" description="不支持。"/>
 		<Item name="wdPriorityLow" value="2" description="不支持。"/>
 		<Item name="wdPriorityNormal" value="1" description="不支持。"/>
-	</WdMailerPriority>
+	</Enum>
 	<!--WdMailMergeActiveRecord 枚举 (Word) ====指定邮件合并结果集内的活动记录。-->
-	<WdMailMergeActiveRecord>
+	<Enum id="WdMailMergeActiveRecord">
 		<Item name="wdFirstDataSourceRecord" value="-6" description="数据源内的第一条记录。"/>
 		<Item name="wdFirstRecord" value="-4" description="结果集内的第一条记录。"/>
 		<Item name="wdLastDataSourceRecord" value="-7" description="数据源内的最后一条记录。"/>
@@ -1986,9 +1986,9 @@
 		<Item name="wdNoActiveRecord" value="-1" description="没有活动记录。"/>
 		<Item name="wdPreviousDataSourceRecord" value="-9" description="数据源内的上一条记录。"/>
 		<Item name="wdPreviousRecord" value="-3" description="结果集内的上一条记录。"/>
-	</WdMailMergeActiveRecord>
+	</Enum>
 	<!--WdMailMergeComparison 枚举 (Word) ====指定向邮件合并过程中添加条件时要使用的比较类型。-->
-	<WdMailMergeComparison>
+	<Enum id="WdMailMergeComparison">
 		<Item name="wdMergeIfEqual" value="0" description="如果邮件合并域等于某个值，则输出值。"/>
 		<Item name="wdMergeIfGreaterThan" value="3" description="如果邮件合并域大于某个值，则输出值。"/>
 		<Item name="wdMergeIfGreaterThanOrEqual" value="5" description="如果邮件合并域大于或等于某个值，则输出值。"/>
@@ -1997,9 +1997,9 @@
 		<Item name="wdMergeIfLessThan" value="2" description="如果邮件合并域小于某个值，则输出值。"/>
 		<Item name="wdMergeIfLessThanOrEqual" value="4" description="如果邮件合并域小于或等于某个值，则输出值。"/>
 		<Item name="wdMergeIfNotEqual" value="1" description="如果邮件合并域不等于某个值，则输出值。"/>
-	</WdMailMergeComparison>
+	</Enum>
 	<!--WdMailMergeDataSource 枚举 (Word) ====为邮件合并操作指定数据源。-->
-	<WdMailMergeDataSource>
+	<Enum id="WdMailMergeDataSource">
 		<Item name="wdMergeInfoFromAccessDDE" value="1" description="使用动态数据交换 (DDE) 的 Microsoft Access。"/>
 		<Item name="wdMergeInfoFromExcelDDE" value="2" description="使用 DDE 的 Microsoft Excel。"/>
 		<Item name="wdMergeInfoFromMSQueryDDE" value="3" description="使用 DDE 的 MSQuery。"/>
@@ -2007,26 +2007,26 @@
 		<Item name="wdMergeInfoFromODSO" value="5" description="Office 数据源对象 (ODSO)。"/>
 		<Item name="wdMergeInfoFromWord" value="0" description="Microsoft Word。"/>
 		<Item name="wdNoMergeInfo" value="-1" description="未提供合并信息。"/>
-	</WdMailMergeDataSource>
+	</Enum>
 	<!--WdMailMergeDefaultRecord 枚举 (Word) ====指定在邮件合并过程中使用的默认记录。-->
-	<WdMailMergeDefaultRecord>
+	<Enum id="WdMailMergeDefaultRecord">
 		<Item name="wdDefaultFirstRecord" value="1" description="将结果集内的第一条记录用作默认记录。"/>
 		<Item name="wdDefaultLastRecord" value="-16" description="将结果集内的最后一条记录用作默认记录。"/>
-	</WdMailMergeDefaultRecord>
+	</Enum>
 	<!--WdMailMergeDestination 枚举 (Word) ====指定邮件合并结果的目标。-->
-	<WdMailMergeDestination>
+	<Enum id="WdMailMergeDestination">
 		<Item name="wdSendToEmail" value="2" description="将结果发送给电子邮件收件人。"/>
 		<Item name="wdSendToFax" value="3" description="将结果发送到传真收件人。"/>
 		<Item name="wdSendToNewDocument" value="0" description="将结果发送到新建的 Word 文档。"/>
 		<Item name="wdSendToPrinter" value="1" description="将结果发送到打印机。"/>
-	</WdMailMergeDestination>
+	</Enum>
 	<!--WdMailMergeMailFormat 枚举 (Word) ====指定邮件合并目标为电子邮件时要使用的格式。-->
-	<WdMailMergeMailFormat>
+	<Enum id="WdMailMergeMailFormat">
 		<Item name="wdMailFormatHTML" value="1" description="使用 HTML 格式发送邮件合并电子邮件文档。"/>
 		<Item name="wdMailFormatPlainText" value="0" description="使用纯文本发送邮件合并电子邮件文档。"/>
-	</WdMailMergeMailFormat>
+	</Enum>
 	<!--WdMailMergeMainDocType 枚举 (Word) ====指定邮件合并文档的类型。-->
-	<WdMailMergeMainDocType>
+	<Enum id="WdMailMergeMainDocType">
 		<Item name="wdCatalog" value="3" description="分类。"/>
 		<Item name="wdDirectory" value="3" description="目录。"/>
 		<Item name="wdEMail" value="4" description="Email消息。"/>
@@ -2035,25 +2035,25 @@
 		<Item name="wdFormLetters" value="0" description="套用信函。"/>
 		<Item name="wdMailingLabels" value="1" description="邮件标签。"/>
 		<Item name="wdNotAMergeDocument" value="-1" description="不是合并文档。"/>
-	</WdMailMergeMainDocType>
+	</Enum>
 	<!--WdMailMergeState 枚举 (Word) ====指定邮件合并操作的状态。-->
-	<WdMailMergeState>
+	<Enum id="WdMailMergeState">
 		<Item name="wdDataSource" value="5" description="不带主文档的数据源。"/>
 		<Item name="wdMainAndDataSource" value="2" description="带附加数据源的主文档。"/>
 		<Item name="wdMainAndHeader" value="3" description="带附加域名源的主文档。"/>
 		<Item name="wdMainAndSourceAndHeader" value="4" description="带附加数据源和域名源的主文档。"/>
 		<Item name="wdMainDocumentOnly" value="1" description="不附带数据的主文档。"/>
 		<Item name="wdNormalDocument" value="0" description="在邮件合并操作中不涉及文档。"/>
-	</WdMailMergeState>
+	</Enum>
 	<!--WdMailSystem 枚举 (Word) ====指定邮件系统的类型。-->
-	<WdMailSystem>
+	<Enum id="WdMailSystem">
 		<Item name="wdMAPI" value="1" description="标准邮件应用程序编程接口 (MAPI) 邮件系统。"/>
 		<Item name="wdMAPIandPowerTalk" value="3" description="标准邮件应用程序编程接口 (MAPI) 邮件系统和 PowerTalk 邮件系统。"/>
 		<Item name="wdNoMailSystem" value="0" description="没有邮件系统。"/>
 		<Item name="wdPowerTalk" value="2" description="PowerTalk 邮件系统。"/>
-	</WdMailSystem>
+	</Enum>
 	<!--WdMappedDataFields 枚举 (Word) ====指定映射数据域的类型。-->
-	<WdMappedDataFields>
+	<Enum id="WdMappedDataFields">
 		<Item name="wdAddress1" value="10" description="地址 1 域。"/>
 		<Item name="wdAddress2" value="11" description="地址 2 域。"/>
 		<Item name="wdAddress3" value="29" description="地址 3 域。"/>
@@ -2084,23 +2084,23 @@
 		<Item name="wdSuffix" value="6" description="后缀域。"/>
 		<Item name="wdUniqueIdentifier" value="1" description="唯一标识符域。"/>
 		<Item name="wdWebPageURL" value=" 21" description="网页的统一资源定位符 (URL) 字段。"/>
-	</WdMappedDataFields>
+	</Enum>
 	<!--WdMeasurementUnits 枚举 (Word) ====指定要使用的度量单位。-->
-	<WdMeasurementUnits>
+	<Enum id="WdMeasurementUnits">
 		<Item name="wdCentimeters" value="1" description="厘米。"/>
 		<Item name="wdInches" value="0" description="英寸。"/>
 		<Item name="wdMillimeters" value="2" description="毫米。"/>
 		<Item name="wdPicas" value="4" description="十二点活字（通常用于传统打字机字体间距）。"/>
 		<Item name="wdPoints" value="3" description="磅。"/>
-	</WdMeasurementUnits>
+	</Enum>
 	<!--WdMergeFormatFrom 枚举 (Word) ====指定要在执行文档比较功能期间保持其格式的文档。-->
-	<WdMergeFormatFrom>
+	<Enum id="WdMergeFormatFrom">
 		<Item name="wdMergeFormatFromOriginal" value="0" description="保留原始文档的格式。"/>
 		<Item name="wdMergeFormatFromPrompt" value="2" description="提示用户指定要保留其格式的文档。"/>
 		<Item name="wdMergeFormatFromRevised" value="1" description="保留修订的文档中的格式。"/>
-	</WdMergeFormatFrom>
+	</Enum>
 	<!--WdMergeSubType 枚举 (Word) ====指定要附加到当前文档的数据源。-->
-	<WdMergeSubType>
+	<Enum id="WdMergeSubType">
 		<Item name="wdMergeSubTypeAccess" value="1" description="Microsoft Access。"/>
 		<Item name="wdMergeSubTypeOAL" value="2" description="Office 地址列表。"/>
 		<Item name="wdMergeSubTypeOLEDBText" value="5" description="OLE 数据库。"/>
@@ -2110,21 +2110,21 @@
 		<Item name="wdMergeSubTypeWord" value="7 " description="Microsoft Word。"/>
 		<Item name="wdMergeSubTypeWord2000" value="8 " description="Microsoft Word 2000。"/>
 		<Item name="wdMergeSubTypeWorks" value="4" description="Microsoft Works。"/>
-	</WdMergeSubType>
+	</Enum>
 	<!--WdMergeTarget 枚举 (Word) ====指定比较和合并文档过程的目标。-->
-	<WdMergeTarget>
+	<Enum id="WdMergeTarget">
 		<Item name="wdMergeTargetCurrent" value="1" description="合并至当前文档中。"/>
 		<Item name="wdMergeTargetNew" value="2" description="合并至新文档中。"/>
 		<Item name="wdMergeTargetSelected" value="0" description="合并至所选文档中。"/>
-	</WdMergeTarget>
+	</Enum>
 	<!--WdMonthNames 枚举 (Word) ====指定要显示月份名称的格式。-->
-	<WdMonthNames>
+	<Enum id="WdMonthNames">
 		<Item name="wdMonthNamesArabic" value="0" description="阿拉伯数字格式。"/>
 		<Item name="wdMonthNamesEnglish" value="1" description="英文格式。"/>
 		<Item name="wdMonthNamesFrench" value="2" description="法文格式。"/>
-	</WdMonthNames>
+	</Enum>
 	<!--WdMoveFromTextMark 枚举 (Word) ====在将带有修订的文档中的文本从一个位置移至另一个位置时，标记源文本。-->
-	<WdMoveFromTextMark>
+	<Enum id="WdMoveFromTextMark">
 		<Item name="wdMoveFromTextMarkBold" value="6" description="用加粗格式标记移动文字。"/>
 		<Item name="wdMoveFromTextMarkCaret" value="3" description="用脱字号标记移动文字。"/>
 		<Item name="wdMoveFromTextMarkColorOnly" value="10" description="仅用颜色标记移动文字。 MoveFromTextColor 属性可用于设置移动文字的颜色。"/>
@@ -2136,14 +2136,14 @@
 		<Item name="wdMoveFromTextMarkPound" value="4" description="用井号（数字标记）标记移动文字。"/>
 		<Item name="wdMoveFromTextMarkStrikeThrough" value="2" description="用删除线标记移动文字。"/>
 		<Item name="wdMoveFromTextMarkUnderline" value="8 " description="为移动文字加下划线。"/>
-	</WdMoveFromTextMark>
+	</Enum>
 	<!--WdMovementType 枚举 (Word) ====指定移动所选内容的方式。-->
-	<WdMovementType>
+	<Enum id="WdMovementType">
 		<Item name="wdExtend" value="1" description="将所选内容的末尾扩展到指定单位的末尾。"/>
 		<Item name="wdMove" value="0" description="将所选内容折叠到插入点中并移到指定单位的末尾。 默认值。"/>
-	</WdMovementType>
+	</Enum>
 	<!--WdMoveToTextMark 枚举 (Word) ====当文档中包含修订的文本从一个位置移到另一个位置时，标记移动到文本。-->
-	<WdMoveToTextMark>
+	<Enum id="WdMoveToTextMark">
 		<Item name="wdMoveToTextMarkBold" value="1" description="用加粗格式标记移动文字。"/>
 		<Item name="wdMoveToTextMarkColorOnly" value="5" description="仅用颜色标记移动文字。 使用 MoveToTextColor 属性可设置移动文本的颜色。"/>
 		<Item name="wdMoveToTextMarkDoubleStrikeThrough" value="7 " description="用双删除线标记移动文字。"/>
@@ -2152,22 +2152,22 @@
 		<Item name="wdMoveToTextMarkNone" value="0" description="移动文字没有特殊格式。"/>
 		<Item name="wdMoveToTextMarkStrikeThrough" value="6" description="用删除线标记移动文字。"/>
 		<Item name="wdMoveToTextMarkUnderline" value="3" description="为移动文字加下划线。"/>
-	</WdMoveToTextMark>
+	</Enum>
 	<!--WdMultipleWordConversionsMode 枚举 (Word) ====指定朝鲜文/朝鲜文汉字之间的转换方向。-->
-	<WdMultipleWordConversionsMode>
+	<Enum id="WdMultipleWordConversionsMode">
 		<Item name="wdHangulToHanja" value="0" description="从朝鲜文到朝鲜文汉字。"/>
 		<Item name="wdHanjaToHangul" value="1" description="从朝鲜文汉字到朝鲜文。"/>
-	</WdMultipleWordConversionsMode>
+	</Enum>
 	<!--WdNewDocumentType 枚举 (Word) ====指定要创建的新文档的类型。-->
-	<WdNewDocumentType>
+	<Enum id="WdNewDocumentType">
 		<Item name="wdNewBlankDocument" value="0" description="空白文档。"/>
 		<Item name="wdNewEmailMessage" value="2" description="Email消息。"/>
 		<Item name="wdNewFrameset" value="3" description="框架集。"/>
 		<Item name="wdNewWebPage" value="1" description="网页。"/>
 		<Item name="wdNewXMLDocument" value="4" description="XML 文档。"/>
-	</WdNewDocumentType>
+	</Enum>
 	<!--WdNoteNumberStyle 枚举 (Word) ====指定要应用于尾注、尾注选项、脚注或脚注选项的数字样式。-->
-	<WdNoteNumberStyle>
+	<Enum id="WdNoteNumberStyle">
 		<Item name="wdNoteNumberStyleArabic" value="0" description="阿拉伯数字样式。"/>
 		<Item name="wdNoteNumberStyleArabicFullWidth" value="14" description="阿拉伯全角数字样式。"/>
 		<Item name="wdNoteNumberStyleArabicLetter1" value="46" description="阿拉伯语字母样式 1。"/>
@@ -2197,27 +2197,27 @@
 		<Item name="wdNoteNumberStyleUppercaseLetter" value="3" description="大写字母样式。"/>
 		<Item name="wdNoteNumberStyleUppercaseRoman" value="1" description="大写罗马数字样式。"/>
 		<Item name="wdNoteNumberStyleVietCardinalText" value="56" description="越南语基数文本样式。"/>
-	</WdNoteNumberStyle>
+	</Enum>
 	<!--WdNumberForm 枚举 (Word) ====指定 OpenType 字体的数字形式设置。-->
-	<WdNumberForm>
+	<Enum id="WdNumberForm">
 		<Item name="wdNumberFormDefault" value="0" description="应用字体的默认数字形式。"/>
 		<Item name="wdNumberFormLining" value="1" description="对字体应用内衬数字形式。"/>
 		<Item name="wdNumberFormOldstyle" value="2" description="对字体应用"旧样式"数字形式。"/>
-	</WdNumberForm>
+	</Enum>
 	<!--WdNumberingRule 枚举 (Word) ====指定要应用的编号规则。-->
-	<WdNumberingRule>
+	<Enum id="WdNumberingRule">
 		<Item name="wdRestartContinuous" value="0" description="连续分配编号。"/>
 		<Item name="wdRestartPage" value="2" description="重设每一页的页码。"/>
 		<Item name="wdRestartSection" value="1" description="重设每一节的节号。"/>
-	</WdNumberingRule>
+	</Enum>
 	<!--WdNumberSpacing 枚举 (Word) ====指定 OpenType 字体的数字间距设置。-->
-	<WdNumberSpacing>
+	<Enum id="WdNumberSpacing">
 		<Item name="wdNumberSpacingDefault" value="0" description="应用字体的默认数字间距。"/>
 		<Item name="wdNumberSpacingProportional" value="1" description="对字体应用成比例数字间距。"/>
 		<Item name="wdNumberSpacingTabular" value="2" description="对字体应用表格数字间距。"/>
-	</WdNumberSpacing>
+	</Enum>
 	<!--WdNumberStyleWordBasicBiDi 枚举 (Word) ====此枚举已经被弃用，不应使用。-->
-	<WdNumberStyleWordBasicBiDi>
+	<Enum id="WdNumberStyleWordBasicBiDi">
 		<Item name="wdCaptionNumberStyleBidiLetter1" value="49" description="不支持。"/>
 		<Item name="wdCaptionNumberStyleBidiLetter2" value="50" description="不支持。"/>
 		<Item name="wdListNumberStyleBidi1" value="49" description="不支持。"/>
@@ -2226,26 +2226,26 @@
 		<Item name="wdNoteNumberStyleBidiLetter2" value="50" description="不支持。"/>
 		<Item name="wdPageNumberStyleBidiLetter1" value="49" description="不支持。"/>
 		<Item name="wdPageNumberStyleBidiLetter2" value="50" description="不支持。"/>
-	</WdNumberStyleWordBasicBiDi>
+	</Enum>
 	<!--WdNumberType 枚举 (Word) ====指定编号的类型。-->
-	<WdNumberType>
+	<Enum id="WdNumberType">
 		<Item name="wdNumberAllNumbers" value="3" description="其他所有情况下的默认值。"/>
 		<Item name="wdNumberListNum" value="2" description="LISTNUM 域的默认值。"/>
 		<Item name="wdNumberParagraph" value="1" description="可通过在 "项目符号和编号" 对话框中选择模板的方式添加到段落中的预设编号。"/>
-	</WdNumberType>
+	</Enum>
 	<!--WdOLEPlacement 枚举 (Word) ====指定 OLE 对象的位置。-->
-	<WdOLEPlacement>
+	<Enum id="WdOLEPlacement">
 		<Item name="wdFloatOverText" value="1" description="浮于文字上方。"/>
 		<Item name="wdInLine" value="0" description="嵌入型。"/>
-	</WdOLEPlacement>
+	</Enum>
 	<!--WdOLEType 枚举 (Word) ====指定 OLE 对象的类型。-->
-	<WdOLEType>
+	<Enum id="WdOLEType">
 		<Item name="wdOLEControl" value="2" description="OLE 控件。"/>
 		<Item name="wdOLEEmbed" value="1" description="嵌入的 OLE 对象。"/>
 		<Item name="wdOLELink" value="0" description="链接的 OLE 对象。"/>
-	</WdOLEType>
+	</Enum>
 	<!--WdOLEVerb 枚举 (Word) ====指定与 OLE 对象应执行的动作相关联的动作。-->
-	<WdOLEVerb>
+	<Enum id="WdOLEVerb">
 		<Item name="wdOLEVerbDiscardUndoState" value="-6" description="强制对象放弃它可能保持的撤消状态；请注意，此时对象仍然处于活动状态。"/>
 		<Item name="wdOLEVerbHide" value="-3" description="从视图中删除对象的用户界面。"/>
 		<Item name="wdOLEVerbInPlaceActivate" value="-5" description="运行对象，装载对象的窗口，但是并不装载任何的用户界面工具。"/>
@@ -2253,28 +2253,28 @@
 		<Item name="wdOLEVerbPrimary" value="0" description="当用户双击对象时执行被调用的动作。"/>
 		<Item name="wdOLEVerbShow" value="-1" description="向用户显示对象以便进行编辑或查看。 可用此常量显示最新插入的对象以便进行初次编辑。"/>
 		<Item name="wdOLEVerbUIActivate" value="-4" description="在适当的位置激活对象并显示对象所需的任何用户界面工具，如菜单或工具条。"/>
-	</WdOLEVerb>
+	</Enum>
 	<!--WdOMathBreakBin 枚举 (Word) ====指定当公式跨两行或多行时 Microsoft Word 放置二元运算符的位置。-->
-	<WdOMathBreakBin>
+	<Enum id="WdOMathBreakBin">
 		<Item name="wdOMathBreakBinAfter" value="1" description="将该运算符放在当前行末尾处（换行符之前）。"/>
 		<Item name="wdOMathBreakBinBefore" value="0" description="将该运算符放在下一行开头处（换行符之后）。"/>
 		<Item name="wdOMathBreakBinRepeat" value="2" description="在当前行末尾处（换行符之前）和下一行开头处（换行符之后）重复放置该运算符。"/>
-	</WdOMathBreakBin>
+	</Enum>
 	<!--WdOMathBreakSub 枚举 (Word) ====指定 Microsoft Word 如何处理位于换行符之前的减法运算符。-->
-	<WdOMathBreakSub>
+	<Enum id="WdOMathBreakSub">
 		<Item name="wdOMathBreakSubMinusMinusMinus" value="0" description="在当前行末尾处（换行符之前）和下一行开头处重复放置减号。 默认值。"/>
 		<Item name="wdOMathBreakSubMinusPlus" value="2" description="在第一行末尾处（换行符之前）插入减号，在下一行开头处（数字之前）插入加号。"/>
 		<Item name="wdOMathBreakSubPlusMinus" value="1" description="在第一行末尾处（换行符之前）插入加号，在下一行开头处（数字之前）插入减号。"/>
-	</WdOMathBreakSub>
+	</Enum>
 	<!--WdOMathFracType 枚举 (Word) ====指定分数线的类型。-->
-	<WdOMathFracType>
+	<Enum id="WdOMathFracType">
 		<Item name="wdOMathFracBar" value="0" description="常规分数线。"/>
 		<Item name="wdOMathFracLin" value="3" description="以内嵌方式显示分数。"/>
 		<Item name="wdOMathFracNoBar" value="1" description="没有分数线。"/>
 		<Item name="wdOMathFracSkw" value="2" description="斜式分数线。"/>
-	</WdOMathFracType>
+	</Enum>
 	<!--WdOMathFunctionType 枚举 (Word) ====指定公式函数的类型。-->
-	<WdOMathFunctionType>
+	<Enum id="WdOMathFunctionType">
 		<Item name="wdOMathFunctionAcc" value="1" description="公式着重符。"/>
 		<Item name="wdOMathFunctionBar" value="2" description="公式分数线。"/>
 		<Item name="wdOMathFunctionBorderBox" value="4" description="边框。"/>
@@ -2296,47 +2296,47 @@
 		<Item name="wdOMathFunctionScrSubSup" value="18 " description="Scr。 sub sup。"/>
 		<Item name="wdOMathFunctionScrSup" value="19" description="上标。"/>
 		<Item name="wdOMathFunctionText" value="20" description="公式文本。"/>
-	</WdOMathFunctionType>
+	</Enum>
 	<!--WdOMathHorizAlignType 枚举 (Word) ====指定公式的水平对齐方式。-->
-	<WdOMathHorizAlignType>
+	<Enum id="WdOMathHorizAlignType">
 		<Item name="wdOMathHorizAlignCenter" value="0" description="居中。"/>
 		<Item name="wdOMathHorizAlignLeft" value="1" description="左对齐。"/>
 		<Item name="wdOMathHorizAlignRight" value="2" description="右对齐。"/>
-	</WdOMathHorizAlignType>
+	</Enum>
 	<!--WdOMathJc 枚举 (Word) ====指定公式默认的对齐方式。-->
-	<WdOMathJc>
+	<Enum id="WdOMathJc">
 		<Item name="wdOMathJcCenter" value="2" description="居中。"/>
 		<Item name="wdOMathJcCenterGroup" value="1" description="作为一个组居中。"/>
 		<Item name="wdOMathJcInline" value="7 " description="内嵌。"/>
 		<Item name="wdOMathJcLeft" value="3" description="向左。"/>
 		<Item name="wdOMathJcRight" value="4" description="向右。"/>
-	</WdOMathJc>
+	</Enum>
 	<!--WdOMathShapeType 枚举 (Word) ====指定分隔符 (括号、大括号、方括号) 与其周围内容的关系的外观。-->
-	<WdOMathShapeType>
+	<Enum id="WdOMathShapeType">
 		<Item name="wdOMathShapeCentered" value="0" description="在公式的整个高度两侧纵向居中放置分隔符，从而使得分隔符在它们的中点上下以相同的幅度增长。"/>
 		<Item name="wdOMathShapeMatch" value="1" description="将分隔符的形状与其内容的大小相匹配。"/>
-	</WdOMathShapeType>
+	</Enum>
 	<!--WdOMathSpacingRule 枚举 (Word) ====指定公式的间距。-->
-	<WdOMathSpacingRule>
+	<Enum id="WdOMathSpacingRule">
 		<Item name="wdOMathSpacing1pt5" value="1" description="1.5 倍行距。"/>
 		<Item name="wdOMathSpacingDouble" value="2" description="双倍行距。"/>
 		<Item name="wdOMathSpacingExactly" value="3" description="固定行距度量。"/>
 		<Item name="wdOMathSpacingMultiple" value="4" description="自定义行距度量。"/>
 		<Item name="wdOMathSpacingSingle" value="0" description="单倍行距。"/>
-	</WdOMathSpacingRule>
+	</Enum>
 	<!--WdOMathType 枚举 (Word) ====指定公式的显示格式类型。-->
-	<WdOMathType>
+	<Enum id="WdOMathType">
 		<Item name="wdOMathDisplay" value="0" description="专业格式。"/>
 		<Item name="wdOMathInline" value="1" description="内嵌。"/>
-	</WdOMathType>
+	</Enum>
 	<!--WdOMathVertAlignType 枚举 (Word) ====对于内嵌公式，指定公式在形状画布或线条内的垂直对齐方式。-->
-	<WdOMathVertAlignType>
+	<Enum id="WdOMathVertAlignType">
 		<Item name="wdOMathVertAlignBottom" value="2" description="公式与形状画布或线条的底部对齐。"/>
 		<Item name="wdOMathVertAlignCenter" value="0" description="公式在形状画布或线条内垂直居中。"/>
 		<Item name="wdOMathVertAlignTop" value="1" description="公式与形状画布或线条的顶端对齐。"/>
-	</WdOMathVertAlignType>
+	</Enum>
 	<!--WdOpenFormat 枚举 (Word) ====指定打开文档时要使用的格式。-->
-	<WdOpenFormat>
+	<Enum id="WdOpenFormat">
 		<Item name="wdOpenFormatAllWord" value="6" description="与 Word 早期版本向后兼容的 Microsoft Word 格式。"/>
 		<Item name="wdOpenFormatAuto" value="0" description="现有格式。"/>
 		<Item name="wdOpenFormatDocument" value="1" description="Word 格式。"/>
@@ -2359,27 +2359,27 @@
 		<Item name="wdOpenFormatXMLTemplateSerialized" value="16 (&H10)" description="单个文件保存为 xml 格式的开放 XML 模板格式。"/>
 		<Item name="wdOpenFormatXMLTemplateMacroEnabled" value="12 " description="启用了宏的 XML 模板格式。"/>
 		<Item name="wdOpenFormatXMLTemplateMacroEnabledSerialized" value="17 (H11) &" description="打开 XML 模板启用了宏格式另存为单个的 XML 文件。"/>
-	</WdOpenFormat>
+	</Enum>
 	<!--WdOrganizerObject 枚举 (Word) ====指定删除、复制或重命名操作所使用的对象的类型。-->
-	<WdOrganizerObject>
+	<Enum id="WdOrganizerObject">
 		<Item name="wdOrganizerObjectAutoText" value="1" description="自动图文集项。"/>
 		<Item name="wdOrganizerObjectCommandBars" value="2" description="命令栏项。"/>
 		<Item name="wdOrganizerObjectProjectItems" value="3" description="方案项。"/>
 		<Item name="wdOrganizerObjectStyles" value="0" description="样式项。"/>
-	</WdOrganizerObject>
+	</Enum>
 	<!--Word)  (WdOrientation 枚举====指定页面布局方向。-->
-	<WdOrientation>
+	<Enum id="WdOrientation">
 		<Item name="wdOrientLandscape" value="1" description="横向。"/>
 		<Item name="wdOrientPortrait" value="0" description="纵向。"/>
-	</WdOrientation>
+	</Enum>
 	<!--WdOriginalFormat 枚举 (Word) ====指定文档格式。 在保存文档时通常使用此枚举。-->
-	<WdOriginalFormat>
+	<Enum id="WdOriginalFormat">
 		<Item name="wdOriginalDocumentFormat" value="1" description="原始文档格式。"/>
 		<Item name="wdPromptUser" value="2" description="提示用户选择文档格式。"/>
 		<Item name="wdWordDocument" value="0" description="Microsoft Word 文档格式。"/>
-	</WdOriginalFormat>
+	</Enum>
 	<!--WdOutlineLevel 枚举 (Word) ====指定要应用于段落的大纲级别。-->
-	<WdOutlineLevel>
+	<Enum id="WdOutlineLevel">
 		<Item name="wdOutlineLevel1" value="1" description="大纲级别 1。"/>
 		<Item name="wdOutlineLevel2" value="2" description="大纲级别 2。"/>
 		<Item name="wdOutlineLevel3" value="3" description="大纲级别 3。"/>
@@ -2390,9 +2390,9 @@
 		<Item name="wdOutlineLevel8" value="8 " description="大纲级别 8。"/>
 		<Item name="wdOutlineLevel9" value="9 " description="大纲级别 9。"/>
 		<Item name="wdOutlineLevelBodyText" value="10" description="没有大纲级别。"/>
-	</WdOutlineLevel>
+	</Enum>
 	<!--WdPageBorderArt 枚举 (Word) ====指定某页的图形页面边框设置。-->
-	<WdPageBorderArt>
+	<Enum id="WdPageBorderArt">
 		<Item name="wdArtApples" value="1" description="苹果边框。"/>
 		<Item name="wdArtArchedScallops" value="97" description="扇贝边框。"/>
 		<Item name="wdArtBabyPacifier" value="70" description="婴儿奶嘴边框。"/>
@@ -2557,35 +2557,35 @@
 		<Item name="wdArtZanyTriangles" value="112" description="Zany 三角形边框。"/>
 		<Item name="wdArtZigZag" value="137" description="之字形边框。"/>
 		<Item name="wdArtZigZagStitch" value="143" description="之字形缝合边框。"/>
-	</WdPageBorderArt>
+	</Enum>
 	<!--Word)  (WdPageColor 枚举====指定阅读模式下的背景页面颜色，由 返回并传递给 View.PageColor。-->
-	<WdPageColor>
+	<Enum id="WdPageColor">
 		<Item name="wdPageColorInverse" value="2" description="反转页面颜色。 以类似于高对比度黑色的方式呈现文档内容，尽管不一定完全如此。 某些图形在黑色背景上以全彩色呈现。"/>
 		<Item name="wdPageColorNone" value="0" description="无页面颜色，默认为 。 页面背景以白色呈现。 将忽略任何分配的页面背景色。"/>
 		<Item name="wdPageColorSepia" value="1" description="棕褐色页面颜色，RGB (112、66、20) ，透明度为 80%。 不对文档的内容进行更改。"/>
-	</WdPageColor>
+	</Enum>
 	<!--WdPageFit 枚举 (Word) ====指定页面的视图设置。-->
-	<WdPageFit>
+	<Enum id="WdPageFit">
 		<Item name="wdPageFitBestFit" value="2" description="使页面最佳匹配活动窗口。"/>
 		<Item name="wdPageFitFullPage" value="1" description="查看整个页面。"/>
 		<Item name="wdPageFitNone" value="0" description="不要为页面调整视图设置。"/>
 		<Item name="wdPageFitTextFit" value="3" description="使页面文本最佳匹配活动窗口。"/>
-	</WdPageFit>
+	</Enum>
 	<!--WdPageMovementType 枚举 (Word) ====指定页面移动类型。-->
-	<WdPageMovementType>
+	<Enum id="WdPageMovementType">
 		<Item name="wdVertical" value="1" description="文档页面移动类型垂直。"/>
 		<Item name="wdSideToSide" value="2" description="文档页面移动类型并排。"/>
-	</WdPageMovementType>
+	</Enum>
 	<!--WdPageNumberAlignment 枚举 (Word) ====指定要应用于页码的对齐方式。-->
-	<WdPageNumberAlignment>
+	<Enum id="WdPageNumberAlignment">
 		<Item name="wdAlignPageNumberCenter" value="1" description="居中。"/>
 		<Item name="wdAlignPageNumberInside" value="3" description="只在页脚内部左对齐。"/>
 		<Item name="wdAlignPageNumberLeft" value="0" description="左对齐。"/>
 		<Item name="wdAlignPageNumberOutside" value="4" description="只在页脚外部右对齐。"/>
 		<Item name="wdAlignPageNumberRight" value="2" description="右对齐。"/>
-	</WdPageNumberAlignment>
+	</Enum>
 	<!--WdPageNumberStyle 枚举 (Word) ====指定要应用于页码的样式。-->
-	<WdPageNumberStyle>
+	<Enum id="WdPageNumberStyle">
 		<Item name="wdPageNumberStyleArabic" value="0" description="阿拉伯语样式。"/>
 		<Item name="wdPageNumberStyleArabicFullWidth" value="14" description="阿拉伯语全角样式。"/>
 		<Item name="wdPageNumberStyleArabicLetter1" value="46" description="阿拉伯语字母 1 样式。"/>
@@ -2615,9 +2615,9 @@
 		<Item name="wdPageNumberStyleUppercaseLetter" value="3" description="大写字母样式。"/>
 		<Item name="wdPageNumberStyleUppercaseRoman" value="1" description="大写罗马样式。"/>
 		<Item name="wdPageNumberStyleVietCardinalText" value="56" description="越南语基数文本样式。"/>
-	</WdPageNumberStyle>
+	</Enum>
 	<!--WdPaperSize 枚举 (Word) ====指定纸张大小。-->
-	<WdPaperSize>
+	<Enum id="WdPaperSize">
 		<Item name="wdPaper10x14" value="0" description="10 英寸（25.4 厘米）宽，14 英寸（35.56 厘米）长。"/>
 		<Item name="wdPaper11x17" value="1" description="正规 11 英寸（27.94 厘米）宽，17 英寸（43.18 厘米）长。"/>
 		<Item name="wdPaperA3" value="6" description="A3 尺寸。"/>
@@ -2660,9 +2660,9 @@
 		<Item name="wdPaperQuarto" value=" 21" description="四开尺寸。"/>
 		<Item name="wdPaperStatement" value="22" description="报表尺寸。"/>
 		<Item name="wdPaperTabloid" value="23" description="文摘尺寸。"/>
-	</WdPaperSize>
+	</Enum>
 	<!--WdPaperTray 枚举 (Word) ====指定打印机纸盒。-->
-	<WdPaperTray>
+	<Enum id="WdPaperTray">
 		<Item name="wdPrinterAutomaticSheetFeed" value="7 " description="自动送纸。"/>
 		<Item name="wdPrinterDefaultBin" value="0" description="默认纸盒。"/>
 		<Item name="wdPrinterEnvelopeFeed" value="5" description="信封送纸器。"/>
@@ -2678,9 +2678,9 @@
 		<Item name="wdPrinterSmallFormatBin" value="9 " description="小格式纸盒。"/>
 		<Item name="wdPrinterTractorFeed" value="8 " description="送纸器。"/>
 		<Item name="wdPrinterUpperBin" value="1" description="上层纸盒。"/>
-	</WdPaperTray>
+	</Enum>
 	<!--WdParagraphAlignment 枚举 (Word) ====指定段落的对齐方式。-->
-	<WdParagraphAlignment>
+	<Enum id="WdParagraphAlignment">
 		<Item name="wdAlignParagraphCenter" value="1" description="居中。"/>
 		<Item name="wdAlignParagraphDistribute" value="4" description="段落字符被分布排列，以填满整个段落宽度。"/>
 		<Item name="wdAlignParagraphJustify" value="3" description="完全两端对齐。"/>
@@ -2690,9 +2690,9 @@
 		<Item name="wdAlignParagraphLeft" value="0" description="左对齐。"/>
 		<Item name="wdAlignParagraphRight" value="2" description="右对齐。"/>
 		<Item name="wdAlignParagraphThaiJustify" value="9 " description="按照泰语格式布局两端对齐。"/>
-	</WdParagraphAlignment>
+	</Enum>
 	<!--WdPartOfSpeech 枚举 (Word) ====指定某个单词在由 Word 同义词库服务返回时所代表的词性。-->
-	<WdPartOfSpeech>
+	<Enum id="WdPartOfSpeech">
 		<Item name="wdAdjective" value="0" description="形容词。"/>
 		<Item name="wdAdverb" value="2" description="副词。"/>
 		<Item name="wdConjunction" value="5" description="连词。"/>
@@ -2703,9 +2703,9 @@
 		<Item name="wdPreposition" value="6" description="介词。"/>
 		<Item name="wdPronoun" value="4" description="代词。"/>
 		<Item name="wdVerb" value="3" description="动词。"/>
-	</WdPartOfSpeech>
+	</Enum>
 	<!--WdPasteDataType 枚举 (Word) ====指定将剪贴板内容插入到文档时采用的格式。-->
-	<WdPasteDataType>
+	<Enum id="WdPasteDataType">
 		<Item name="wdPasteBitmap" value="4" description="位图。"/>
 		<Item name="wdPasteDeviceIndependentBitmap" value="5" description="与设备无关的位图。"/>
 		<Item name="wdPasteEnhancedMetafile" value="9 " description="增强型图元文件。"/>
@@ -2716,43 +2716,43 @@
 		<Item name="wdPasteRTF" value="1" description="RTF 格式。"/>
 		<Item name="wdPasteShape" value="8 " description="形状。"/>
 		<Item name="wdPasteText" value="2" description="文本。"/>
-	</WdPasteDataType>
+	</Enum>
 	<!--WdPasteOptions 枚举 (Word) ====指示如何粘贴所复制的文本。-->
-	<WdPasteOptions>
+	<Enum id="WdPasteOptions">
 		<Item name="wdKeepSourceFormatting" value="0" description="保留源文档的格式。"/>
 		<Item name="wdKeepTextOnly" value="2" description="只保留文本，不保留格式。"/>
 		<Item name="wdMatchDestinationFormatting" value="1" description="使格式与目标文档匹配。"/>
 		<Item name="wdUseDestinationStyles" value="3" description="使用样式来设置格式，以使格式与目标文档匹配。"/>
-	</WdPasteOptions>
+	</Enum>
 	<!--WdPhoneticGuideAlignmentType 枚举 (Word) ====指定添加到所指定区域的拼音文本的对齐方式。-->
-	<WdPhoneticGuideAlignmentType>
+	<Enum id="WdPhoneticGuideAlignmentType">
 		<Item name="wdPhoneticGuideAlignmentCenter" value="0" description="Microsoft Word 将拼音文本居中放置在所指定区域上。 这是默认值。"/>
 		<Item name="wdPhoneticGuideAlignmentLeft" value="3" description="Word 将拼音文本以左对齐方式放置在所指定区域上。"/>
 		<Item name="wdPhoneticGuideAlignmentOneTwoOne" value="2" description="Word 按照 1:2:1 的比例调整拼音文本内侧和外侧的间距。"/>
 		<Item name="wdPhoneticGuideAlignmentRight" value="4" description="Word 将拼音文本以右对齐方式放置在所指定区域上。"/>
 		<Item name="wdPhoneticGuideAlignmentRightVertical" value="5" description="Word 将拼音文本与竖排文本的右侧对齐。"/>
 		<Item name="wdPhoneticGuideAlignmentZeroOneZero" value="1" description="Word 按照 0:1:0 的比例调整拼音文本内侧和外侧的间距。"/>
-	</WdPhoneticGuideAlignmentType>
+	</Enum>
 	<!--WdPictureLinkType 枚举 (Word) ====指定将图片链接到文档的方式。-->
-	<WdPictureLinkType>
+	<Enum id="WdPictureLinkType">
 		<Item name="wdLinkDataInDoc" value="1" description="将图片嵌入到文档中。"/>
 		<Item name="wdLinkDataOnDisk" value="2" description="将图片链接到文档。"/>
 		<Item name="wdLinkNone" value="0" description="不将图片链接或嵌入到文档中。"/>
-	</WdPictureLinkType>
+	</Enum>
 	<!--WdPortugueseReform 枚举 (Word) ====指定巴西或欧洲葡萄牙语拼写器的模式。 读/写。-->
-	<WdPortugueseReform>
+	<Enum id="WdPortugueseReform">
 		<Item name="wdPortugueseBoth" value="3" description="使用前期修订和后期修订拼写规则。"/>
 		<Item name="wdPortuguesePostReform" value="2" description="使用后期修订拼写规则。"/>
 		<Item name="wdPortuguesePreReform" value="1" description="使用前期修订拼写规则。"/>
-	</WdPortugueseReform>
+	</Enum>
 	<!--WdPreferredWidthType 枚举 (Word) ====指定要在测量项目宽度时使用的首选度量单位。-->
-	<WdPreferredWidthType>
+	<Enum id="WdPreferredWidthType">
 		<Item name="wdPreferredWidthAuto" value="1" description="基于当前所选内容自动选择要使用的度量单位。"/>
 		<Item name="wdPreferredWidthPercent" value="2" description="使用指定的百分比测量当前项目的宽度。"/>
 		<Item name="wdPreferredWidthPoints" value="3" description="使用指定的磅数测量当前项目的宽度。"/>
-	</WdPreferredWidthType>
+	</Enum>
 	<!--WdPrintOutItem 枚举 (Word) ====指定要打印的项目。-->
-	<WdPrintOutItem>
+	<Enum id="WdPrintOutItem">
 		<Item name="wdPrintAutoTextEntries" value="4" description="当前文档中的自动图文集条目。"/>
 		<Item name="wdPrintComments" value="2" description="当前文档中的批注。"/>
 		<Item name="wdPrintDocumentContent" value="0" description="当前文档内容。"/>
@@ -2762,53 +2762,53 @@
 		<Item name="wdPrintMarkup" value="2" description="当前文档中的标记。"/>
 		<Item name="wdPrintProperties" value="1" description="当前文档中的属性。"/>
 		<Item name="wdPrintStyles" value="3" description="当前文档中的样式。"/>
-	</WdPrintOutItem>
+	</Enum>
 	<!--WdPrintOutPages 枚举 (Word) ====指定要打印的页面的类型。-->
-	<WdPrintOutPages>
+	<Enum id="WdPrintOutPages">
 		<Item name="wdPrintAllPages" value="0" description="所有页面。"/>
 		<Item name="wdPrintEvenPagesOnly" value="2" description="仅偶数页。"/>
 		<Item name="wdPrintOddPagesOnly" value="1" description="仅奇数页。"/>
-	</WdPrintOutPages>
+	</Enum>
 	<!--WdPrintOutRange 枚举 (Word) ====指定要打印的范围。-->
-	<WdPrintOutRange>
+	<Enum id="WdPrintOutRange">
 		<Item name="wdPrintAllDocument" value="0" description="整个文档。"/>
 		<Item name="wdPrintCurrentPage" value="2" description="当前页面。"/>
 		<Item name="wdPrintFromTo" value="3" description="指定范围。"/>
 		<Item name="wdPrintRangeOfPages" value="4" description="指定的页面范围。"/>
 		<Item name="wdPrintSelection" value="1" description="当前所选内容。"/>
-	</WdPrintOutRange>
+	</Enum>
 	<!--WdProofreadingErrorType 枚举 (Word) ====指定 Word 校对过程返回的校对错误的类型。-->
-	<WdProofreadingErrorType>
+	<Enum id="WdProofreadingErrorType">
 		<Item name="wdGrammaticalError" value="1" description="语法错误。"/>
 		<Item name="wdSpellingError" value="0" description="拼写错误。"/>
-	</WdProofreadingErrorType>
+	</Enum>
 	<!--WdProtectedViewCloseReason 枚举 (Word) ====指定如何关闭受保护的视图窗口。-->
-	<WdProtectedViewCloseReason>
+	<Enum id="WdProtectedViewCloseReason">
 		<Item name="wdProtectedViewCloseEdit" value="1" description="当用户在"受保护的视图"中单击 "启用编辑" 或 "仍然编辑" 按钮时将会关闭该窗口。"/>
 		<Item name="wdProtectedViewCloseForced" value="2" description="该窗口因为应用程序强制将其关闭或应用程序停止响应而关闭。"/>
 		<Item name="wdProtectedViewCloseNormal" value="0" description="该窗口正常关闭。"/>
-	</WdProtectedViewCloseReason>
+	</Enum>
 	<!--WdProtectionType 枚举 (Word) ====指定应用于当前文档的保护的类型。-->
-	<WdProtectionType>
+	<Enum id="WdProtectionType">
 		<Item name="wdAllowOnlyComments" value="1" description="只允许将批注添加到文档中。"/>
 		<Item name="wdAllowOnlyFormFields" value="2" description="只允许通过窗体域将内容添加到文档中。"/>
 		<Item name="wdAllowOnlyReading" value="3" description="允许对文档进行只读访问。"/>
 		<Item name="wdAllowOnlyRevisions" value="0" description="只允许对现有内容进行修订。"/>
 		<Item name="wdNoProtection" value="-1" description="不对文档应用保护。"/>
-	</WdProtectionType>
+	</Enum>
 	<!--WdReadingLayoutMargin 枚举 (Word) ====指定以全屏阅读视图查看文档时边距可见还是隐藏。-->
-	<WdReadingLayoutMargin>
+	<Enum id="WdReadingLayoutMargin">
 		<Item name="wdAutomaticMargin" value="0" description="显示页面时不带边距。"/>
 		<Item name="wdFullMargin" value="2" description="显示页面时带边距。"/>
 		<Item name="wdSuppressMargin" value="1" description="Microsoft Word 会自动根据可用空间来决定是显示还是隐藏边距。"/>
-	</WdReadingLayoutMargin>
+	</Enum>
 	<!--WdReadingOrder 枚举 (Word) ====指定文档的文字排列和读取顺序。-->
-	<WdReadingOrder>
+	<Enum id="WdReadingOrder">
 		<Item name="wdReadingOrderLtr" value="1" description="从左到右的读取顺序。"/>
 		<Item name="wdReadingOrderRtl" value="0" description="从右到左的读取顺序。"/>
-	</WdReadingOrder>
+	</Enum>
 	<!--WdRecoveryType 枚举 (Word) ====指定要在粘贴所选的表格单元格时使用的格式。-->
-	<WdRecoveryType>
+	<Enum id="WdRecoveryType">
 		<Item name="wdChart" value="14" description="将 Microsoft Office Excel 图表粘贴为嵌入的 OLE 对象。"/>
 		<Item name="wdChartLinked" value="15" description="粘贴 Excel 图表并将其链接到原始 Excel 电子表格。"/>
 		<Item name="wdChartPicture" value="13" description="将 Excel 图表粘贴为图片。"/>
@@ -2827,9 +2827,9 @@
 		<Item name="wdTableOriginalFormatting" value="12 " description="粘贴一个追加的表格，而不合并表格样式。"/>
 		<Item name="wdTableOverwriteCells" value="23" description="粘贴表格单元格并覆盖现有的表格单元格。"/>
 		<Item name="wdUseDestinationStylesRecovery" value="19" description="使用目标文档中使用的样式。"/>
-	</WdRecoveryType>
+	</Enum>
 	<!--WdRectangleType 枚举 (Word) ====指定矩形的类型以及它所包含的信息。-->
-	<WdRectangleType>
+	<Enum id="WdRectangleType">
 		<Item name="wdLineBetweenColumnRectangle" value="5" description="代表列分隔线所对应的区域。"/>
 		<Item name="wdMarkupRectangle" value="2" description="代表批注框所占用的空间。"/>
 		<Item name="wdMarkupRectangleButton" value="3" description="代表"更多"指示符 (...) 所占用的空间，批注框中显示该指示符时表明存在更多批注文本。"/>
@@ -2844,9 +2844,9 @@
 		<Item name="wdMarkupRectangleMoveMatch" value="10" description="代表由用于在文档中查找匹配的跟踪移动对的 "搜索" 按钮所占用的空间。"/>
 		<Item name="wdReadingModeNavigation" value="9 " description="代表在全页阅读视图中阅读文档时页面导航按钮所占用的空间。"/>
 		<Item name="wdReadingModePanningArea" value="11" description="代表在全页阅读视图中阅读文档时为翻转页面而占用的空间。"/>
-	</WdRectangleType>
+	</Enum>
 	<!--WdReferenceKind 枚举 (Word) ====指定要在交叉引用中包含的信息。-->
-	<WdReferenceKind>
+	<Enum id="WdReferenceKind">
 		<Item name="wdContentText" value="-1" description="插入指定项的文本值。 例如，插入指定标题的文本。"/>
 		<Item name="wdEndnoteNumber" value="6" description="插入尾注引用标记。"/>
 		<Item name="wdEndnoteNumberFormatted" value="17 " description="插入带格式的尾注引用标记。"/>
@@ -2860,17 +2860,17 @@
 		<Item name="wdOnlyLabelAndNumber" value="3" description="只插入指定公式、图表或表格的标签和编号。"/>
 		<Item name="wdPageNumber" value="7 " description="插入指定项的页码。"/>
 		<Item name="wdPosition" value="15" description="根据需要插入单词"Above"或"Below"。"/>
-	</WdReferenceKind>
+	</Enum>
 	<!--WdReferenceType 枚举 (Word) ====指定要交叉引用的项目的类型。-->
-	<WdReferenceType>
+	<Enum id="WdReferenceType">
 		<Item name="wdRefTypeBookmark" value="2" description="书签。"/>
 		<Item name="wdRefTypeEndnote" value="4" description="尾注。"/>
 		<Item name="wdRefTypeFootnote" value="3" description="脚注。"/>
 		<Item name="wdRefTypeHeading" value="1" description="标题。"/>
 		<Item name="wdRefTypeNumberedItem" value="0" description="编号项。"/>
-	</WdReferenceType>
+	</Enum>
 	<!--WdRelativeHorizontalPosition 枚举 (Word) ====指定图文框、形状或一组行的水平位置所相对的对象。-->
-	<WdRelativeHorizontalPosition>
+	<Enum id="WdRelativeHorizontalPosition">
 		<Item name="wdRelativeHorizontalPositionCharacter" value="3" description="相对于字符。"/>
 		<Item name="wdRelativeHorizontalPositionColumn" value="2" description="相对于列。"/>
 		<Item name="wdRelativeHorizontalPositionMargin" value="0" description="相对于边距。"/>
@@ -2879,18 +2879,18 @@
 		<Item name="wdRelativeHorizontalPositionLeftMarginArea" value="4" description="相对于左边距。"/>
 		<Item name="wdRelativeHorizontalPositionOuterMarginArea" value="7 " description="相对于外空白区。"/>
 		<Item name="wdRelativeHorizontalPositionRightMarginArea" value="5" description="相对于右边距。"/>
-	</WdRelativeHorizontalPosition>
+	</Enum>
 	<!--WdRelativeHorizontalSize 枚举 (Word) ====指定形状中的 形状 或 ShapeRange 对象的 WidthRelative 属性指定的值的相对宽度。-->
-	<WdRelativeHorizontalSize>
+	<Enum id="WdRelativeHorizontalSize">
 		<Item name="wdRelativeHorizontalSizeInnerMarginArea" value="4" description="宽度相对于内部边距的大小;为奇数页的左边距的大小，以及偶数页的右边距的大小。"/>
 		<Item name="wdRelativeHorizontalSizeLeftMarginArea" value="2" description="宽度相对于左边距的大小。"/>
 		<Item name="wdRelativeHorizontalSizeMargin" value="0" description="宽度相对于左边距和右边距之间的间距。"/>
 		<Item name="wdRelativeHorizontalSizeOuterMarginArea" value="5" description="宽度相对于外部边距的大小;为奇数页的右边距的大小，以及偶数页的左边距大小。"/>
 		<Item name="wdRelativeHorizontalSizePage" value="1" description="宽度相对于页面宽度。"/>
 		<Item name="wdRelativeHorizontalSizeRightMarginArea" value="3" description="宽度相对于右边距的宽度。"/>
-	</WdRelativeHorizontalSize>
+	</Enum>
 	<!--WdRelativeVerticalPosition 枚举 (Word) ====指定图文框、形状或一组行的纵向位置所相对的对象。-->
-	<WdRelativeVerticalPosition>
+	<Enum id="WdRelativeVerticalPosition">
 		<Item name="wdRelativeVerticalPositionLine" value="3" description="相对于线。"/>
 		<Item name="wdRelativeVerticalPositionMargin" value="0" description="相对于边距。"/>
 		<Item name="wdRelativeVerticalPositionPage" value="1" description="相对于页面。"/>
@@ -2899,23 +2899,23 @@
 		<Item name="wdRelativeVerticalPositionInnerMarginArea" value="6" description="相对于内空白区。"/>
 		<Item name="wdRelativeVerticalPositionOuterMarginArea" value="7 " description="相对于外空白区。"/>
 		<Item name="wdRelativeVerticalPositionTopMarginArea" value="4" description="相对于上边距。"/>
-	</WdRelativeVerticalPosition>
+	</Enum>
 	<!--WdRelativeVerticalSize 枚举 (Word) ====指定形状中的 形状 或 ShapeRange 对象的 HeightRelative 属性指定的值的相对高度。-->
-	<WdRelativeVerticalSize>
+	<Enum id="WdRelativeVerticalSize">
 		<Item name="wdRelativeVerticalSizeBottomMarginArea" value="3" description="高度以下边距的大小为基准。"/>
 		<Item name="wdRelativeVerticalSizeInnerMarginArea" value="4" description="高度相对于内部边距的大小;为奇数页的上边距的大小，以及偶数页的下边距的大小。"/>
 		<Item name="wdRelativeVerticalSizeMargin" value="0" description="高度以左边距和右边距之间的间距为基准。"/>
 		<Item name="wdRelativeVerticalSizeOuterMarginArea" value="5" description="高度相对于外部边距的大小;为奇数页的下边距的大小，以及偶数页的上边距的大小。"/>
 		<Item name="wdRelativeVerticalSizePage" value="1" description="高度以页面高度为基准。"/>
 		<Item name="wdRelativeVerticalSizeTopMarginArea" value="2" description="高度以上边距的大小为基准。"/>
-	</WdRelativeVerticalSize>
+	</Enum>
 	<!--WdRelocate 枚举 (Word) ====指定应该相对于段落的当前位置将其重新放置到何处。-->
-	<WdRelocate>
+	<Enum id="WdRelocate">
 		<Item name="wdRelocateDown" value="1" description="在下一个可见的段落下面。"/>
 		<Item name="wdRelocateUp" value="0" description="在上一个可见的段落上面。"/>
-	</WdRelocate>
+	</Enum>
 	<!--WdRemoveDocInfoType 枚举 (Word) ====指定从文档中删除的信息类型。-->
-	<WdRemoveDocInfoType>
+	<Enum id="WdRemoveDocInfoType">
 		<Item name="wdRDIAll" value="99" description="删除所有文档信息。"/>
 		<Item name="wdRDIComments" value="1" description="删除文档注释。"/>
 		<Item name="wdRDIContentType" value="16" description="删除内容类型信息。"/>
@@ -2932,22 +2932,22 @@
 		<Item name="wdRDITemplate" value="9 " description="删除模板信息。"/>
 		<Item name="wdRDITaskpaneWebExtensions" value="17 " description="删除任务窗格 web 扩展信息。"/>
 		<Item name="wdRDIVersions" value="3" description="删除文档版本信息。"/>
-	</WdRemoveDocInfoType>
+	</Enum>
 	<!--WdReplace 枚举 (Word) ====指定在使用“查找和替换”时要进行的替换次数。-->
-	<WdReplace>
+	<Enum id="WdReplace">
 		<Item name="wdReplaceAll" value="2" description="替换所有匹配项。"/>
 		<Item name="wdReplaceNone" value="0" description="不替换任何匹配项。"/>
 		<Item name="wdReplaceOne" value="1" description="替换遇到的第一个匹配项。"/>
-	</WdReplace>
+	</Enum>
 	<!--WdRevisedLinesMark 枚举 (Word) ====指定在启用修订功能时显示修订的位置。-->
-	<WdRevisedLinesMark>
+	<Enum id="WdRevisedLinesMark">
 		<Item name="wdRevisedLinesMarkLeftBorder" value="1" description="在左边框中。"/>
 		<Item name="wdRevisedLinesMarkNone" value="0" description="不显示。"/>
 		<Item name="wdRevisedLinesMarkOutsideBorder" value="3" description="在边框外部。"/>
 		<Item name="wdRevisedLinesMarkRightBorder" value="2" description="在右边框中。"/>
-	</WdRevisedLinesMark>
+	</Enum>
 	<!--WdRevisedPropertiesMark 枚举 (Word) ====指定在启用修订功能时显示修订的方式。-->
-	<WdRevisedPropertiesMark>
+	<Enum id="WdRevisedPropertiesMark">
 		<Item name="wdRevisedPropertiesMarkBold" value="1" description="使用加粗字体。"/>
 		<Item name="wdRevisedPropertiesMarkColorOnly" value="5" description="使用指定的颜色。"/>
 		<Item name="wdRevisedPropertiesMarkDoubleStrikeThrough" value="7 " description="使用双删除线符号。"/>
@@ -2956,48 +2956,48 @@
 		<Item name="wdRevisedPropertiesMarkNone" value="0" description="使用特殊符号。"/>
 		<Item name="wdRevisedPropertiesMarkStrikeThrough" value="6" description="使用删除线符号。"/>
 		<Item name="wdRevisedPropertiesMarkUnderline" value="3" description="使用下划线。"/>
-	</WdRevisedPropertiesMark>
+	</Enum>
 	<!--WdRevisionsBalloonMargin 枚举 (Word) ====指定应该显示修订气球的边距。-->
-	<WdRevisionsBalloonMargin>
+	<Enum id="WdRevisionsBalloonMargin">
 		<Item name="wdLeftMargin" value="0" description="左边距。"/>
 		<Item name="wdRightMargin" value="1" description="右边距。 默认值。"/>
-	</WdRevisionsBalloonMargin>
+	</Enum>
 	<!--WdRevisionsBalloonPrintOrientation 枚举 (Word) ====指定在打印修订气球和批注气球时的方向。-->
-	<WdRevisionsBalloonPrintOrientation>
+	<Enum id="WdRevisionsBalloonPrintOrientation">
 		<Item name="wdBalloonPrintOrientationAuto" value="0" description="Microsoft Word 自动选择适当的方向，以使显示比例系数最接近 100%。"/>
 		<Item name="wdBalloonPrintOrientationForceLandscape" value="2" description="Word 强制以横向模式打印所有节，而不考虑原来的方向，并且在与文档文本相对的一侧打印修订气球和批注气球。"/>
 		<Item name="wdBalloonPrintOrientationPreserve" value="1" description="Word 保留未加批注的原始文档的方向。"/>
-	</WdRevisionsBalloonPrintOrientation>
+	</Enum>
 	<!--WdRevisionsBalloonWidthType 枚举 (Word) ====指定 Microsoft Word 度量修订气球宽度的方式。-->
-	<WdRevisionsBalloonWidthType>
+	<Enum id="WdRevisionsBalloonWidthType">
 		<Item name="wdBalloonWidthPercent" value="0" description="以文档宽度的百分比度量。"/>
 		<Item name="wdBalloonWidthPoints" value="1" description="以磅为单位度量。"/>
-	</WdRevisionsBalloonWidthType>
+	</Enum>
 	<!--WdRevisionsMarkup 枚举 (Word) ====指定文档中可见、由 返回并传递给 RevisionsFilter.Markup 属性的标记的范围。-->
-	<WdRevisionsMarkup>
+	<Enum id="WdRevisionsMarkup">
 		<Item name="wdRevisionsMarkupAll" value="2" description="显示所有标记可见的最终文档。"/>
 		<Item name="wdRevisionsMarkupNone" value="0" description="显示没有可见标记的最终文档。"/>
 		<Item name="wdRevisionsMarkupSimple" value="1" description="在简单标记中显示最后一个文档：包含修订，但不显示任何标记。"/>
-	</WdRevisionsMarkup>
+	</Enum>
 	<!--WdRevisionsMode 枚举 (Word) ====指定 Microsoft Word 是在边距中显示气球还是在文档正文内部显示气球。-->
-	<WdRevisionsMode>
+	<Enum id="WdRevisionsMode">
 		<Item name="wdBalloonRevisions" value="0" description="在左边距或右边距的气球中显示修订。"/>
 		<Item name="wdInLineRevisions" value="1" description="在正文中显示修订，使用删除线表示删除，使用下划线表示插入。 这是 Word 早期版本的默认设置。"/>
 		<Item name="wdMixedRevisions" value="2" description="不支持。"/>
-	</WdRevisionsMode>
+	</Enum>
 	<!--WdRevisionsView 枚举 (Word) ====指定 Word 是显示文档的原始版本还是显示应用了修订和格式更改的版本。-->
-	<WdRevisionsView>
+	<Enum id="WdRevisionsView">
 		<Item name="wdRevisionsViewFinal" value="0" description="显示应用了格式和内容更改的文档。"/>
 		<Item name="wdRevisionsViewOriginal" value="1" description="显示进行更改之前的文档。"/>
-	</WdRevisionsView>
+	</Enum>
 	<!--WdRevisionsWrap 枚举 (Word) ====指定在文档中显示修订标记的方式。-->
-	<WdRevisionsWrap>
+	<Enum id="WdRevisionsWrap">
 		<Item name="wdWrapAlways" value="1" description="以环绕方式显示修订。"/>
 		<Item name="wdWrapAsk" value="2" description="询问用户是否应该以环绕方式显示修订。"/>
 		<Item name="wdWrapNever" value="0" description="从不以环绕方式显示修订。"/>
-	</WdRevisionsWrap>
+	</Enum>
 	<!--WdRevisionType 枚举 (Word) ====指定用修订标记进行标记的更改的类型。-->
-	<WdRevisionType>
+	<Enum id="WdRevisionType">
 		<Item name="wdNoRevision" value="0" description="无修订。"/>
 		<Item name="wdRevisionCellDeletion" value="17 " description="表格单元格已删除。"/>
 		<Item name="wdRevisionCellInsertion" value="16" description="表格单元格已插入。"/>
@@ -3020,42 +3020,42 @@
 		<Item name="wdRevisionStyle" value="8 " description="样式已更改。"/>
 		<Item name="wdRevisionStyleDefinition" value="13" description="样式定义已更改。"/>
 		<Item name="wdRevisionTableProperty" value="11" description="表格属性已更改。"/>
-	</WdRevisionType>
+	</Enum>
 	<!--WdRowAlignment 枚举 (Word) ====指定所选行中内容的对齐方式。-->
-	<WdRowAlignment>
+	<Enum id="WdRowAlignment">
 		<Item name="wdAlignRowCenter" value="1" description="居中。"/>
 		<Item name="wdAlignRowLeft" value="0" description="左对齐。 默认值。"/>
 		<Item name="wdAlignRowRight" value="2" description="右对齐。"/>
-	</WdRowAlignment>
+	</Enum>
 	<!--WdRowHeightRule 枚举 (Word) ====指定用于确定所指定单元格或行的高度的规则。-->
-	<WdRowHeightRule>
+	<Enum id="WdRowHeightRule">
 		<Item name="wdRowHeightAtLeast" value="1" description="行高至少是最小的指定值。"/>
 		<Item name="wdRowHeightAuto" value="0" description="调整行高以适应该行中的最大高度值。"/>
 		<Item name="wdRowHeightExactly" value="2" description="行高是固定值。"/>
-	</WdRowHeightRule>
+	</Enum>
 	<!--WdRulerStyle 枚举 (Word) ====指定 Word 在左缩进更改时调整表格的方式。-->
-	<WdRulerStyle>
+	<Enum id="WdRulerStyle">
 		<Item name="wdAdjustFirstColumn" value="2" description="只调整第一列的左边缘，而保持其他列和表格右边缘的位置。"/>
 		<Item name="wdAdjustNone" value="0" description="调整一行或多行的左边缘，通过将所有列左移或右移来保持列宽度。 这是默认值。"/>
 		<Item name="wdAdjustProportional" value="1" description="调整第一列的左边缘，通过按比例调整指定的一行或多行中所有单元格的宽度，保持表格右边缘的位置。"/>
 		<Item name="wdAdjustSameWidth" value="3" description="调整第一列的左边缘，通过将指定的一行或多行中所有单元格的宽度设置为相同值，保持表格右边缘的位置。"/>
-	</WdRulerStyle>
+	</Enum>
 	<!--WdSalutationGender 枚举 (Word) ====指定要在称呼中使用的性别。-->
-	<WdSalutationGender>
+	<Enum id="WdSalutationGender">
 		<Item name="wdGenderFemale" value="0" description="女性。"/>
 		<Item name="wdGenderMale" value="1" description="男性。"/>
 		<Item name="wdGenderNeutral" value="2" description="中性。"/>
 		<Item name="wdGenderUnknown" value="3" description="未知性别。"/>
-	</WdSalutationGender>
+	</Enum>
 	<!--WdSalutationType 枚举 (Word) ====指定要用于信函的称呼的类型。-->
-	<WdSalutationType>
+	<Enum id="WdSalutationType">
 		<Item name="wdSalutationBusiness" value="2" description="商业称呼。"/>
 		<Item name="wdSalutationFormal" value="1" description="正式称呼。"/>
 		<Item name="wdSalutationInformal" value="0" description="非正式称呼。"/>
 		<Item name="wdSalutationOther" value="3" description="自定义称呼。"/>
-	</WdSalutationType>
+	</Enum>
 	<!--WdSaveFormat 枚举 (Word) ====指定要在保存文档时使用的格式。-->
-	<WdSaveFormat>
+	<Enum id="WdSaveFormat">
 		<Item name="wdFormatDocument" value="0" description="Microsoft Office Word 97 - 2003 binary file format."/>
 		<Item name="wdFormatDOSText" value="4" description="Microsoft DOS text format."/>
 		<Item name="wdFormatDOSTextLineBreaks" value="5" description="Microsoft DOS text with line breaks preserved."/>
@@ -3084,34 +3084,34 @@
 		<Item name="wdFormatXMLTemplate" value="14" description="XML template format."/>
 		<Item name="wdFormatXMLTemplateMacroEnabled" value="15" description="XML template format with macros enabled."/>
 		<Item name="wdFormatXPS" value="18 " description="XPS format."/>
-	</WdSaveFormat>
+	</Enum>
 	<!--WdSaveOptions 枚举 (Word) ====指定应该如何处理待定的更改。-->
-	<WdSaveOptions>
+	<Enum id="WdSaveOptions">
 		<Item name="wdDoNotSaveChanges" value="0" description="不保存待定的更改。"/>
 		<Item name="wdPromptToSaveChanges" value="-2" description="提示用户保存待定更改。"/>
 		<Item name="wdSaveChanges" value="-1" description="自动保存待定更改，而不提示用户。"/>
-	</WdSaveOptions>
+	</Enum>
 	<!--WdScrollbarType 枚举 (Word) ====指定在 Web 浏览器中查看其框架页面时，当指定框架的滚动条可用。-->
-	<WdScrollbarType>
+	<Enum id="WdScrollbarType">
 		<Item name="wdScrollbarTypeAuto" value="0" description="仅在内容太长而无法在分配的空间中显示的情况下，才可在指定的框架中使用滚动条。"/>
 		<Item name="wdScrollbarTypeNo" value="2" description="永远无法在指定框架中使用滚动条。"/>
 		<Item name="wdScrollbarTypeYes" value="1" description="总是可以在指定的框架中使用滚动条。"/>
-	</WdScrollbarType>
+	</Enum>
 	<!--WdSectionDirection 枚举 (Word) ====指定 Word 如何显示指定节的阅读顺序和对齐方式。-->
-	<WdSectionDirection>
+	<Enum id="WdSectionDirection">
 		<Item name="wdSectionDirectionLtr" value="1" description="用左对齐方式和从左到右的阅读顺序显示节。"/>
 		<Item name="wdSectionDirectionRtl" value="0" description="用右对齐方式和从右到左的阅读顺序显示节。"/>
-	</WdSectionDirection>
+	</Enum>
 	<!--WdSectionStart 枚举 (Word) ====指定所指定项的分节符的类型。-->
-	<WdSectionStart>
+	<Enum id="WdSectionStart">
 		<Item name="wdSectionContinuous" value="0" description="“连续”分节符。"/>
 		<Item name="wdSectionEvenPage" value="3" description="“偶数页”分节符。"/>
 		<Item name="wdSectionNewColumn" value="1" description="“新栏”分节符。"/>
 		<Item name="wdSectionNewPage" value="2" description="“新页”分节符。"/>
 		<Item name="wdSectionOddPage" value="4" description="“奇数页”分节符。"/>
-	</WdSectionStart>
+	</Enum>
 	<!--WdSeekView 枚举 (Word) ====指定要在页面视图中显示的文档元素。-->
-	<WdSeekView>
+	<Enum id="WdSeekView">
 		<Item name="wdSeekCurrentPageFooter" value="10" description="当前页页脚。"/>
 		<Item name="wdSeekCurrentPageHeader" value="9 " description="当前页页眉。"/>
 		<Item name="wdSeekEndnotes" value="8 " description="尾注。"/>
@@ -3123,17 +3123,17 @@
 		<Item name="wdSeekMainDocument" value="0" description="主文档。"/>
 		<Item name="wdSeekPrimaryFooter" value="4" description="主页脚。"/>
 		<Item name="wdSeekPrimaryHeader" value="1" description="主页眉。"/>
-	</WdSeekView>
+	</Enum>
 	<!--WdSelectionFlags 枚举 (Word) ====指定所选内容的属性。-->
-	<WdSelectionFlags>
+	<Enum id="WdSelectionFlags">
 		<Item name="wdSelActive" value="8 " description="所选内容是活动的。"/>
 		<Item name="wdSelAtEOL" value="2" description="所选内容位于信函的末尾。"/>
 		<Item name="wdSelOvertype" value="4" description="所选内容被改写。"/>
 		<Item name="wdSelReplace" value="16" description="所选内容被替换。"/>
 		<Item name="wdSelStartActive" value="1" description="所选内容位于活动文档的开头。"/>
-	</WdSelectionFlags>
+	</Enum>
 	<!--WdSelectionType 枚举 (Word) ====指定选择类型。-->
-	<WdSelectionType>
+	<Enum id="WdSelectionType">
 		<Item name="wdNoSelection" value="0" description="没有选定内容。"/>
 		<Item name="wdSelectionBlock" value="6" description="列方式选定。"/>
 		<Item name="wdSelectionColumn" value="4" description="列选择。"/>
@@ -3143,17 +3143,17 @@
 		<Item name="wdSelectionNormal" value="2" description="标准的或用户定义的选择容。"/>
 		<Item name="wdSelectionRow" value="5" description="行选择。"/>
 		<Item name="wdSelectionShape" value="8 " description="形状选择。"/>
-	</WdSelectionType>
+	</Enum>
 	<!--WdSeparatorType 枚举 (Word) ====指定要在各项之间放置的分隔符的类型。-->
-	<WdSeparatorType>
+	<Enum id="WdSeparatorType">
 		<Item name="wdSeparatorColon" value="2" description="冒号。"/>
 		<Item name="wdSeparatorEmDash" value="3" description="着重突出的划线。"/>
 		<Item name="wdSeparatorEnDash" value="4" description="标准划线。"/>
 		<Item name="wdSeparatorHyphen" value="0" description="连字符。"/>
 		<Item name="wdSeparatorPeriod" value="1" description="句点。"/>
-	</WdSeparatorType>
+	</Enum>
 	<!--WdShapePosition 枚举 (Word) ====指定所指定形状的相对位置。-->
-	<WdShapePosition>
+	<Enum id="WdShapePosition">
 		<Item name="wdShapeBottom" value="-999997" description="底部。"/>
 		<Item name="wdShapeCenter" value="-999995" description="中央。"/>
 		<Item name="wdShapeInside" value="-999994" description="所选区域内部。"/>
@@ -3161,33 +3161,33 @@
 		<Item name="wdShapeOutside" value="-999993" description="所选区域外部。"/>
 		<Item name="wdShapeRight" value="-999996" description="右侧。"/>
 		<Item name="wdShapeTop" value="-999999" description="顶部。"/>
-	</WdShapePosition>
+	</Enum>
 	<!--WdShapePositionRelative 枚举 (Word) ====指定 LeftRelative 或 TopRelative形状 或 绘图 对象的属性是否有效。-->
-	<WdShapePositionRelative>
+	<Enum id="WdShapePositionRelative">
 		<Item name="wdShapePositionRelativeNone" value="-999999" description="指定 LeftRelative 或 TopRelative 属性不是当前有效，使形状位置根据分别在 Left 或 Top 属性指定的值。"/>
-	</WdShapePositionRelative>
+	</Enum>
 	<!--WdShapeSizeRelative 枚举 (Word) ====指定 WidthRelative 或 HeightRelative形状 或 绘图 对象的属性是否有效。-->
-	<WdShapeSizeRelative>
+	<Enum id="WdShapeSizeRelative">
 		<Item name="wdShapeSizeRelativeNone" value="-999999" description="指定 WidthRelative 或 HeightRelative 属性不是当前有效，使形状位置根据分别在 Left 或 Top 属性指定的值。"/>
-	</WdShapeSizeRelative>
+	</Enum>
 	<!--WdShowFilter 枚举 (Word) ====指定要在 "样式和格式" 任务窗格中显示的样式和格式。-->
-	<WdShowFilter>
+	<Enum id="WdShowFilter">
 		<Item name="wdShowFilterFormattingAvailable" value="4" description="所有可用的格式。"/>
 		<Item name="wdShowFilterFormattingInUse" value="3" description="所有正在使用的格式。"/>
 		<Item name="wdShowFilterStylesAll" value="2" description="所有样式。"/>
 		<Item name="wdShowFilterStylesAvailable" value="0" description="所有可用的样式。"/>
 		<Item name="wdShowFilterStylesInUse" value="1" description="所有正在使用的样式。"/>
 		<Item name="wdShowFilterFormattingRecommended" value="5" description="仅限于推荐的样式。"/>
-	</WdShowFilter>
+	</Enum>
 	<!--WdShowSourceDocuments 枚举 (Word) ====指定在使用 Word 比较函数比较两个文档时源文档的显示方式。-->
-	<WdShowSourceDocuments>
+	<Enum id="WdShowSourceDocuments">
 		<Item name="wdShowSourceDocumentsBoth" value="3" description="同时显示原始文档和修订后的文档。"/>
 		<Item name="wdShowSourceDocumentsNone" value="0" description="对于比较函数中所用的源文档，既不显示原始文档，也不显示修订后的文档。"/>
 		<Item name="wdShowSourceDocumentsOriginal" value="1" description="只显示原始文档。"/>
 		<Item name="wdShowSourceDocumentsRevised" value="2" description="只显示修订后的文档。"/>
-	</WdShowSourceDocuments>
+	</Enum>
 	<!--WdSmartTagControlType 枚举 (Word) ====指定与 SmartTagAction 对象相关联的控件的类型。-->
-	<WdSmartTagControlType>
+	<Enum id="WdSmartTagControlType">
 		<Item name="wdControlActiveX" value="13" description="ActiveX 控件。"/>
 		<Item name="wdControlButton" value="6" description="按钮。"/>
 		<Item name="wdControlCheckbox" value="9 " description="复选框。"/>
@@ -3204,9 +3204,9 @@
 		<Item name="wdControlSeparator" value="5" description="分隔符。"/>
 		<Item name="wdControlSmartTag" value="1" description="智能标记。"/>
 		<Item name="wdControlTextbox" value="10" description="文本框。"/>
-	</WdSmartTagControlType>
+	</Enum>
 	<!--WdSortFieldType 枚举 (Word) ====指定要在对列进行排序时应用的排序类型。-->
-	<WdSortFieldType>
+	<Enum id="WdSortFieldType">
 		<Item name="wdSortFieldAlphanumeric" value="0" description="字母数字顺序。"/>
 		<Item name="wdSortFieldDate" value="2" description="日期顺序。"/>
 		<Item name="wdSortFieldJapanJIS" value="4" description="日语 JIS 顺序。"/>
@@ -3214,26 +3214,26 @@
 		<Item name="wdSortFieldNumeric" value="1" description="数字顺序。"/>
 		<Item name="wdSortFieldStroke" value="5" description="笔划顺序。"/>
 		<Item name="wdSortFieldSyllable" value="3" description="音节顺序。"/>
-	</WdSortFieldType>
+	</Enum>
 	<!--WdSortOrder 枚举 (Word) ====指定排序方向。-->
-	<WdSortOrder>
+	<Enum id="WdSortOrder">
 		<Item name="wdSortOrderAscending" value="0" description="升序。 默认值。"/>
 		<Item name="wdSortOrderDescending" value="1" description="降序。"/>
-	</WdSortOrder>
+	</Enum>
 	<!--WdSortSeparator 枚举 (Word) ====指定域分隔符的类型。-->
-	<WdSortSeparator>
+	<Enum id="WdSortSeparator">
 		<Item name="wdSortSeparateByCommas" value="1" description="逗号。"/>
 		<Item name="wdSortSeparateByDefaultTableSeparator" value="2" description="默认表格分隔符。"/>
 		<Item name="wdSortSeparateByTabs" value="0" description="制表符。"/>
-	</WdSortSeparator>
+	</Enum>
 	<!--WdSpanishSpeller 枚举 (Word) ====指定西班牙语拼写器模式。-->
-	<WdSpanishSpeller>
+	<Enum id="WdSpanishSpeller">
 		<Item name="wdSpanishTuteoAndVoseo" value="1" description="西班牙语拼写检查器可识别 tuteo 和 voseo 动词。"/>
 		<Item name="wdSpanishTuteoOnly" value="0" description="西班牙语拼写检查器仅识别 tuteo 动词。"/>
 		<Item name="wdSpanishVoseoOnly" value="2" description="西班牙语拼写检查器仅识别 voseo 动词。"/>
-	</WdSpanishSpeller>
+	</Enum>
 	<!--WdSpecialPane 枚举 (Word) ====指定要在活动窗口的窗格中显示的项。-->
-	<WdSpecialPane>
+	<Enum id="WdSpecialPane">
 		<Item name="wdPaneComments" value="15" description="所选批注。"/>
 		<Item name="wdPaneCurrentPageFooter" value="17 " description="页脚。"/>
 		<Item name="wdPaneCurrentPageHeader" value="16" description="页眉。"/>
@@ -3255,21 +3255,21 @@
 		<Item name="wdPaneRevisions" value="18 " description="修订窗格。"/>
 		<Item name="wdPaneRevisionsHoriz" value="19" description="修订窗格沿着文档窗口的底部显示。"/>
 		<Item name="wdPaneRevisionsVert" value="20" description="修订窗格沿着文档窗口的左侧显示。"/>
-	</WdSpecialPane>
+	</Enum>
 	<!--WdSpellingErrorType 枚举 (Word) ====指定拼写错误类型。-->
-	<WdSpellingErrorType>
+	<Enum id="WdSpellingErrorType">
 		<Item name="wdSpellingCapitalization" value="2" description="大写字母错误。"/>
 		<Item name="wdSpellingCorrect" value="0" description="拼写正确。"/>
 		<Item name="wdSpellingNotInDictionary" value="1" description="单词不在指定的词典中。"/>
-	</WdSpellingErrorType>
+	</Enum>
 	<!--WdSpellingWordType 枚举 (Word) ====指定 Microsoft Word 提出拼写建议的方式。-->
-	<WdSpellingWordType>
+	<Enum id="WdSpellingWordType">
 		<Item name="wdAnagram" value="2" description="换音造词或回文造词搜索。"/>
 		<Item name="wdSpellword" value="0" description="近似拼写单词搜索。"/>
 		<Item name="wdWildcard" value="1" description="通配符搜索。"/>
-	</WdSpellingWordType>
+	</Enum>
 	<!--WdStatistic 枚举 (Word) ====指定要从选定内容或项目返回的统计信息。-->
-	<WdStatistic>
+	<Enum id="WdStatistic">
 		<Item name="wdStatisticCharacters" value="3" description="字符数。"/>
 		<Item name="wdStatisticCharactersWithSpaces" value="5" description="包括空格在内的字符数。"/>
 		<Item name="wdStatisticFarEastCharacters" value="6" description="亚洲语言字符数。"/>
@@ -3277,9 +3277,9 @@
 		<Item name="wdStatisticPages" value="2" description="页数。"/>
 		<Item name="wdStatisticParagraphs" value="4" description="段落数。"/>
 		<Item name="wdStatisticWords" value="0" description="单词数。"/>
-	</WdStatistic>
+	</Enum>
 	<!--WdStoryType 枚举 (Word) ====指定选定内容或项目的部分类型。-->
-	<WdStoryType>
+	<Enum id="WdStoryType">
 		<Item name="wdCommentsStory" value="4" description="批注部分。"/>
 		<Item name="wdEndnoteContinuationNoticeStory" value="17 " description="尾注延续标记部分。"/>
 		<Item name="wdEndnoteContinuationSeparatorStory" value="16" description="尾注延续分隔符部分。"/>
@@ -3297,36 +3297,36 @@
 		<Item name="wdPrimaryFooterStory" value="9 " description="主页脚部分。"/>
 		<Item name="wdPrimaryHeaderStory" value="7 " description="主页眉部分。"/>
 		<Item name="wdTextFrameStory" value="5" description="文本框架部分。"/>
-	</WdStoryType>
+	</Enum>
 	<!--WdStyleSheetLinkType 枚举 (Word) ====指定如何将样式表与文档相关联。-->
-	<WdStyleSheetLinkType>
+	<Enum id="WdStyleSheetLinkType">
 		<Item name="wdStyleSheetLinkTypeImported" value="1" description="导入的内部样式表。"/>
 		<Item name="wdStyleSheetLinkTypeLinked" value="0" description="链接的外部样式表。"/>
-	</WdStyleSheetLinkType>
+	</Enum>
 	<!--WdStyleSheetPrecedence 枚举 (Word) ====指定样式表与附加到 Web 文档的其他级联样式表相比的重要性级别。-->
-	<WdStyleSheetPrecedence>
+	<Enum id="WdStyleSheetPrecedence">
 		<Item name="wdStyleSheetPrecedenceHigher" value="-1" description="普通优先级。"/>
 		<Item name="wdStyleSheetPrecedenceHighest" value="1" description="最高优先级。"/>
 		<Item name="wdStyleSheetPrecedenceLower" value="-2" description="较低的优先级。"/>
 		<Item name="wdStyleSheetPrecedenceLowest" value="0" description="最低优先级。"/>
-	</WdStyleSheetPrecedence>
+	</Enum>
 	<!--WdStyleSort 枚举 (Word) ====指定如何对 "样式" 任务窗格中的样式进行排序。-->
-	<WdStyleSort>
+	<Enum id="WdStyleSort">
 		<Item name="wdStyleSortByBasedOn" value="3" description="根据 "样式排序方式基于" 选项中指定的项对样式进行排序。"/>
 		<Item name="wdStyleSortByFont" value="2" description="根据所用字体的名称对样式进行排序。"/>
 		<Item name="wdStyleSortByName" value="0" description="根据样式的名称按字母顺序对样式进行排序。"/>
 		<Item name="wdStyleSortByType" value="4" description="根据样式是段落样式还是字符样式对样式进行排序。"/>
 		<Item name="wdStyleSortRecommended" value="1" description="根据是否是建议使用样式对样式进行排序。"/>
-	</WdStyleSort>
+	</Enum>
 	<!--WdStyleType 枚举 (Word) ====指定要应用的样式类型。-->
-	<WdStyleType>
+	<Enum id="WdStyleType">
 		<Item name="wdStyleTypeCharacter" value="2" description="正文字符样式。"/>
 		<Item name="wdStyleTypeList" value="4" description="列表样式。"/>
 		<Item name="wdStyleTypeParagraph" value="1" description="段落样式。"/>
 		<Item name="wdStyleTypeTable" value="3" description="表格样式。"/>
-	</WdStyleType>
+	</Enum>
 	<!--WdStylisticSet 枚举 (Word) ====指定要应用于字体的样式集。-->
-	<WdStylisticSet>
+	<Enum id="WdStylisticSet">
 		<Item name="wdStylisticSet01" value="1" description="指定字体的第一个样式集。"/>
 		<Item name="wdStylisticSet02" value="2" description="指定字体的第二个样式集。"/>
 		<Item name="wdStylisticSet03" value="4" description="指定字体的第三个样式集。"/>
@@ -3348,46 +3348,46 @@
 		<Item name="wdStylisticSet19" value="262144" description="指定字体的第十九个样式集。"/>
 		<Item name="wdStylisticSet20" value="524288" description="指定字体的第二十个样式集。"/>
 		<Item name="wdStylisticSetDefault" value="0" description="指定字体的默认样式集。"/>
-	</WdStylisticSet>
+	</Enum>
 	<!--WdSubscriberFormats 枚举 (Word) ====此枚举已经被弃用，不应使用。-->
-	<WdSubscriberFormats>
+	<Enum id="WdSubscriberFormats">
 		<Item name="wdSubscriberBestFormat" value="0" description="不支持。"/>
 		<Item name="wdSubscriberPict" value="4" description="不支持。"/>
 		<Item name="wdSubscriberRTF" value="1" description="不支持。"/>
 		<Item name="wdSubscriberText" value="2" description="不支持。"/>
-	</WdSubscriberFormats>
+	</Enum>
 	<!--WdTabAlignment 枚举 (Word) ====指定要应用的制表位对齐方式。-->
-	<WdTabAlignment>
+	<Enum id="WdTabAlignment">
 		<Item name="wdAlignTabBar" value="4" description="竖线对齐。"/>
 		<Item name="wdAlignTabCenter" value="1" description="居中对齐。"/>
 		<Item name="wdAlignTabDecimal" value="3" description="小数点对齐。"/>
 		<Item name="wdAlignTabLeft" value="0" description="左对齐。"/>
 		<Item name="wdAlignTabList" value="6" description="列表对齐。"/>
 		<Item name="wdAlignTabRight" value="2" description="右对齐。"/>
-	</WdTabAlignment>
+	</Enum>
 	<!--WdTabLeader 枚举 (Word) ====指定要用作带格式制表符前导符的字符。-->
-	<WdTabLeader>
+	<Enum id="WdTabLeader">
 		<Item name="wdTabLeaderDashes" value="2" description="划线。"/>
 		<Item name="wdTabLeaderDots" value="1" description="点。"/>
 		<Item name="wdTabLeaderHeavy" value="4" description="粗线。"/>
 		<Item name="wdTabLeaderLines" value="3" description="双线。"/>
 		<Item name="wdTabLeaderMiddleDot" value="5" description="中间点。"/>
 		<Item name="wdTabLeaderSpaces" value="0" description="空格。 默认值。"/>
-	</WdTabLeader>
+	</Enum>
 	<!--WdTableDirection 枚举 (Word) ====指定 Microsoft Word 对指定表格或行中的单元格进行排序的方向。-->
-	<WdTableDirection>
+	<Enum id="WdTableDirection">
 		<Item name="wdTableDirectionLtr" value="1" description="对所选行进行排列，使第一列位于最左边的位置。"/>
 		<Item name="wdTableDirectionRtl" value="0" description="对所选行进行排列，使第一列位于最右边的位置。"/>
-	</WdTableDirection>
+	</Enum>
 	<!--WdTableFieldSeparator 枚举 (Word) ====指定要在下列情况下使用的字符：在将文本转换为表格时将文本分隔成单元格；以及在将表格转换为文本时分隔所转换的列（段落标记分隔所转换的行）。-->
-	<WdTableFieldSeparator>
+	<Enum id="WdTableFieldSeparator">
 		<Item name="wdSeparateByCommas" value="2" description="一个逗号。"/>
 		<Item name="wdSeparateByDefaultListSeparator" value="3" description="默认列表分隔符。"/>
 		<Item name="wdSeparateByParagraphs" value="0" description="段落标记。"/>
 		<Item name="wdSeparateByTabs" value="1" description="制表符。"/>
-	</WdTableFieldSeparator>
+	</Enum>
 	<!--WdTableFormat 枚举 (Word) ====指定要应用于表格的预定义格式。-->
-	<WdTableFormat>
+	<Enum id="WdTableFormat">
 		<Item name="wdTableFormat3DEffects1" value="32" description="3D 效果格式数字 1。"/>
 		<Item name="wdTableFormat3DEffects2" value="33" description="3D 效果格式数字 2。"/>
 		<Item name="wdTableFormat3DEffects3" value="34" description="3D 效果格式数字 3。"/>
@@ -3431,9 +3431,9 @@
 		<Item name="wdTableFormatWeb1" value="40" description="1 号 Web 格式。"/>
 		<Item name="wdTableFormatWeb2" value="41" description="2 号 Web 格式。"/>
 		<Item name="wdTableFormatWeb3" value="42" description="3 号 Web 格式。"/>
-	</WdTableFormat>
+	</Enum>
 	<!--WdTableFormatApply 枚举 (Word) ====指定应该如何应用表格格式。-->
-	<WdTableFormatApply>
+	<Enum id="WdTableFormatApply">
 		<Item name="wdTableFormatApplyAutoFit" value="16" description="自动调整。"/>
 		<Item name="wdTableFormatApplyBorders" value="1" description="边框。"/>
 		<Item name="wdTableFormatApplyColor" value="8 " description="颜色。"/>
@@ -3443,9 +3443,9 @@
 		<Item name="wdTableFormatApplyLastColumn" value="256" description="将自动套用格式应用于最后一列。"/>
 		<Item name="wdTableFormatApplyLastRow" value="64" description="将自动套用格式应用于最后一行。"/>
 		<Item name="wdTableFormatApplyShading" value="2" description="底纹。"/>
-	</WdTableFormatApply>
+	</Enum>
 	<!--WdTablePosition 枚举 (Word) ====指定表格在文档中的相对位置。-->
-	<WdTablePosition>
+	<Enum id="WdTablePosition">
 		<Item name="wdTableBottom" value="-999997" description="在文档的底部。"/>
 		<Item name="wdTableCenter" value="-999995" description="居中。"/>
 		<Item name="wdTableInside" value="-999994" description="位于区域内部。"/>
@@ -3453,9 +3453,9 @@
 		<Item name="wdTableOutside" value="-999993" description="位于区域外部。"/>
 		<Item name="wdTableRight" value="-999996" description="与文档的右侧对齐。"/>
 		<Item name="wdTableTop" value="-999999" description="在文档的顶部。"/>
-	</WdTablePosition>
+	</Enum>
 	<!--WdTaskPanes 枚举 (Word) ====指定任务窗格的类型。-->
-	<WdTaskPanes>
+	<Enum id="WdTaskPanes">
 		<Item name="wdTaskPaneApplyStyles" value="17 " description="应用样式窗格。"/>
 		<Item name="wdTaskPaneDocumentActions" value="7 " description="文档操作窗格。"/>
 		<Item name="wdTaskPaneDocumentProtection" value="6" description="文档保护窗格。"/>
@@ -3475,47 +3475,47 @@
 		<Item name="wdTaskPaneXMLDocument" value="12 " description="XML 文档窗格。"/>
 		<Item name="wdTaskPaneXMLMapping" value=" 21" description="XML 映射窗格。"/>
 		<Item name="wdTaskPaneXMLStructure" value="5" description="XML 结构窗格。"/>
-	</WdTaskPanes>
+	</Enum>
 	<!--WdTCSCConverterDirection 枚举 (Word) ====指定在繁体中文和简体中文之间进行转换的方式。-->
-	<WdTCSCConverterDirection>
+	<Enum id="WdTCSCConverterDirection">
 		<Item name="wdTCSCConverterDirectionAuto" value="2" description="根据在指定区域检测到的语言，进行相应方向的转换。"/>
 		<Item name="wdTCSCConverterDirectionSCTC" value="0" description="将简体中文转换为繁体中文。"/>
 		<Item name="wdTCSCConverterDirectionTCSC" value="1" description="将繁体中文转换为简体中文。"/>
-	</WdTCSCConverterDirection>
+	</Enum>
 	<!--WdTemplateType 枚举 (Word) ====指定模板的类型。-->
-	<WdTemplateType>
+	<Enum id="WdTemplateType">
 		<Item name="wdAttachedTemplate" value="2" description="附加模板。"/>
 		<Item name="wdGlobalTemplate" value="1" description="全局模板。"/>
 		<Item name="wdNormalTemplate" value="0" description="标准默认模板。"/>
-	</WdTemplateType>
+	</Enum>
 	<!--WdTextboxTightWrap 枚举 (Word) ====指定 Microsoft Word 使文字紧密环绕文本框的方式。-->
-	<WdTextboxTightWrap>
+	<Enum id="WdTextboxTightWrap">
 		<Item name="wdTightAll" value="1" description="在所有行上，文本框周围文字紧密环绕文本框的内容。"/>
 		<Item name="wdTightFirstAndLastLines" value="2" description="仅在第一行和最后一行上，文字紧密环绕文本框的内容。"/>
 		<Item name="wdTightFirstLineOnly" value="3" description="仅在第一行上，文字紧密环绕文本框的内容。"/>
 		<Item name="wdTightLastLineOnly" value="4" description="仅在最后一行上，文字紧密环绕文本框的内容。"/>
 		<Item name="wdTightNone" value="0" description="文字不紧密环绕文本框的内容。"/>
-	</WdTextboxTightWrap>
+	</Enum>
 	<!--WdTextFormFieldType 枚举 (Word) ====指定文字型窗体域的类型。-->
-	<WdTextFormFieldType>
+	<Enum id="WdTextFormFieldType">
 		<Item name="wdCalculationText" value="5" description="计算文字型域。"/>
 		<Item name="wdCurrentDateText" value="3" description="当前日期文字型域。"/>
 		<Item name="wdCurrentTimeText" value="4" description="当前时间文字型域。"/>
 		<Item name="wdDateText" value="2" description="日期文字型域。"/>
 		<Item name="wdNumberText" value="1" description="数字文字型域。"/>
 		<Item name="wdRegularText" value="0" description="常规文字型域。"/>
-	</WdTextFormFieldType>
+	</Enum>
 	<!--WdTextOrientation 枚举 (Word) ====指定区域或选定内容中的文字方向。-->
-	<WdTextOrientation>
+	<Enum id="WdTextOrientation">
 		<Item name="wdTextOrientationDownward" value="3" description="文字向斜下方排列。"/>
 		<Item name="wdTextOrientationHorizontal" value="0" description="文字水平排列。 默认值。"/>
 		<Item name="wdTextOrientationHorizontalRotatedFarEast" value="4" description="文字水平排列，但方向是从右向左，以适应从右向左的语言。"/>
 		<Item name="wdTextOrientationUpward" value="2" description="文字向斜上方排列。"/>
 		<Item name="wdTextOrientationVerticalFarEast" value="1" description="文字纵向排列，阅读方向是从上向下、从右向左。"/>
 		<Item name="wdTextOrientationVertical" value="5" description="文字纵向排列，阅读方向是从上向下、从左向右。"/>
-	</WdTextOrientation>
+	</Enum>
 	<!--WdTextureIndex 枚举 (Word) ====指定要用于所选项的底纹纹理。-->
-	<WdTextureIndex>
+	<Enum id="WdTextureIndex">
 		<Item name="wdTexture10Percent" value="100" description="10% 底纹。"/>
 		<Item name="wdTexture12Pt5Percent" value="125" description="12.5% 底纹。"/>
 		<Item name="wdTexture15Percent" value="150" description="15% 底纹。"/>
@@ -3569,9 +3569,9 @@
 		<Item name="wdTextureNone" value="0" description="无底纹。"/>
 		<Item name="wdTextureSolid" value="1000" description="纯色底纹。"/>
 		<Item name="wdTextureVertical" value="-8" description="垂直底纹。"/>
-	</WdTextureIndex>
+	</Enum>
 	<!--WdThemeColorIndex 枚举 (Word) ====指定文档主题的主题颜色。-->
-	<WdThemeColorIndex>
+	<Enum id="WdThemeColorIndex">
 		<Item name="wdNotThemeColor" value="-1" description="无颜色。"/>
 		<Item name="wdThemeColorAccent1" value="4" description="强调文字颜色 1。"/>
 		<Item name="wdThemeColorAccent2" value="5" description="强调文字颜色 2。"/>
@@ -3589,17 +3589,17 @@
 		<Item name="wdThemeColorMainLight2" value="3" description="浅色主色 2。"/>
 		<Item name="wdThemeColorText1" value="13" description="文本颜色 1。"/>
 		<Item name="wdThemeColorText2" value="15" description="文本颜色 2。"/>
-	</WdThemeColorIndex>
+	</Enum>
 	<!--WdToaFormat 枚举 (Word) ====指定要应用于活动文档中引文目录的格式的类型。-->
-	<WdToaFormat>
+	<Enum id="WdToaFormat">
 		<Item name="wdTOAClassic" value="1" description="古典格式。"/>
 		<Item name="wdTOADistinctive" value="2" description="优雅格式。"/>
 		<Item name="wdTOAFormal" value="3" description="正式格式。"/>
 		<Item name="wdTOASimple" value="4" description="简单格式。"/>
 		<Item name="wdTOATemplate" value="0" description="模板格式。"/>
-	</WdToaFormat>
+	</Enum>
 	<!--WdTocFormat 枚举 (Word) ====指定要应用于活动文档中目录的格式的类型。-->
-	<WdTocFormat>
+	<Enum id="WdTocFormat">
 		<Item name="wdTOCClassic" value="1" description="古典格式。"/>
 		<Item name="wdTOCDistinctive" value="2" description="优雅格式。"/>
 		<Item name="wdTOCFancy" value="3" description="流行格式。"/>
@@ -3607,33 +3607,33 @@
 		<Item name="wdTOCModern" value="4" description="现代格式。"/>
 		<Item name="wdTOCSimple" value="6" description="简单格式。"/>
 		<Item name="wdTOCTemplate" value="0" description="模板格式。"/>
-	</WdTocFormat>
+	</Enum>
 	<!--WdTofFormat 枚举 (Word) ====指定要应用于活动文档中图表目录的格式的类型。-->
-	<WdTofFormat>
+	<Enum id="WdTofFormat">
 		<Item name="wdTOFCentered" value="3" description="居中格式。"/>
 		<Item name="wdTOFClassic" value="1" description="古典格式。"/>
 		<Item name="wdTOFDistinctive" value="2" description="优雅格式。"/>
 		<Item name="wdTOFFormal" value="4" description="正式格式。"/>
 		<Item name="wdTOFSimple" value="5" description="简单格式。"/>
 		<Item name="wdTOFTemplate" value="0" description="模板格式。"/>
-	</WdTofFormat>
+	</Enum>
 	<!--WdTrailingCharacter 枚举 (Word) ====指定在编号列表项的编号之后插入的字符。-->
-	<WdTrailingCharacter>
+	<Enum id="WdTrailingCharacter">
 		<Item name="wdTrailingNone" value="2" description="不插入任何字符。"/>
 		<Item name="wdTrailingSpace" value="1" description="插入一个空格。 默认值。"/>
 		<Item name="wdTrailingTab" value="0" description="插入一个制表符。"/>
-	</WdTrailingCharacter>
+	</Enum>
 	<!--WdTwoLinesInOneType 枚举 (Word) ====指定将要写入一行的两行括在一起时所使用的字符。-->
-	<WdTwoLinesInOneType>
+	<Enum id="WdTwoLinesInOneType">
 		<Item name="wdTwoLinesInOneAngleBrackets" value="4" description="使用尖括号将这两行括起来。"/>
 		<Item name="wdTwoLinesInOneCurlyBrackets" value="5" description="使用花括号将这两行括起来。"/>
 		<Item name="wdTwoLinesInOneNoBrackets" value="1" description="不使用任何分隔字符。"/>
 		<Item name="wdTwoLinesInOneNone" value="0" description="将写入一行的两行文字还原为单独的两行。"/>
 		<Item name="wdTwoLinesInOneParentheses" value="2" description="使用小括号将这两行括起来行。"/>
 		<Item name="wdTwoLinesInOneSquareBrackets" value="3" description="使用方括号将这两行括起来。"/>
-	</WdTwoLinesInOneType>
+	</Enum>
 	<!--Word)  (WdUnderline 枚举====指定要应用的下划线的类型。-->
-	<WdUnderline>
+	<Enum id="WdUnderline">
 		<Item name="wdUnderlineDash" value="7 " description="划线。"/>
 		<Item name="wdUnderlineDashHeavy" value="23" description="粗划线。"/>
 		<Item name="wdUnderlineDashLong" value="39" description="长划线。"/>
@@ -3652,9 +3652,9 @@
 		<Item name="wdUnderlineWavyDouble" value="43" description="双波浪线。"/>
 		<Item name="wdUnderlineWavyHeavy" value="27" description="粗波浪线。"/>
 		<Item name="wdUnderlineWords" value="2" description="仅为单个字加下划线。"/>
-	</WdUnderline>
+	</Enum>
 	<!--WdUnits 枚举 (Word) ====指定要使用的度量单位。-->
-	<WdUnits>
+	<Enum id="WdUnits">
 		<Item name="wdCell" value="12 " description="单元格。"/>
 		<Item name="wdCharacter" value="1" description="字符。"/>
 		<Item name="wdCharacterFormatting" value="13" description="字符格式。"/>
@@ -3671,27 +3671,27 @@
 		<Item name="wdTable" value="15" description="一个表格。"/>
 		<Item name="wdWindow" value="11" description="窗口。"/>
 		<Item name="wdWord" value="2" description="字。"/>
-	</WdUnits>
+	</Enum>
 	<!--WdUpdateStyleListBehavior 枚举 (Word) ====指定行为Word时，应考虑更新样式以匹配所选的内容包含编号或项目符号。-->
-	<WdUpdateStyleListBehavior>
+	<Enum id="WdUpdateStyleListBehavior">
 		<Item name="wdListBehaviorAddBulletsNumbering" value="1" description="将选中内容的编号或项目符号模式添加到文档中使用相同样式的所有段落。"/>
 		<Item name="wdListBehaviorKeepPreviousPattern" value="0" description="保留使用相同样式的其他所有段落的现有编号或项目符号模式，不应用选中内容的编号或项目符号模式。"/>
-	</WdUpdateStyleListBehavior>
+	</Enum>
 	<!--WdUseFormattingFrom 枚举 (Word) ====指定格式复制操作的源。-->
-	<WdUseFormattingFrom>
+	<Enum id="WdUseFormattingFrom">
 		<Item name="wdFormattingFromCurrent" value="0" description="从当前项复制源格式。"/>
 		<Item name="wdFormattingFromPrompt" value="2" description="提示用户指定要使用的格式。"/>
 		<Item name="wdFormattingFromSelected" value="1" description="从当前选定内容复制源格式。"/>
-	</WdUseFormattingFrom>
+	</Enum>
 	<!--WdVerticalAlignment 枚举 (Word) ====指定要应用的垂直对齐方式的类型。-->
-	<WdVerticalAlignment>
+	<Enum id="WdVerticalAlignment">
 		<Item name="wdAlignVerticalBottom" value="3" description="靠下垂直对齐。"/>
 		<Item name="wdAlignVerticalCenter" value="1" description="居中垂直对齐。"/>
 		<Item name="wdAlignVerticalJustify" value="2" description="两端垂直对齐。"/>
 		<Item name="wdAlignVerticalTop" value="0" description="靠上垂直对齐。"/>
-	</WdVerticalAlignment>
+	</Enum>
 	<!--Word)  (WdViewType 枚举====指定视图类型。-->
-	<WdViewType>
+	<Enum id="WdViewType">
 		<Item name="wdMasterView" value="5" description="主控视图。"/>
 		<Item name="wdNormalView" value="1" description="普通视图。"/>
 		<Item name="wdOutlineView" value="2" description="大纲视图。"/>
@@ -3699,25 +3699,25 @@
 		<Item name="wdPrintView" value="3" description="页面视图。"/>
 		<Item name="wdReadingView" value="7 " description="阅读视图。"/>
 		<Item name="wdWebView" value="6" description="Web 视图。"/>
-	</WdViewType>
+	</Enum>
 	<!--WdVisualSelection 枚举 (Word) ====指定选定内容的行为，该行为基于从右向左语言文档中可视的光标移动。-->
-	<WdVisualSelection>
+	<Enum id="WdVisualSelection">
 		<Item name="wdVisualSelectionBlock" value="0" description="所有选定行的宽度相同。"/>
 		<Item name="wdVisualSelectionContinuous" value="1" description="选定内容进行换行。"/>
-	</WdVisualSelection>
+	</Enum>
 	<!--WdWindowState 枚举 (Word) ====指定当前文档窗口或任务窗口的状态。-->
-	<WdWindowState>
+	<Enum id="WdWindowState">
 		<Item name="wdWindowStateMaximize" value="1" description="最大化。"/>
 		<Item name="wdWindowStateMinimize" value="2" description="最小化。"/>
 		<Item name="wdWindowStateNormal" value="0" description="正常。"/>
-	</WdWindowState>
+	</Enum>
 	<!--WdWindowType 枚举 (Word) ====指定窗口的类型。-->
-	<WdWindowType>
+	<Enum id="WdWindowType">
 		<Item name="wdWindowDocument" value="0" description="文档窗口。"/>
 		<Item name="wdWindowTemplate" value="1" description="模板窗口。"/>
-	</WdWindowType>
+	</Enum>
 	<!--WdWordDialog 枚举 (Word) ====指示可以使用的 Microsoft Word 对话框，并指定可以用来获取或设置对话框中值的参数（如果适用）。-->
-	<WdWordDialog>
+	<Enum id="WdWordDialog">
 		<Item name="wdDialogBuildingBlockOrganizer" value="2067" description="（无）"/>
 		<Item name="wdDialogConnect" value="420" description="Drive、Path、Password"/>
 		<Item name="wdDialogConsistencyChecker" value="1121" description="（无）"/>
@@ -3953,9 +3953,9 @@
 		<Item name="wdDialogWindowActivate" value="220" description="（无）"/>
 		<Item name="wdDialogXMLElementAttributes" value="1460" description="（无）"/>
 		<Item name="wdDialogXMLOptions" value="1425" description="(无)"/>
-	</WdWordDialog>
+	</Enum>
 	<!--WdWordDialogTab 枚举 (Word) ====指定在显示指定的对话框时的活动选项卡。-->
-	<WdWordDialogTab>
+	<Enum id="WdWordDialogTab">
 		<Item name="wdDialogEmailOptionsTabQuoting" value="1900002" description="“Email选项”对话框的“常规”选项卡。"/>
 		<Item name="wdDialogEmailOptionsTabSignature" value="1900000" description="Email“Email选项”对话框的“签名”选项卡。"/>
 		<Item name="wdDialogEmailOptionsTabStationary" value="1900001" description="“Email选项”对话框的“个人固定”选项卡。"/>
@@ -4043,16 +4043,16 @@
 		<Item name="wdDialogStyleManagementTabEdit" value="2200000" description=""样式管理" 对话框的 "编辑" 选项卡。"/>
 		<Item name="wdDialogStyleManagementTabRecommend" value="2200001" description=""样式管理" 对话框的 "推荐" 选项卡。"/>
 		<Item name="wdDialogStyleManagementTabRestrict" value="2200002" description=""样式管理" 对话框的 "限制" 选项卡。"/>
-	</WdWordDialogTab>
+	</Enum>
 	<!--WdWrapSideType 枚举 (Word) ====指定文档文字应该在所指定形状的两侧环绕，只在左侧或右侧环绕，还是在形状距离页边距最远的一侧环绕。-->
-	<WdWrapSideType>
+	<Enum id="WdWrapSideType">
 		<Item name="wdWrapBoth" value="0" description="所指定形状的两侧。"/>
 		<Item name="wdWrapLargest" value="3" description="形状距离页边距最远的一侧。"/>
 		<Item name="wdWrapLeft" value="1" description="仅限于形状的左侧。"/>
 		<Item name="wdWrapRight" value="2" description="仅限于形状的右侧。"/>
-	</WdWrapSideType>
+	</Enum>
 	<!--WdWrapType 枚举 (Word) ====指定如何在形状周围环绕文字。-->
-	<WdWrapType>
+	<Enum id="WdWrapType">
 		<Item name="wdWrapInline" value="7 " description="将形状嵌入到文字中。"/>
 		<Item name="wdWrapNone" value="3" description="将形状放在文字前面。 请参阅 wdWrapFront 。"/>
 		<Item name="wdWrapSquare" value="0" description="使文字环绕形状。 线条延续位于形状的另一侧。"/>
@@ -4061,9 +4061,9 @@
 		<Item name="wdWrapTopBottom" value="4" description="将文字放在形状的上方和下方。"/>
 		<Item name="wdWrapBehind" value="5" description="将形状放在文字后面。"/>
 		<Item name="wdWrapFront" value="3" description="将形状放在文字前面。 另请参阅 wdWrapNone。"/>
-	</WdWrapType>
+	</Enum>
 	<!--WdWrapTypeMerged 枚举 (Word) ====指定 Microsoft Word 在图片周围环绕文字的方式。-->
-	<WdWrapTypeMerged>
+	<Enum id="WdWrapTypeMerged">
 		<Item name="wdWrapMergeBehind" value="3" description="衬于文字下方。"/>
 		<Item name="wdWrapMergeFront" value="4" description="浮于文字上方。"/>
 		<Item name="wdWrapMergeInline" value="0" description="嵌入型。"/>
@@ -4071,80 +4071,80 @@
 		<Item name="wdWrapMergeThrough" value="5" description="穿越型。"/>
 		<Item name="wdWrapMergeTight" value="2" description="紧密型。"/>
 		<Item name="wdWrapMergeTopBottom" value="6" description="上下型。"/>
-	</WdWrapTypeMerged>
+	</Enum>
 	<!--XlAxisCrosses 枚举 (Word) ====指定所指定的坐标轴与其他坐标轴相交的点。-->
-	<XlAxisCrosses>
+	<Enum id="XlAxisCrosses">
 		<Item name="xlAxisCrossesAutomatic" value="-4105" description="Word 设置坐标轴交叉点。"/>
 		<Item name="xlAxisCrossesCustom" value="-4114" description="CrossesAt 属性指定坐标轴相交点。"/>
 		<Item name="xlAxisCrossesMaximum" value="2" description="坐标轴在最大值处相交。"/>
 		<Item name="xlAxisCrossesMinimum" value="4" description="坐标轴在最小值处相交。"/>
-	</XlAxisCrosses>
+	</Enum>
 	<!--XlAxisGroup 枚举 (Word) ====指定坐标轴组的类型。-->
-	<XlAxisGroup>
+	<Enum id="XlAxisGroup">
 		<Item name="xlPrimary" value="1" description="主坐标轴组。"/>
 		<Item name="xlSecondary" value="2" description="次坐标轴组。"/>
-	</XlAxisGroup>
+	</Enum>
 	<!--XlAxisType 枚举 (Word) ====指定坐标轴类型。-->
-	<XlAxisType>
+	<Enum id="XlAxisType">
 		<Item name="xlCategory" value="1" description="坐标轴显示类别。"/>
 		<Item name="xlSeriesAxis" value="3" description="坐标轴显示数据系列。"/>
 		<Item name="xlValue" value="2" description="坐标轴显示值。"/>
-	</XlAxisType>
+	</Enum>
 	<!--Word)  (XlBackground 枚举====指定图表文本的背景类型。-->
-	<XlBackground>
+	<Enum id="XlBackground">
 		<Item name="xlBackgroundAutomatic" value="-4105" description="Word 控制背景。"/>
 		<Item name="xlBackgroundOpaque" value="3" description="不透明背景。"/>
 		<Item name="xlBackgroundTransparent" value="2" description="透明背景。"/>
-	</XlBackground>
+	</Enum>
 	<!--XlBarShape 枚举 (Word) ====指定用于 3D 条形图或柱形图的形状。-->
-	<XlBarShape>
+	<Enum id="XlBarShape">
 		<Item name="xlBox" value="0" description="盒子。"/>
 		<Item name="xlConeToMax" value="5" description="圆锥图，在指定值处截断。"/>
 		<Item name="xlConeToPoint" value="4" description="圆锥图，在指定值处变成一点。"/>
 		<Item name="xlCylinder" value="3" description="圆柱图。"/>
 		<Item name="xlPyramidToMax" value="2" description="棱锥图，在指定值处截断。"/>
 		<Item name="xlPyramidToPoint" value="1" description="棱锥图，在指定值处变成一点。"/>
-	</XlBarShape>
+	</Enum>
 	<!--XlBinsType 枚举 (Word)====指定传递给 ChartGroup.BinsType 属性并由其返回的常量。-->
-	<XlBinsType>
+	<Enum id="XlBinsType">
 		<Item name="xlBinsTypeAutomatic" value="0" description="自动设置箱类型。"/>
 		<Item name="xlBinsTypeCategorical" value="1" description="按类别设置箱类型。"/>
 		<Item name="xlBinsTypeManual" value="2" description="手动设置箱类型。"/>
 		<Item name="xlBinsTypeBinSize" value="3" description="按大小设置箱类型。"/>
 		<Item name="xlBinsTypeBinCount" value="4" description="按计数设置箱类型。"/>
-	</XlBinsType>
+	</Enum>
 	<!--XlBorderWeight 枚举 (Word) ====指定某一区域周围的边框的粗细。-->
-	<XlBorderWeight>
+	<Enum id="XlBorderWeight">
 		<Item name="xlHairline" value="1" description="细线边框（最细的边框）。"/>
 		<Item name="xlMedium" value="-4138" description="中等边框。"/>
 		<Item name="xlThick" value="4" description="粗边框（最宽的边框）。"/>
 		<Item name="xlThin" value="2" description="细边框。"/>
-	</XlBorderWeight>
+	</Enum>
 	<!--XlCategoryLabelLevel 枚举 (Word) ====指定传递给 Chart.CategoryLabelLevel 属性并由其返回的图表类别标签级别。-->
-	<XlCategoryLabelLevel>
+	<Enum id="XlCategoryLabelLevel">
 		<Item name="xlCategoryLabelLevelAll" value="-1" description="使用图表范围内的所有类别标签级别。 默认值。"/>
 		<Item name="xlCategoryLabelLevelCustom" value="-2" description="指示类别标签中的文本数据。"/>
 		<Item name="xlCategoryLabelLevelNone" value="-3" description="在图表中不使用类别标签。 默认为自动索引标签。"/>
-	</XlCategoryLabelLevel>
+	</Enum>
 	<!--XlCategoryType 枚举 (Word) ====指定分类轴的类型。-->
-	<XlCategoryType>
+	<Enum id="XlCategoryType">
 		<Item name="xlAutomaticScale" value="-4105" description="Word 控制坐标轴类型。"/>
 		<Item name="xlCategoryScale" value="2" description="轴按一组任意类别组合数据。"/>
 		<Item name="xlTimeScale" value="3" description="轴按时间刻度组合数据。"/>
-	</XlCategoryType>
+	</Enum>
 	<!--XlChartElementPosition 枚举 (Word) ====指定图表元素的位置。-->
-	<XlChartElementPosition>
+	<Enum id="XlChartElementPosition">
 		<Item name="xlChartElementPositionAutomatic" value="-4105" description="自动设置图表元素的位置。"/>
 		<Item name="xlChartElementPositionCustom" value="-4114" description="为图表元素指定特定位置。"/>
-	</XlChartElementPosition>
+	</Enum>
 	<!--XlChartGallery 枚举 (Word) ====指定图表库。-->
-	<XlChartGallery>
+	<Enum id="XlChartGallery">
 		<Item name="xlAnyGallery" value="23" description="任意一个库。"/>
 		<Item name="xlBuiltIn" value=" 21" description="内置库。"/>
 		<Item name="xlUserDefined" value="22" description="用户定义的库。"/>
-	</XlChartGallery>
+	</Enum>
 	<!--XlChartItem 枚举 (Word) ====指定图表项的类型。-->
-	<XlChartItem>
+	<Enum id="XlChartItem">
 		<Item name="xlAxis" value=" 21" description="坐标轴。"/>
 		<Item name="xlAxisTitle" value="17 " description="坐标轴标题。"/>
 		<Item name="xlChartArea" value="2" description="图表区。"/>
@@ -4177,9 +4177,9 @@
 		<Item name="xlWalls" value="5" description="背景墙。"/>
 		<Item name="xlXErrorBars" value="10" description="X 误差线。"/>
 		<Item name="xlYErrorBars" value="11" description="Y 误差线。"/>
-	</XlChartItem>
+	</Enum>
 	<!--XlChartPicturePlacement 枚举 (Word) ====指定用户选择的图片在 3D 条形图或列中的条形图上的位置。-->
-	<XlChartPicturePlacement>
+	<Enum id="XlChartPicturePlacement">
 		<Item name="xlAllFaces" value="7 " description="在所有表面上显示。"/>
 		<Item name="xlEnd" value="2" description="在末端显示。"/>
 		<Item name="xlEndSides" value="3" description="在末端和侧面上显示。"/>
@@ -4187,27 +4187,27 @@
 		<Item name="xlFrontEnd" value="6" description="在前端和末端显示。"/>
 		<Item name="xlFrontSides" value="5" description="在前端和侧面上显示。"/>
 		<Item name="xlSides" value="1" description="在侧面上显示。"/>
-	</XlChartPicturePlacement>
+	</Enum>
 	<!--XlChartPictureType 枚举 (Word) ====指定在柱形、条形图或图例项标示上如何显示图片。-->
-	<XlChartPictureType>
+	<Enum id="XlChartPictureType">
 		<Item name="xlStack" value="2" description="调整图片大小，以在最长的堆积条形图中最多重复显示 15 次。"/>
 		<Item name="xlStackScale" value="3" description="将图片大小调整为指定的单位数，并在条形长度内重复显示。"/>
 		<Item name="xlStretch" value="1" description="将图片拉伸至堆积条形图的全长。"/>
-	</XlChartPictureType>
+	</Enum>
 	<!--XlChartSplitType 枚举 (Word) ====指定饼图或饼图条形图中第二个图表中显示的值。-->
-	<XlChartSplitType>
+	<Enum id="XlChartSplitType">
 		<Item name="xlSplitByCustomSplit" value="4" description="第二个图表显示任意幻灯片。"/>
 		<Item name="xlSplitByPercentValue" value="3" description="第二个图表显示小于总值的某个百分比的值。 该百分比由 SplitValue 属性指定。"/>
 		<Item name="xlSplitByPosition" value="1" description="第二个图表显示数据系列中的最小值。 由 SplitValue 属性指定要显示的值的数目。"/>
 		<Item name="xlSplitByValue" value="2" description="第二个图表显示值小于指定的 SplitValue 属性的值。"/>
-	</XlChartSplitType>
+	</Enum>
 	<!--XlColorIndex 枚举 (Word) ====指定所选功能（如边框、字体或填充）的颜色。-->
-	<XlColorIndex>
+	<Enum id="XlColorIndex">
 		<Item name="xlColorIndexAutomatic" value="-4105" description="自动配色。"/>
 		<Item name="xlColorIndexNone" value="-4142" description="无颜色。"/>
-	</XlColorIndex>
+	</Enum>
 	<!--XlConstants 枚举 (Word) ====在 Microsoft Word 中指定各种常量。-->
-	<XlConstants>
+	<Enum id="XlConstants">
 		<Item name="xl3DBar" value="-4099" description="三维条形图组或系列。"/>
 		<Item name="xl3DSurface" value="-4103" description="三维曲面图组或系列。"/>
 		<Item name="xlAbove" value="0" description="汇总行显示在指定范围的上方。"/>
@@ -4271,14 +4271,14 @@
 		<Item name="xlTop" value="-4160" description="顶端对齐。"/>
 		<Item name="xlTransparent" value="2" description="透明填充。"/>
 		<Item name="xlTriangle" value="3" description="三角形。"/>
-	</XlConstants>
+	</Enum>
 	<!--XlCopyPictureFormat 枚举 (Word) ====指定复制的图片的格式。-->
-	<XlCopyPictureFormat>
+	<Enum id="XlCopyPictureFormat">
 		<Item name="xlBitmap" value="2" description="位图（.bmp, .jpg, .gif）。"/>
 		<Item name="xlPicture" value="-4147" description="绘制图片（.png, .wmf, .mix）。"/>
-	</XlCopyPictureFormat>
+	</Enum>
 	<!--XlDataLabelPosition 枚举 (Word) ====指定数据标签的放置位置。-->
-	<XlDataLabelPosition>
+	<Enum id="XlDataLabelPosition">
 		<Item name="xlLabelPositionAbove" value="0" description="数据标签放置在数据点的上方。"/>
 		<Item name="xlLabelPositionBelow" value="1" description="数据标签放置在数据点的下方。"/>
 		<Item name="xlLabelPositionBestFit" value="5" description="Word 设置数据标签的位置。"/>
@@ -4290,28 +4290,28 @@
 		<Item name="xlLabelPositionMixed" value="6" description="数据标签位于多个位置。"/>
 		<Item name="xlLabelPositionOutsideEnd" value="2" description="数据标签放置在数据点上边缘外侧。"/>
 		<Item name="xlLabelPositionRight" value="-4152" description="数据标签放置在数据点右侧。"/>
-	</XlDataLabelPosition>
+	</Enum>
 	<!--XlDataLabelSeparator 枚举 (Word) ====指定用于数据标签的分隔符。-->
-	<XlDataLabelSeparator>
+	<Enum id="XlDataLabelSeparator">
 		<Item name="xlDataLabelSeparatorDefault" value="1" description="Word 选择分隔符。"/>
-	</XlDataLabelSeparator>
+	</Enum>
 	<!--XlDataLabelsType 枚举 (Word) ====指定要应用的数据标签的类型。-->
-	<XlDataLabelsType>
+	<Enum id="XlDataLabelsType">
 		<Item name="xlDataLabelsShowBubbleSizes" value="6" description="显示关于绝对值的气泡图的大小。"/>
 		<Item name="xlDataLabelsShowLabel" value="4" description="数据点所属的分类。"/>
 		<Item name="xlDataLabelsShowLabelAndPercent" value="5" description="占总数的百分比及数据点所属的分类。 仅用于饼图和圆环图。"/>
 		<Item name="xlDataLabelsShowNone" value="-4142" description="无数据标签。"/>
 		<Item name="xlDataLabelsShowPercent" value="3" description="占总数的百分比。 仅用于饼图和圆环图。"/>
 		<Item name="xlDataLabelsShowValue" value="2" description="数据点的默认值（假定未指定此参数）。"/>
-	</XlDataLabelsType>
+	</Enum>
 	<!--XlDisplayBlanksAs 枚举 (Word) ====指定在图表上绘制空单元格的方式。-->
-	<XlDisplayBlanksAs>
+	<Enum id="XlDisplayBlanksAs">
 		<Item name="xlInterpolated" value="3" description="将值内插入图表。"/>
 		<Item name="xlNotPlotted" value="1" description="不绘制空单元格。"/>
 		<Item name="xlZero" value="2" description="空单元格绘制为零。"/>
-	</XlDisplayBlanksAs>
+	</Enum>
 	<!--XlDisplayUnit 枚举 (Word) ====指定坐标轴的显示单位标签。-->
-	<XlDisplayUnit>
+	<Enum id="XlDisplayUnit">
 		<Item name="xlHundredMillions" value="-8" description="亿。"/>
 		<Item name="xlHundreds" value="-2" description="百。"/>
 		<Item name="xlHundredThousands" value="-5" description="十万。"/>
@@ -4321,34 +4321,34 @@
 		<Item name="xlTenThousands" value="-4" description="万。"/>
 		<Item name="xlThousandMillions" value="-9" description="亿。"/>
 		<Item name="xlThousands" value="-3" description="千。"/>
-	</XlDisplayUnit>
+	</Enum>
 	<!--XlEndStyleCap 枚举 (Word) ====指定误差线的末端样式。-->
-	<XlEndStyleCap>
+	<Enum id="XlEndStyleCap">
 		<Item name="xlCap" value="1" description="应用帽。"/>
 		<Item name="xlNoCap" value="2" description="不应用帽。"/>
-	</XlEndStyleCap>
+	</Enum>
 	<!--XlErrorBarDirection 枚举 (Word) ====指定接收误差线的轴值。-->
-	<XlErrorBarDirection>
+	<Enum id="XlErrorBarDirection">
 		<Item name="xlChartX" value="-4168" description="误差线平行于 Y 轴，长度为 X 轴值。"/>
 		<Item name="xlChartY" value="1" description="误差线平行于 X 轴，长度为 Y 轴值。"/>
-	</XlErrorBarDirection>
+	</Enum>
 	<!--XlErrorBarInclude 枚举 (Word) ====指定要包含的误差线部分。-->
-	<XlErrorBarInclude>
+	<Enum id="XlErrorBarInclude">
 		<Item name="xlErrorBarIncludeBoth" value="1" description="正负误差区域。"/>
 		<Item name="xlErrorBarIncludeMinusValues" value="3" description="仅负误差区域。"/>
 		<Item name="xlErrorBarIncludeNone" value="-4142" description="无误差线区域。"/>
 		<Item name="xlErrorBarIncludePlusValues" value="2" description="仅正误差区域。"/>
-	</XlErrorBarInclude>
+	</Enum>
 	<!--XlErrorBarType 枚举 (Word) ====指定误差线标记的区域。-->
-	<XlErrorBarType>
+	<Enum id="XlErrorBarType">
 		<Item name="xlErrorBarTypeCustom" value="-4114" description="区域由固定值或单元格值设置。"/>
 		<Item name="xlErrorBarTypeFixedValue" value="1" description="固定长度误差线。"/>
 		<Item name="xlErrorBarTypePercent" value="2" description="误差线覆盖的区域百分比。"/>
 		<Item name="xlErrorBarTypeStDev" value="-4155" description="显示指定数目的标准偏差的区域。"/>
 		<Item name="xlErrorBarTypeStError" value="4" description="显示标准误差区域。"/>
-	</XlErrorBarType>
+	</Enum>
 	<!--XlHAlign 枚举 (Word) ====指定对象的水平对齐方式。-->
-	<XlHAlign>
+	<Enum id="XlHAlign">
 		<Item name="xlHAlignCenter" value="-4108" description="居中。"/>
 		<Item name="xlHAlignCenterAcrossSelection" value="7 " description="跨列居中。"/>
 		<Item name="xlHAlignDistributed" value="-4117" description="分散对齐。"/>
@@ -4357,18 +4357,18 @@
 		<Item name="xlHAlignJustify" value="-4130" description="两端对齐。"/>
 		<Item name="xlHAlignLeft" value="-4131" description="靠左。"/>
 		<Item name="xlHAlignRight" value="-4152" description="靠右。"/>
-	</XlHAlign>
+	</Enum>
 	<!--XlLegendPosition 枚举 (Word) ====指定图例在图表上的位置。-->
-	<XlLegendPosition>
+	<Enum id="XlLegendPosition">
 		<Item name="xlLegendPositionBottom" value="-4107" description="位于图表下方。"/>
 		<Item name="xlLegendPositionCorner" value="2" description="位于图表边框的右上角。"/>
 		<Item name="xlLegendPositionCustom" value="-4161" description="位于自定义的位置上。"/>
 		<Item name="xlLegendPositionLeft" value="-4131" description="位于图表的左侧。"/>
 		<Item name="xlLegendPositionRight" value="-4152" description="位于图表的右侧。"/>
 		<Item name="xlLegendPositionTop" value="-4160" description="位于图表的上方。"/>
-	</XlLegendPosition>
+	</Enum>
 	<!--XlLineStyle 枚举 (Word) ====指定边框的线条样式。-->
-	<XlLineStyle>
+	<Enum id="XlLineStyle">
 		<Item name="xlContinuous" value="1" description="实线。"/>
 		<Item name="xlDash" value="-4115" description="虚线。"/>
 		<Item name="xlDashDot" value="4" description="点划相间线。"/>
@@ -4377,9 +4377,9 @@
 		<Item name="xlDouble" value="-4119" description="双线。"/>
 		<Item name="xlLineStyleNone" value="-4142" description="无线。"/>
 		<Item name="xlSlantDashDot" value="13" description="倾斜的划线。"/>
-	</XlLineStyle>
+	</Enum>
 	<!--XlMarkerStyle 枚举 (Word) ====指定折线图、散点图或雷达图中数据点或系列的数据标记样式。-->
-	<XlMarkerStyle>
+	<Enum id="XlMarkerStyle">
 		<Item name="xlMarkerStyleAutomatic" value="-4105" description="自动设置标记。"/>
 		<Item name="xlMarkerStyleCircle" value="8 " description="圆形标记。"/>
 		<Item name="xlMarkerStyleDash" value="-4115" description="长条形标记。"/>
@@ -4392,22 +4392,22 @@
 		<Item name="xlMarkerStyleStar" value="5" description="带星号的方形标记。"/>
 		<Item name="xlMarkerStyleTriangle" value="3" description="三角形标记。"/>
 		<Item name="xlMarkerStyleX" value="-4168" description="带 X 记号的方形标记。"/>
-	</XlMarkerStyle>
+	</Enum>
 	<!--XlOrientation 枚举 (Word) ====指定文字方向。-->
-	<XlOrientation>
+	<Enum id="XlOrientation">
 		<Item name="xlDownward" value="-4170" description="文字向下排列。"/>
 		<Item name="xlHorizontal" value="-4128" description="文字水平排列。"/>
 		<Item name="xlUpward" value="-4171" description="文字向上排列。"/>
 		<Item name="xlVertical" value="-4166" description="文字在单元格中向下居中排列。"/>
-	</XlOrientation>
+	</Enum>
 	<!--XlParentDataLabelOptions 枚举 (Word)====指定传递给 Series.ParentDataLabelOption 属性并返回的常量。-->
-	<XlParentDataLabelOptions>
+	<Enum id="XlParentDataLabelOptions">
 		<Item name="xlParentDataLabelOptionsNone" value="0" description="不显示父标签。"/>
 		<Item name="xlParentDataLabelOptionsBanner" value="1" description="父标签布局是类别上方的横幅。"/>
 		<Item name="xlParentDataLabelOptionsOverlapping" value="2" description="父标签在类别中布局。"/>
-	</XlParentDataLabelOptions>
+	</Enum>
 	<!--XlPattern 枚举 (Word) ====指定图表或内部对象的内部图案。-->
-	<XlPattern>
+	<Enum id="XlPattern">
 		<Item name="xlPatternAutomatic" value="-4105" description="Word 控制图案。"/>
 		<Item name="xlPatternChecker" value="9 " description="棋盘。"/>
 		<Item name="xlPatternCrissCross" value="16" description="十字线。"/>
@@ -4430,14 +4430,14 @@
 		<Item name="xlPatternSolid" value="1" description="纯色。"/>
 		<Item name="xlPatternUp" value="-4162" description="从左下到右上方的深对角线。"/>
 		<Item name="xlPatternVertical" value="-4166" description="深色垂直条。"/>
-	</XlPattern>
+	</Enum>
 	<!--XlPictureAppearance 枚举 (Word) ====指定图片的复制方式。-->
-	<XlPictureAppearance>
+	<Enum id="XlPictureAppearance">
 		<Item name="xlPrinter" value="2" description="图片按其打印效果进行复制。"/>
 		<Item name="xlScreen" value="1" description="图片尽可能按其屏幕显示进行复制。"/>
-	</XlPictureAppearance>
+	</Enum>
 	<!--XlPieSliceIndex 枚举 (Word) ====指定返回扇区上哪个位置的坐标。-->
-	<XlPieSliceIndex>
+	<Enum id="XlPieSliceIndex">
 		<Item name="xlCenterPoint" value="5" description="饼图扇区的中心点。"/>
 		<Item name="xlInnerCenterPoint" value="8 " description="圆环图扇区的最里层中心点。"/>
 		<Item name="xlInnerClockwisePoint" value="7 " description="圆环图扇区最大顺时针半径的最里层点。"/>
@@ -4447,9 +4447,9 @@
 		<Item name="xlOuterCenterPoint" value="2" description="扇区圆周的外部中心点。"/>
 		<Item name="xlOuterClockwisePoint" value="3" description="扇区圆周的最外部顺时针点。"/>
 		<Item name="xlOuterCounterClockwisePoint" value="1" description="扇区圆周的最外部逆时针点。"/>
-	</XlPieSliceIndex>
+	</Enum>
 	<!--XlPieSliceLocation 枚举 (Word) ====指定返回扇区上哪个位置的坐标。-->
-	<XlPieSliceLocation>
+	<Enum id="XlPieSliceLocation">
 		<Item name="xlCenterPoint" value="5" description="饼图扇区的中心点。"/>
 		<Item name="xlInnerCenterPoint" value="8 " description="圆环图扇区的最里层中心点。"/>
 		<Item name="xlInnerClockwisePoint" value="7 " description="圆环图扇区最大顺时针半径的最里层点。"/>
@@ -4459,23 +4459,23 @@
 		<Item name="xlOuterCenterPoint" value="2" description="扇区圆周的外部中心点。"/>
 		<Item name="xlOuterClockwisePoint" value="3" description="扇区圆周的最外部顺时针点。"/>
 		<Item name="xlOuterCounterClockwisePoint" value="1" description="扇区圆周的最外部逆时针点。"/>
-	</XlPieSliceLocation>
+	</Enum>
 	<!--XlPivotFieldOrientation 枚举 (Word) ====指定字段在数据透视表中的位置。-->
-	<XlPivotFieldOrientation>
+	<Enum id="XlPivotFieldOrientation">
 		<Item name="xlColumnField" value="2" description="列字段。"/>
 		<Item name="xlDataField" value="4" description="数据字段。"/>
 		<Item name="xlHidden" value="0" description="隐藏字段。"/>
 		<Item name="xlPageField" value="3" description="页字段。"/>
 		<Item name="xlRowField" value="1" description="行字段。"/>
-	</XlPivotFieldOrientation>
+	</Enum>
 	<!--XlReadingOrder 枚举 (Word) ====指定所指定对象的阅读顺序。-->
-	<XlReadingOrder>
+	<Enum id="XlReadingOrder">
 		<Item name="xlContext" value="-5002" description="根据上下文。"/>
 		<Item name="xlLTR" value="-5003" description="从左到右。"/>
 		<Item name="xlRTL" value="-5004" description="从右到左。"/>
-	</XlReadingOrder>
+	</Enum>
 	<!--XlRgbColor 枚举 (Word) ====指定 RGB 颜色。-->
-	<XlRgbColor>
+	<Enum id="XlRgbColor">
 		<Item name="xlAliceBlue" value="16775408" description="艾莉斯蓝"/>
 		<Item name="xlAntiqueWhite" value="14150650" description="古董白"/>
 		<Item name="xlAqua" value="16776960" description="青色"/>
@@ -4620,79 +4620,79 @@
 		<Item name="xlWhiteSmoke" value="16119285" description="烟白色"/>
 		<Item name="xlYellow" value="65535" description="黄色"/>
 		<Item name="xlYellowGreen" value="3329434" description="黄绿色"/>
-	</XlRgbColor>
+	</Enum>
 	<!--XlRowCol 枚举 (Word) ====指定与特定数据系列对应的值是在行中还是在列中。-->
-	<XlRowCol>
+	<Enum id="XlRowCol">
 		<Item name="xlColumns" value="2" description="数据系列在行中。"/>
 		<Item name="xlRows" value="1" description="数据系列在列中。"/>
-	</XlRowCol>
+	</Enum>
 	<!--Word)  (XlScaleType 枚举====指定数值轴的刻度类型。-->
-	<XlScaleType>
+	<Enum id="XlScaleType">
 		<Item name="xlScaleLinear" value="-4132" description="线性刻度。"/>
 		<Item name="xlScaleLogarithmic" value="-4133" description="对数刻度。"/>
-	</XlScaleType>
+	</Enum>
 	<!--XlSeriesNameLevel 枚举 (Word) ====指定 传递给 Chart.SeriesNameLevel 属性并返回的系列名称级常量。-->
-	<XlSeriesNameLevel>
+	<Enum id="XlSeriesNameLevel">
 		<Item name="xlSeriesNameLevelAll" value="-1" description="将系列名称设置为图表范围内的所有系列名称级别。 默认值。"/>
 		<Item name="xlSeriesNameLevelCustom" value="-2" description="指示系列名称中的文字数据。"/>
 		<Item name="xlSeriesNameLevelNone" value="-3" description="在图表中不设置系列名称。"/>
-	</XlSeriesNameLevel>
+	</Enum>
 	<!--XlSizeRepresents 枚举 (Word) ====指定气泡图上气泡大小表示的内容。-->
-	<XlSizeRepresents>
+	<Enum id="XlSizeRepresents">
 		<Item name="xlSizeIsArea" value="1" description="气泡的面积。"/>
 		<Item name="xlSizeIsWidth" value="2" description="气泡的宽度。"/>
-	</XlSizeRepresents>
+	</Enum>
 	<!--XlTickLabelOrientation 枚举 (Word) ====指定刻度线标签的文本方向。-->
-	<XlTickLabelOrientation>
+	<Enum id="XlTickLabelOrientation">
 		<Item name="xlTickLabelOrientationAutomatic" value="-4105" description="文本方向由 Microsoft Word 设置。"/>
 		<Item name="xlTickLabelOrientationDownward" value="-4170" description="文字向下排列。"/>
 		<Item name="xlTickLabelOrientationHorizontal" value="-4128" description="字符水平排列。"/>
 		<Item name="xlTickLabelOrientationUpward" value="-4171" description="文字向上排列。"/>
 		<Item name="xlTickLabelOrientationVertical" value="-4166" description="字符垂直排列。"/>
-	</XlTickLabelOrientation>
+	</Enum>
 	<!--XlTickLabelPosition 枚举 (Word) ====在指定坐标轴上指定刻度线标签的位置。-->
-	<XlTickLabelPosition>
+	<Enum id="XlTickLabelPosition">
 		<Item name="xlTickLabelPositionHigh" value="-4127" description="图表的顶部或右侧。"/>
 		<Item name="xlTickLabelPositionLow" value="-4134" description="图表的底部或左侧。"/>
 		<Item name="xlTickLabelPositionNextToAxis" value="4" description="坐标轴旁边（其中坐标轴不在图表的任意一侧）。"/>
 		<Item name="xlTickLabelPositionNone" value="-4142" description="无刻度线。"/>
-	</XlTickLabelPosition>
+	</Enum>
 	<!--Word)  (XlTickMark 枚举====指定坐标轴的主要和次要刻度线标志的位置。-->
-	<XlTickMark>
+	<Enum id="XlTickMark">
 		<Item name="xlTickMarkCross" value="4" description="跨轴。"/>
 		<Item name="xlTickMarkInside" value="2" description="在轴内。"/>
 		<Item name="xlTickMarkNone" value="-4142" description="无标志。"/>
 		<Item name="xlTickMarkOutside" value="3" description="在轴外。"/>
-	</XlTickMark>
+	</Enum>
 	<!--XlTimeUnit 枚举 (Word) ====指定图表轴和数据系列的时间单位。-->
-	<XlTimeUnit>
+	<Enum id="XlTimeUnit">
 		<Item name="xlDays" value="0" description="Days"/>
 		<Item name="xlMonths" value="1" description="月"/>
 		<Item name="xlYears" value="2" description="年限"/>
-	</XlTimeUnit>
+	</Enum>
 	<!--Word)  (XlTrendlineType 枚举====指定如何计算平滑数据波动的趋势线。-->
-	<XlTrendlineType>
+	<Enum id="XlTrendlineType">
 		<Item name="xlExponential" value="5" description="使用公式（如 y=ab^x）计算数据点的最小平方拟合值。"/>
 		<Item name="xlLinear" value="-4132" description="使用线性公式 y = mx + b 计算数据点的最小平方拟合值。"/>
 		<Item name="xlLogarithmic" value="-4133" description="使用公式 y = c ln x + b 计算数据点的最小平方拟合值。"/>
 		<Item name="xlMovingAvg" value="6" description="使用通过数据系列中某些部分计算出的一系列平均值。 数据点个数等于数据系列中数据点的总数减去为周期指定的数值。"/>
 		<Item name="xlPolynomial" value="3" description="使用公式（如 y = ax^6 + bx^5 + cx^4 + dx^3 + ex^2 + fx + g）计算数据点的最小平方拟合值。"/>
 		<Item name="xlPower" value="4" description="使用公式（如 y = ax^b）计算数据点的最小平方拟合值。"/>
-	</XlTrendlineType>
+	</Enum>
 	<!--XlUnderlineStyle 枚举 (Word) ====指定应用于字体的下划线类型。-->
-	<XlUnderlineStyle>
+	<Enum id="XlUnderlineStyle">
 		<Item name="xlUnderlineStyleDouble" value="-4119" description="粗双下划线。"/>
 		<Item name="xlUnderlineStyleDoubleAccounting" value="5" description="紧靠在一起的两条细下划线。"/>
 		<Item name="xlUnderlineStyleNone" value="-4142" description="无下划线。"/>
 		<Item name="xlUnderlineStyleSingle" value="2" description="单下划线。"/>
 		<Item name="xlUnderlineStyleSingleAccounting" value="4" description="不支持。"/>
-	</XlUnderlineStyle>
+	</Enum>
 	<!--XlVAlign 枚举 (Word) ====指定对象的垂直对齐方式。-->
-	<XlVAlign>
+	<Enum id="XlVAlign">
 		<Item name="xlVAlignBottom" value="-4107" description="底端对齐。"/>
 		<Item name="xlVAlignCenter" value="-4108" description="居中对齐。"/>
 		<Item name="xlVAlignDistributed" value="-4117" description="分散对齐。"/>
 		<Item name="xlVAlignJustify" value="-4130" description="两端对齐。"/>
 		<Item name="xlVAlignTop" value="-4160" description="顶端对齐。"/>
-	</XlVAlign>
+	</Enum>
 </WordEnum>
