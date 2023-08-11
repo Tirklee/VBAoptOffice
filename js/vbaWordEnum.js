@@ -37,18 +37,18 @@ function fetchApiList(apiList) {
       let doc = new DOMParser ().parseFromString(data);
       let enumEn = xpath.select('//main/div[3]/h1', doc).at(0);
       let enumCh = xpath.select('//main/div[3]/p[1]', doc).at(0);
-      let enumStr = "\t<!--"+enumEn.textContent+"===="
-                    +enumCh.textContent+"-->\r\n";
-      enumStr+="\t<Enum id=\'"+api.EnumField+"\'>\r\n";   
+      let enumStr = "\t<!--"+enumEn.textContent.replaceAll("\"","'").replaceAll("\r\n","").trim()+"===="
+                    +enumCh.textContent.replaceAll("\"","'").replaceAll("\r\n","").trim()+"-->\r\n";
+      enumStr+="\t<Enum id=\""+api.EnumField+"\">\r\n";   
       // 使用XPath查找所有a标签的href属性值
       let nodelist = xpath.select('//table/tbody/tr', doc);
       nodelist.forEach(node=>{
         let name = node.childNodes[1].textContent;
         let value = node.childNodes[3].textContent;
-        let description = node.childNodes[5].textContent;
-        enumStr+="\t\t<Item id=\'"+name+"\' name=\'"+name+"\' "
-                 +"value=\'"+value+"\' "
-                 +"description=\'"+ description +"\'/>\r\n";
+        let description = node.childNodes[5].textContent.replaceAll("\"","'").replaceAll("\r\n","").trim();
+        enumStr+="\t\t<Item id=\""+name+"\" name=\""+name+"\" "
+                 +"value=\""+value+"\" "
+                 +"description=\""+ description +"\"/>\r\n";
       });
       enumStr+="\t</Enum>\r\n";
       return enumStr;
