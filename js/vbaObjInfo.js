@@ -7,6 +7,14 @@ const path = require('path');
 function getVBAObjInfo(filePath){
   //读取文件目录
   let fileList =  fs.readdirSync(filePath);
+  let objList = [];
+  for(let file of fileList){
+    if(file.endsWith(".html")){
+      let objName = file.replace(".html","").replace(/\d/g,"");
+      let id = objName.replace("对象","").trim()
+      objList.push(id);
+    }
+  }
   let objStr = '<?xml version="1.0" encoding="UTF-8"?>\r\n';
   objStr+="<VbaObjs>\r\n";
   for(let file of fileList){
@@ -43,13 +51,13 @@ function getVBAObjInfo(filePath){
             let desc = childColumns[2].textContent.trim().replaceAll(/\r?\n/g,"");
             let attrName = childColumns[1].textContent.trim().replaceAll(/\r?\n/g,"");
             let attrType = "str";
-            if(desc.indexOf("对象")>0){
-                attrType = "obj";  
-            }else if(desc.indexOf("集合")>0){
+            objList.forEach(objNameX => {
+              if(desc.indexOf("对象")>0 && desc.indexOf(objNameX)>0){
+                attrType = "obj"; 
+              }else if(desc.indexOf("集合")>0 && desc.indexOf(objNameX)>0){
                 attrType = "list";
-            }else{
-                attrType = "str";
-            }
+              }
+            });
             objStr+="\t\t\t<Item attrName=\'"+attrName+"\' attrType='"+attrType+"' desc=\'"+desc+"\'/>\r\n";
           }
           objStr+="\t\t</AttrItems>\r\n";
@@ -61,6 +69,7 @@ function getVBAObjInfo(filePath){
     }
   }
   objStr+="</VbaObjs>\r\n";
+  objStr.replace("<Item attrName='Count' attrType='obj'","<Item attrName='Count' attrType='str'");
   const saveObjXmlPath = path.join(filePath,"xml/VbaObjModel.xml");
   const writeStream = fs.createWriteStream(saveObjXmlPath);
   writeStream.write(objStr, () => {
