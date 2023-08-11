@@ -59,19 +59,41 @@ function getVBAObjInfo(filePath){
             attrItems.com("attrName:名称 attrType:数据类型(str字符串 list列表 obj对象)  desc：说明");
             let desc = childColumns[2].textContent.replaceAll("\r\n","").trim();
             let attrName = childColumns[1].textContent;
-            
+            let subObjName = "";
             let attrType = "str";
-            objList.forEach(objNameX => {
+            objList.forEach(objNameX=>{
               if(desc.indexOf("对象")>0 && desc.indexOf(objNameX)>0 && desc.indexOf("类型")==-1){
                 attrType = "obj"; 
               }else if(desc.indexOf("集合")>0 && desc.indexOf(objNameX)>0){
                 attrType = "list";
               }
             });
+            let isType = true;
+            if(attrType=="list"){
+              objList.forEach(objNameX=>{
+                let isSelfContain = attrName.length>objNameX.length?
+                  attrName.indexOf(objNameX)>0:false; 
+                if(desc.indexOf(objNameX)>0 && attrName==objNameX && !isSelfContain && attrName.endsWith("s") && attrName.length>1){
+                  subObjName = attrName.substring(0,attrName.length-1); 
+                }else if((desc.indexOf(objNameX)>0 && attrName!=objNameX) && !isSelfContain){
+                  subObjName = objNameX;
+                }else if((desc.indexOf("Object")>0 && attrName!=objNameX)){
+                  subObjName = objNameX;
+                }
+              });
+            }
             if(attrName=="Count"){
               attrType = "str"
             }
-
+            if(attrName=="Parent"){
+              attrType = "obj"
+            }
+            if(attrName=="Application"){
+              attrType = "obj"
+            }
+            if(attrName=="Creator"){
+              attrType = "str"
+            }
             let isReadOnly = "false";
             if(desc.indexOf("只读")>0){
               isReadOnly = "true";  
@@ -80,6 +102,9 @@ function getVBAObjInfo(filePath){
             item.att("id",attrName);
             item.att("attrName",attrName);
             item.att("attrType",attrType);
+            if(attrType=="list"){
+              item.att("subObjName",subObjName);
+            }
             item.att("isReadOnly",isReadOnly);
             item.att("desc",desc);
           }
