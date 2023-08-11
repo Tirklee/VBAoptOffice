@@ -438,7 +438,7 @@
 	</Enum>
 	<!--WdChevronConvertRule 枚举 (Word)====指定用于将括在 v 形字符中的文本 (< >) 转换为合并字段的规则。-->
 	<Enum id="WdChevronConvertRule">
-		<Item id="wdAlwaysConvert" name="wdAlwaysConvert" value="1" description="转换器尝试将括在 v 形中的文本转换为邮件合并字段 (< >) 。"/>
+		<Item id="wdAlwaysConvert" name="wdAlwaysConvert" value="1" description="转换器尝试将括在 v 形中的文本转换为邮件合并字段 。"/>
 		<Item id="wdAskToConvert" name="wdAskToConvert" value="3" description="转换器在 Word for Macintosh 文档打开时提示用户是否转换 V 型字符中包含的文字。"/>
 		<Item id="wdAskToNotConvert" name="wdAskToNotConvert" value="2" description="转换器在 Word for Macintosh 文档打开时提示用户是否转换 V 型字符中包含的文字。"/>
 		<Item id="wdNeverConvert" name="wdNeverConvert" value="0" description="转换器忽略此文字而不做任何处理。"/>
