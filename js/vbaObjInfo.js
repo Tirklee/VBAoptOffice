@@ -28,28 +28,30 @@ function getVBAObjInfo(filePath){
       objStr+="\t<!--"+headersTitle[0].textContent+"-->\r\n";
       let headersDesc = xpath.select("/html/body/div[2]/div/p[1]",doc);
       objStr+="\t<!--"+headersDesc[0].textContent+"-->\r\n";
-      objStr+="\t<VbaObj id='"+objName.replace("对象","").trim()+"' name='"+headersTitle[0].textContent.trim()+"' desc='"+headersDesc[0].textContent+"'>\r\n";
+      objStr+="\t<VbaObj id='"+objName.replace("对象","").trim()+"' name='"+headersTitle[0].textContent+"' desc='"+headersDesc[0].textContent+"'>\r\n";
       let methodList = xpath.select("//*[@id=\"vstable\"]/table",doc); 
       let i=0;
       for(let node of methodList){
         let childRows = node.childNodes;
         if(i==0){
           objStr+="\t\t<!--方法-->\r\n";  
-          objStr+="\t\t<Methods>\r\n";
+          objStr+="\t\t<Methods id='Methods'>\r\n";
           for(let r=1;r<childRows.length;r++){
             let childColumns = childRows[r].childNodes;
             objStr+="\t\t\t<!-- methodName:名称 desc：说明-->\r\n";
-            objStr+="\t\t\t<Item methodName=\'"+childColumns[1].textContent.trim().replaceAll(/\r?\n/g,"")+"\' desc=\'"+childColumns[2].textContent.trim().replaceAll(/\r?\n/g,"")+"\'/>\r\n";
+            let methodName = childColumns[1].textContent;
+            let des = childColumns[2].textContent;
+            objStr+="\t\t\t<Item id=\'"+methodName+"\' methodName=\'"+methodName+"\' desc=\'"+des+"\'/>\r\n";
           }
           objStr+="\t\t</Methods>\r\n" ;
         }else if(i==1){
           objStr+="\t\t<!--属性-->\r\n" ;
-          objStr+="\t\t<AttrItems>\r\n";
+          objStr+="\t\t<AttrItems id='AttrItems'>\r\n";
           for(let r=1;r<childRows.length;r++){
             let childColumns = childRows[r].childNodes;
             objStr+="\t\t\t<!-- attrName:名称 attrType:数据类型(str字符串 list列表 obj对象)  desc：说明-->\r\n";
-            let desc = childColumns[2].textContent.trim().replaceAll(/\r?\n/g,"");
-            let attrName = childColumns[1].textContent.trim().replaceAll(/\r?\n/g,"");
+            let desc = childColumns[2].textContent;
+            let attrName = childColumns[1].textContent;
             let attrType = "str";
             objList.forEach(objNameX => {
               if(desc.indexOf("对象")>0 && desc.indexOf(objNameX)>0){
@@ -58,7 +60,7 @@ function getVBAObjInfo(filePath){
                 attrType = "list";
               }
             });
-            objStr+="\t\t\t<Item attrName=\'"+attrName+"\' attrType='"+attrType+"' desc=\'"+desc+"\'/>\r\n";
+            objStr+="\t\t\t<Item id=\'"+attrName+"\' attrName=\'"+attrName+"\' attrType='"+attrType+"' desc=\'"+desc+"\'/>\r\n";
           }
           objStr+="\t\t</AttrItems>\r\n";
         }
